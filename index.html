@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="webSemantiqueApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="INSA de Lyon département Informatique : Projet 4IF WebSemantique">
+
+        <title>WebSemantique</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="css/app.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        <script src="js/angular/angular.js"></script>
+        <script src="js/angular/angular-resource.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/app-controller.js"></script>
+    </head>
+    <body ng-controller="SearchController">
+        <div class="container">
+            <div class="header clearfix">
+                <nav>
+                    <ul class="nav nav-pills pull-right">
+                        <li role="presentation" class="active"><a href="#">Recherche</a></li>
+                        <li role="presentation"><a href="#">A Propos</a></li>
+                        <li role="presentation"><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <h3 class="text-muted">WebSemantique</h3>
+            </div>
+
+            <div class="jumbotron">
+                <h1>Rechercher</h1>
+                <div class="form-group form-group-lg">
+                    <input class="form-control" type="text" id="searchInput" ng-model="recherche" placeholder="Entrez votre requête...">
+                </div>
+            </div>
+
+            <div class="row marketing">
+                <div class="col-lg-12">
+                    <h4>{{ recherche }} — Wikipédia</h4>
+                    <p>Le Dogue de Bordeaux était utilisé pour garder le bétail des bouchers, pour ramener le gibier durant la période de chasse, pour les combats de chiens ou ...</p>
+                    
+                    <h4>Dogue de Bordeaux : chien et chiot.</h4>
+                    <p>Tout sur le Dogue de Bordeaux : caractéristiques physiques, mode de vie, caractère, origines, conseils, santé…</p>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <p>&copy; INSA de Lyon 4IF : Hexanôme 4402</p>
+            </footer>
+
+        </div> <!-- /container -->
+    </body>
+</html>
