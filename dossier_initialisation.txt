@@ -1,0 +1,11 @@
+Dossier d'initialisation :
+
+- Identification des modules à développer
+	- Récupération d'URI à partir d'une requête textuelle. Le système doit utiliser les résultats (de l'ordre d'une dizaine à une centaine) d'un ou plusieurs moteurs de recherche (Google, Bing, Yahoo).
+	- Récupération de texte brut d'une page à partir d'une URI. Il ne faut conserver que les données qui ont un sens pour la page et donc retirer le texte des publicités.
+	- Identification des mot-clés du texte. Nous allons utiliser le service spotlight qui retourne un ensemble d'URI dbpedia correspondant aux mot-clés du texte. Le webservice permet de régler un seuil de tolérance.
+	- A partir des URI précédemment obtenues, nous pouvons commencer une ébauche de graphe rdf pour une page donnée. Nous allons visiter les pages dbpedia identifiées par ces URI afin d'enrichir ce graphe. L'objectif est de fournir un graphe suffisament complet pour chaque page, sans aller trop loin dans l'enrichissement pour éviter des intersection malvenues avec des graphes de pages sémantiquement plus éloignées.
+	- Comparer les graphes des différente pages et établir une matrice de similarité. Nous allons nous servir de cette matrice pour repérer les groupes connexes et ainsi regrouper les sites contenant du texte avec un sens voisin.
+	- Visualisation des résultats (groupes connexes ?) en mode interactif avec seuil de JAccard réglable ?
+	
+
