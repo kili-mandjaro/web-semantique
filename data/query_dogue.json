@@ -1,0 +1,527 @@
+{
+ "kind": "customsearch#search",
+ "url": {
+  "type": "application/json",
+  "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+ },
+ "queries": {
+  "nextPage": [
+   {
+    "title": "Google Custom Search - Dogue de Bordeaux",
+    "totalResults": "431000",
+    "searchTerms": "Dogue de Bordeaux",
+    "count": 10,
+    "startIndex": 11,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "010385690139782890959:ezl0o7x_7ro"
+   }
+  ],
+  "request": [
+   {
+    "title": "Google Custom Search - Dogue de Bordeaux",
+    "totalResults": "431000",
+    "searchTerms": "Dogue de Bordeaux",
+    "count": 10,
+    "startIndex": 1,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "010385690139782890959:ezl0o7x_7ro"
+   }
+  ]
+ },
+ "context": {
+  "title": "INSALyon-WebSemantique"
+ },
+ "searchInformation": {
+  "searchTime": 0.314809,
+  "formattedSearchTime": "0.31",
+  "totalResults": "431000",
+  "formattedTotalResults": "431,000"
+ },
+ "items": [
+  {
+   "kind": "customsearch#result",
+   "title": "Dogue de Bordeaux Dog Breed Information - American Kennel Club",
+   "htmlTitle": "\u003cb\u003eDogue de Bordeaux\u003c/b\u003e Dog Breed Information - American Kennel Club",
+   "link": "http://www.akc.org/dog-breeds/dogue-de-bordeaux/",
+   "displayLink": "www.akc.org",
+   "snippet": "Right breed for you? Dogue de Bordeaux information including personality, \nhistory, grooming, pictures, videos, how to find a Dogue de Bordeaux and AKC ...",
+   "htmlSnippet": "Right breed for you? \u003cb\u003eDogue de Bordeaux\u003c/b\u003e information including personality, \u003cbr\u003e\nhistory, grooming, pictures, videos, how to find a \u003cb\u003eDogue de Bordeaux\u003c/b\u003e and AKC&nbsp;...",
+   "cacheId": "CSls8FDo328J",
+   "formattedUrl": "www.akc.org/dog-breeds/dogue-de-bordeaux/",
+   "htmlFormattedUrl": "www.akc.org/\u003cb\u003edog\u003c/b\u003e-breeds/\u003cb\u003edogue-de-bordeaux\u003c/b\u003e/",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://cdn.akc.org/akcdoglovers/DoguesdeBordeaux_hero_-_Copy.jpg",
+      "type": "1",
+      "width": "303",
+      "height": "166"
+     }
+    ],
+    "thumbnail": [
+     {
+      "src": "http://cdn.akc.org/akcdoglovers/DoguesdeBordeaux_hero_-_Copy.jpg"
+     }
+    ],
+    "metatags": [
+     {
+      "fb:app_id": "530726673730940",
+      "author": "American Kennel Club",
+      "og:url": "http://www.akc.org/dog-breeds/dogue-de-bordeaux/",
+      "og:title": "Dogue de Bordeaux Dog Breed Information",
+      "og:description": "Right breed for you? Dogue de Bordeaux information including personality, history, grooming, pictures, videos, how to find a Dogue de Bordeaux and AKC standard.",
+      "og:image": "http://cdn.akc.org/akcdoglovers/DoguesdeBordeaux_hero_-_Copy.jpg",
+      "twitter:card": "summary",
+      "twitter:site": "@akcdoglovers",
+      "twitter:title": "Dogue de Bordeaux Dog Breed Information",
+      "twitter:description": "AKC.org offers information on dog breeds, dog ownership, dog training, health, nutrition, exercise & grooming, registering your dog, AKC competition events and affiliated clubs to help you discover more things to enjoy with your dog.",
+      "twitter:image": "http://cdn.akc.org/akcdoglovers/DoguesdeBordeaux_hero_-_Copy.jpg",
+      "thumbnail": "http://cdn.akc.org/akcdoglovers/DoguesdeBordeaux_hero_-_Copy.jpg",
+      "headline": "Dogue de Bordeaux Dog Breed Information",
+      "viewport": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
+      "msapplication-tilecolor": "#603cba",
+      "msapplication-tileimage": "/mstile-144x144.png",
+      "fb:admins": "689743718"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Dogue de Bordeaux - Wikipedia, the free encyclopedia",
+   "htmlTitle": "\u003cb\u003eDogue de Bordeaux\u003c/b\u003e - Wikipedia, the free encyclopedia",
+   "link": "https://en.wikipedia.org/wiki/Dogue_de_Bordeaux",
+   "displayLink": "en.wikipedia.org",
+   "snippet": "The Dogue de Bordeaux, Bordeaux Mastiff, French Mastiff or Bordeauxdog is a \nlarge French Mastiff breed—and one of the most ancient French dog breeds.",
+   "htmlSnippet": "The \u003cb\u003eDogue de Bordeaux\u003c/b\u003e, Bordeaux Mastiff, French Mastiff or Bordeauxdog is a \u003cbr\u003e\nlarge French Mastiff breed—and one of the most ancient French dog breeds.",
+   "cacheId": "WbA58j32cncJ",
+   "formattedUrl": "https://en.wikipedia.org/wiki/Dogue_de_Bordeaux",
+   "htmlFormattedUrl": "https://en.wikipedia.org/wiki/\u003cb\u003eDogue_de_Bordeaux\u003c/b\u003e",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/DJT_0086.jpg/220px-DJT_0086.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "176",
+      "height": "117",
+      "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSauX19-vhXzryXq_uiF1kfwyY09UOHaWA1ggqcjeaJRvVNmMGmVtA4I-k"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Dogue de Bordeaux Dog Breed Information and Pictures, French ...",
+   "htmlTitle": "\u003cb\u003eDogue de Bordeaux\u003c/b\u003e Dog Breed Information and Pictures, French \u003cb\u003e...\u003c/b\u003e",
+   "link": "http://www.dogbreedinfo.com/doguedebordeax.htm",
+   "displayLink": "www.dogbreedinfo.com",
+   "snippet": "All about the Dogue de Bordeaux, info, pictures, breeders, rescues, care, \ntemperament, health, puppies and more.",
+   "htmlSnippet": "All about the \u003cb\u003eDogue de Bordeaux\u003c/b\u003e, info, pictures, breeders, rescues, care, \u003cbr\u003e\ntemperament, health, puppies and more.",
+   "cacheId": "8t7yAubwcyUJ",
+   "formattedUrl": "www.dogbreedinfo.com/doguedebordeax.htm",
+   "htmlFormattedUrl": "www.\u003cb\u003edog\u003c/b\u003ebreedinfo.com/\u003cb\u003edogue\u003c/b\u003edebordeax.htm",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://www.dogbreedinfo.com/images16/DogueDeBordeauxRoxyReese22.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "267",
+      "height": "189",
+      "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSu_VfCOssU52P3LgoGiQHu879ET5sgJncwkpCuCSnNV22ju5rZXAnRT8Rk"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Dogue de Bordeaux Rescue | Rescue, Rehabilitate and Rehome ...",
+   "htmlTitle": "\u003cb\u003eDogue de Bordeaux\u003c/b\u003e Rescue | Rescue, Rehabilitate and Rehome \u003cb\u003e...\u003c/b\u003e",
+   "link": "http://ddbrescue.org/",
+   "displayLink": "ddbrescue.org",
+   "snippet": "Rescue, Rehabilitate and Rehome Dogues de Bordeaux in Need.",
+   "htmlSnippet": "Rescue, Rehabilitate and Rehome \u003cb\u003eDogues de Bordeaux\u003c/b\u003e in Need.",
+   "cacheId": "cWn4rlt0uJ0J",
+   "formattedUrl": "ddbrescue.org/",
+   "htmlFormattedUrl": "ddbrescue.org/",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://ddbrescue.org/wp-content/blogs.dir/2/files/2011/10/260x210xbenefitwines.jpg.pagespeed.ic.gKK6jji8na.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "208",
+      "height": "168",
+      "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeUBMAtRKDBooKr9sKTgUANNKS9vTDgWCgoZE9B5hXwGJVIW33rXaYqFE"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Dogue De Bordeaux Puppies for Sale",
+   "htmlTitle": "\u003cb\u003eDogue De Bordeaux\u003c/b\u003e Puppies for Sale",
+   "link": "http://www.puppyfind.com/dogue+de+bordeaux.php",
+   "displayLink": "www.puppyfind.com",
+   "snippet": "The early origins of the Dogue de Bordeaux (also known as the 'French Mastiff' or \n'Bordeaux Bulldog') are shrouded in mystery. Some say it descended from the ...",
+   "htmlSnippet": "The early origins of the \u003cb\u003eDogue de Bordeaux\u003c/b\u003e (also known as the &#39;French Mastiff&#39; or \u003cbr\u003e\n&#39;Bordeaux Bulldog&#39;) are shrouded in mystery. Some say it descended from the&nbsp;...",
+   "cacheId": "e5atyIJ4fsoJ",
+   "formattedUrl": "www.puppyfind.com/dogue+de+bordeaux.php",
+   "htmlFormattedUrl": "www.puppyfind.com/\u003cb\u003edogue\u003c/b\u003e+de+\u003cb\u003ebordeaux\u003c/b\u003e.php",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://www.puppyfind.com/breed/dogue_de_bordeaux/m_842k2e117k.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "176",
+      "height": "176",
+      "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT--s087fSW8p5GQI-wFQZHVvwtwAvnatQiU_wj6oKvCTDhMaEukjS4FNqU"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1",
+      "classification": "puppies,dogs,dog breeders,dog breeds",
+      "author": "PuppyFind.com",
+      "og:site_name": "PuppyFind.com",
+      "og:description": "Puppies for Sale at PuppyFind.com"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "A DdB for you?",
+   "htmlTitle": "A DdB for you?",
+   "link": "http://www.bordeauxdogs.de/bordeauxdogs-gettingone.htm",
+   "displayLink": "www.bordeauxdogs.de",
+   "snippet": "If you are a first time Dogue de Bordeaux buyer and you would still like one after \nreading this page, then go get one! Also, please try the fun Dogue de Bordeaux ...",
+   "htmlSnippet": "If you are a first time \u003cb\u003eDogue de Bordeaux\u003c/b\u003e buyer and you would still like one after \u003cbr\u003e\nreading this page, then go get one! Also, please try the fun \u003cb\u003eDogue de Bordeaux\u003c/b\u003e&nbsp;...",
+   "cacheId": "BTL-R1EsefIJ",
+   "formattedUrl": "www.bordeauxdogs.de/bordeauxdogs-gettingone.htm",
+   "htmlFormattedUrl": "www.\u003cb\u003ebordeauxdog\u003c/b\u003es.de/\u003cb\u003ebordeauxdog\u003c/b\u003es-gettingone.htm",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://www.bordeauxdogs.de/images/gettingaddb/7.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "228",
+      "height": "157",
+      "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJwmoVGZY1K40kCGqxw8woj7D0LWMYiWMkWFvpuufQdcAj8fCIHvCP0ZRk"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Dogue de Bordeaux - Dogtime",
+   "htmlTitle": "\u003cb\u003eDogue de Bordeaux\u003c/b\u003e - Dogtime",
+   "link": "http://dogtime.com/dog-breeds/dogue-de-bordeaux",
+   "displayLink": "dogtime.com",
+   "snippet": "Dogue de Bordeaux information including pictures, training, behavior, and care \nof Dogue de Bordeauxes and dog breed mixes.",
+   "htmlSnippet": "\u003cb\u003eDogue de Bordeaux\u003c/b\u003e information including pictures, training, behavior, and care \u003cbr\u003e\nof Dogue de Bordeauxes and dog breed mixes.",
+   "cacheId": "ty_hB77Dq1EJ",
+   "formattedUrl": "dogtime.com/dog-breeds/dogue-de-bordeaux",
+   "htmlFormattedUrl": "\u003cb\u003edog\u003c/b\u003etime.com/\u003cb\u003edog\u003c/b\u003e-breeds/\u003cb\u003edogue-de-bordeaux\u003c/b\u003e",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://cdn2-www.dogtime.com/assets/uploads/2011/01/file_23252_dogue-de-bordeaux-dog-breed.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "283",
+      "height": "178",
+      "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKD7RfAKw2pFJat97D8DoouDTzbfBlEsLMmeA9W0-GSKE0kE-vzIA8lXyC"
+     }
+    ],
+    "metatags": [
+     {
+      "p:domain_verify": "bc06c90d1acb18ed0abe8e9b9c02db20",
+      "viewport": "width=device-width, initial-scale=1, maximum-scale=1, minimal-ui",
+      "fragment": "!",
+      "og:locale": "en_US",
+      "og:type": "article",
+      "og:title": "Dogue de Bordeaux - Dogtime",
+      "og:description": "Dogue de Bordeaux information including pictures, training, behavior, and care of Dogue de Bordeauxes and dog breed mixes.",
+      "og:url": "http://dogtime.com/dog-breeds/dogue-de-bordeaux",
+      "og:site_name": "Dogtime",
+      "og:image": "http://cdn2-www.dogtime.com/assets/uploads/2011/01/file_23252_dogue-de-bordeaux-dog-breed.jpg",
+      "msvalidate.01": "066A90BB609174C8673EE79E0B03EAAF"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Dogue de Bordeaux - YouTube",
+   "htmlTitle": "\u003cb\u003eDogue de Bordeaux\u003c/b\u003e - YouTube",
+   "link": "http://www.youtube.com/watch?v=IPIxZe5vP-4",
+   "displayLink": "www.youtube.com",
+   "snippet": "Jul 9, 2013 ... Dogue de Bordeaux ... is my 3 years old video of my dog Bax Grand Moloss. http:/\n/youtu.be/ZQCK1smgd5s ... very nice dog you got there :).",
+   "htmlSnippet": "Jul 9, 2013 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eDogue de Bordeaux\u003c/b\u003e ... is my 3 years old video of my dog Bax Grand Moloss. http:/\u003cbr\u003e\n/youtu.be/ZQCK1smgd5s ... very nice dog you got there :).",
+   "cacheId": "zw-UGkclbSgJ",
+   "formattedUrl": "www.youtube.com/watch?v=IPIxZe5vP-4",
+   "htmlFormattedUrl": "www.youtube.com/watch?v=IPIxZe5vP-4",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://i.ytimg.com/vi/IPIxZe5vP-4/hqdefault.jpg"
+     }
+    ],
+    "videoobject": [
+     {
+      "url": "http://www.youtube.com/watch?v=IPIxZe5vP-4",
+      "name": "Dogue de Bordeaux",
+      "paid": "False",
+      "channelid": "UCii0tpdMLo4fWY4YdpLU7AQ",
+      "videoid": "IPIxZe5vP-4",
+      "duration": "PT4M10S",
+      "unlisted": "False",
+      "thumbnailurl": "http://i.ytimg.com/vi/IPIxZe5vP-4/hqdefault.jpg",
+      "embedurl": "https://www.youtube.com/embed/IPIxZe5vP-4",
+      "playertype": "HTML5 Flash",
+      "width": "640",
+      "height": "360",
+      "isfamilyfriendly": "True",
+      "regionsallowed": "AD,AE,AF,AG,AI,AL,AM,AO,AQ,AR,AS,AT,AU,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CA,CC,CD,CF,CG,CH,CI,CK,CL,CM,CN,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH...",
+      "interactioncount": "60484",
+      "datepublished": "2013-07-09",
+      "genre": "People & Blogs"
+     }
+    ],
+    "person": [
+     {
+      "url": "http://www.youtube.com/channel/UCii0tpdMLo4fWY4YdpLU7AQ"
+     },
+     {
+      "url": "https://plus.google.com/115397153239324383364"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "259",
+      "height": "194",
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ8muqbaq9BYumstu8Nuc6G1ZQcSxOGYA3PVxOo4J3_7agvKVO4McjHtCe"
+     }
+    ],
+    "metatags": [
+     {
+      "title": "Dogue de Bordeaux",
+      "og:site_name": "YouTube",
+      "og:url": "http://www.youtube.com/watch?v=IPIxZe5vP-4",
+      "og:title": "Dogue de Bordeaux",
+      "og:image": "http://i.ytimg.com/vi/IPIxZe5vP-4/hqdefault.jpg",
+      "al:ios:app_store_id": "544007664",
+      "al:ios:app_name": "YouTube",
+      "al:ios:url": "vnd.youtube://www.youtube.com/watch?v=IPIxZe5vP-4&feature=applinks",
+      "al:android:url": "vnd.youtube://www.youtube.com/watch?v=IPIxZe5vP-4&feature=applinks",
+      "al:android:app_name": "YouTube",
+      "al:android:package": "com.google.android.youtube",
+      "al:web:url": "http://www.youtube.com/watch?v=IPIxZe5vP-4&feature=applinks",
+      "og:type": "video",
+      "og:video:url": "https://www.youtube.com/embed/IPIxZe5vP-4",
+      "og:video:secure_url": "https://www.youtube.com/embed/IPIxZe5vP-4",
+      "og:video:type": "text/html",
+      "og:video:width": "640",
+      "og:video:height": "360",
+      "og:video:tag": "Dog (Domesticated Animal)",
+      "fb:app_id": "87741124305",
+      "twitter:card": "player",
+      "twitter:site": "@youtube",
+      "twitter:url": "http://www.youtube.com/watch?v=IPIxZe5vP-4",
+      "twitter:title": "Dogue de Bordeaux",
+      "twitter:image": "http://i.ytimg.com/vi/IPIxZe5vP-4/hqdefault.jpg",
+      "twitter:app:name:iphone": "YouTube",
+      "twitter:app:id:iphone": "544007664",
+      "twitter:app:name:ipad": "YouTube",
+      "twitter:app:id:ipad": "544007664",
+      "twitter:app:url:iphone": "vnd.youtube://www.youtube.com/watch?v=IPIxZe5vP-4&feature=applinks",
+      "twitter:app:url:ipad": "vnd.youtube://www.youtube.com/watch?v=IPIxZe5vP-4&feature=applinks",
+      "twitter:app:name:googleplay": "YouTube",
+      "twitter:app:id:googleplay": "com.google.android.youtube",
+      "twitter:app:url:googleplay": "http://www.youtube.com/watch?v=IPIxZe5vP-4",
+      "twitter:player": "https://www.youtube.com/embed/IPIxZe5vP-4",
+      "twitter:player:width": "640",
+      "twitter:player:height": "360",
+      "attribution": "ii0tpdMLo4fWY4YdpLU7AQ/"
+     }
+    ],
+    "imageobject": [
+     {
+      "url": "http://i.ytimg.com/vi/IPIxZe5vP-4/hqdefault.jpg",
+      "width": "480",
+      "height": "360"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Dogue de Bordeaux Rescue, Inc.",
+   "htmlTitle": "\u003cb\u003eDogue de Bordeaux\u003c/b\u003e Rescue, Inc.",
+   "link": "https://www.facebook.com/DoguedeBordeauxRescueInc",
+   "displayLink": "www.facebook.com",
+   "snippet": "Dogue de Bordeaux Rescue, Inc. 33744 likes · 1565 talking about this. Rescue, \nRehabilitate, Rehome Dogues de Bordeaux in need. Based in the USA.",
+   "htmlSnippet": "\u003cb\u003eDogue de Bordeaux\u003c/b\u003e Rescue, Inc. 33744 likes · 1565 talking about this. Rescue, \u003cbr\u003e\nRehabilitate, Rehome \u003cb\u003eDogues de Bordeaux\u003c/b\u003e in need. Based in the USA.",
+   "cacheId": "LvEhldMFb-8J",
+   "formattedUrl": "https://www.facebook.com/DoguedeBordeauxRescueInc",
+   "htmlFormattedUrl": "https://www.facebook.com/\u003cb\u003eDoguedeBordeaux\u003c/b\u003eRescueInc",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/v/t1.0-1/c38.57.466.466/s160x160/12006333_10152924158181735_4855739216274445349_n.jpg?oh=1c7f1a2e9b36f558fcfcb693ec471ec9&oe=56854747&__gda__=1456151106_ffcfc95b993f9a6f1f02f4785816c369"
+     }
+    ],
+    "organization": [
+     {
+      "name": "Dogue de Bordeaux Rescue, Inc."
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "128",
+      "height": "128",
+      "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOctOTInOAB0_iX-qV7svbTGbeXw5xHAiKmYsdgh8ECWom40oJGmAGs68"
+     }
+    ],
+    "metatags": [
+     {
+      "referrer": "default",
+      "al:android:app_name": "Facebook",
+      "al:android:package": "com.facebook.katana",
+      "al:android:url": "fb://page/142226701734"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Rottweiler v Dogue de Bordeaux v Child - YouTube",
+   "htmlTitle": "Rottweiler v \u003cb\u003eDogue de Bordeaux\u003c/b\u003e v Child - YouTube",
+   "link": "https://www.youtube.com/watch?v=ZWirg7ksXf0",
+   "displayLink": "www.youtube.com",
+   "snippet": "Mar 6, 2011 ... Rottweiler and Dogue De Bordeaux fight over a tug.",
+   "htmlSnippet": "Mar 6, 2011 \u003cb\u003e...\u003c/b\u003e Rottweiler and \u003cb\u003eDogue De Bordeaux\u003c/b\u003e fight over a tug.",
+   "cacheId": "2KfesquHtekJ",
+   "formattedUrl": "https://www.youtube.com/watch?v=ZWirg7ksXf0",
+   "htmlFormattedUrl": "https://www.youtube.com/watch?v=ZWirg7ksXf0",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "https://i.ytimg.com/vi/ZWirg7ksXf0/hqdefault.jpg"
+     }
+    ],
+    "videoobject": [
+     {
+      "url": "https://www.youtube.com/watch?v=ZWirg7ksXf0",
+      "name": "Rottweiler v Dogue de Bordeaux v Child",
+      "description": "Rottweiler and Dogue De Bordeaux fight over a tug",
+      "paid": "False",
+      "channelid": "UCNkQC-WyZUlzk2vZgeYsf6Q",
+      "videoid": "ZWirg7ksXf0",
+      "duration": "PT3M26S",
+      "unlisted": "False",
+      "thumbnailurl": "https://i.ytimg.com/vi/ZWirg7ksXf0/hqdefault.jpg",
+      "embedurl": "https://www.youtube.com/embed/ZWirg7ksXf0",
+      "playertype": "HTML5 Flash",
+      "width": "480",
+      "height": "360",
+      "isfamilyfriendly": "True",
+      "regionsallowed": "AD,AE,AF,AG,AI,AL,AM,AO,AQ,AR,AS,AT,AU,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CA,CC,CD,CF,CG,CH,CI,CK,CL,CM,CN,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH...",
+      "interactioncount": "2796055",
+      "datepublished": "2011-03-06",
+      "genre": "Pets & Animals"
+     }
+    ],
+    "person": [
+     {
+      "url": "http://www.youtube.com/user/dunnytoz"
+     },
+     {
+      "url": "https://plus.google.com/110491686332062813013"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "259",
+      "height": "194",
+      "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUxsrOSjUcLZP_84trg618qh_A3XiX9se0G-bIavEy0Q1ogQZbYJtCWCYr"
+     }
+    ],
+    "metatags": [
+     {
+      "title": "Rottweiler v Dogue de Bordeaux v Child",
+      "og:site_name": "YouTube",
+      "og:url": "https://www.youtube.com/watch?v=ZWirg7ksXf0",
+      "og:title": "Rottweiler v Dogue de Bordeaux v Child",
+      "og:image": "https://i.ytimg.com/vi/ZWirg7ksXf0/hqdefault.jpg",
+      "og:description": "Rottweiler and Dogue De Bordeaux fight over a tug",
+      "al:ios:app_store_id": "544007664",
+      "al:ios:app_name": "YouTube",
+      "al:ios:url": "vnd.youtube://www.youtube.com/watch?v=ZWirg7ksXf0&feature=applinks",
+      "al:android:url": "vnd.youtube://www.youtube.com/watch?v=ZWirg7ksXf0&feature=applinks",
+      "al:android:app_name": "YouTube",
+      "al:android:package": "com.google.android.youtube",
+      "al:web:url": "https://www.youtube.com/watch?v=ZWirg7ksXf0&feature=applinks",
+      "og:type": "video",
+      "og:video:url": "https://www.youtube.com/embed/ZWirg7ksXf0",
+      "og:video:secure_url": "https://www.youtube.com/embed/ZWirg7ksXf0",
+      "og:video:type": "text/html",
+      "og:video:width": "480",
+      "og:video:height": "360",
+      "og:video:tag": "Rottie",
+      "fb:app_id": "87741124305",
+      "twitter:card": "player",
+      "twitter:site": "@youtube",
+      "twitter:url": "https://www.youtube.com/watch?v=ZWirg7ksXf0",
+      "twitter:title": "Rottweiler v Dogue de Bordeaux v Child",
+      "twitter:description": "Rottweiler and Dogue De Bordeaux fight over a tug",
+      "twitter:image": "https://i.ytimg.com/vi/ZWirg7ksXf0/hqdefault.jpg",
+      "twitter:app:name:iphone": "YouTube",
+      "twitter:app:id:iphone": "544007664",
+      "twitter:app:name:ipad": "YouTube",
+      "twitter:app:id:ipad": "544007664",
+      "twitter:app:url:iphone": "vnd.youtube://www.youtube.com/watch?v=ZWirg7ksXf0&feature=applinks",
+      "twitter:app:url:ipad": "vnd.youtube://www.youtube.com/watch?v=ZWirg7ksXf0&feature=applinks",
+      "twitter:app:name:googleplay": "YouTube",
+      "twitter:app:id:googleplay": "com.google.android.youtube",
+      "twitter:app:url:googleplay": "https://www.youtube.com/watch?v=ZWirg7ksXf0",
+      "twitter:player": "https://www.youtube.com/embed/ZWirg7ksXf0",
+      "twitter:player:width": "480"
+     }
+    ],
+    "imageobject": [
+     {
+      "url": "https://i.ytimg.com/vi/ZWirg7ksXf0/hqdefault.jpg",
+      "width": "480",
+      "height": "360"
+     }
+    ]
+   }
+  }
+ ]
+}
