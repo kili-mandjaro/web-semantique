@@ -26,8 +26,9 @@
         <script src="js/app.js"></script>
         <script src="js/app-controller.js"></script>
         <script src="js/components/url/url-service.js"></script>
+        <script src="js/components/keywords-uri-finder/keywords-uri-finder-service.js"></script>
     </head>
-    <body ng-controller="SearchController">
+    <body>
         <div class="container">
             <div class="header clearfix">
                 <nav>
@@ -40,21 +41,50 @@
                 <h3 class="text-muted">WebSemantique</h3>
             </div>
 
-            <div class="jumbotron">
-                <div class="form-group form-group-lg">
-                    <input class="form-control" type="text" id="searchInput" ng-model="recherche" placeholder="Entrez votre requête...">
+            <div id="recherche" ng-controller="SearchController">
+                <div class="jumbotron">
+                    <div class="form-group form-group-lg">
+                        <input class="form-control" type="text" id="searchInput" ng-model="recherche" placeholder="Entrez votre requête...">
+                    </div>
+                    <button type="button" class="btn btn-primary btn-lg btn-block" ng-click="LancerRecherche()">Rechercher</button>
                 </div>
-                <button type="button" class="btn btn-primary btn-lg btn-block" ng-click="LancerRecherche()">Rechercher</button>
-            </div>
 
-            <div class="row marketing">
-                <div class="col-lg-12">
-                    <h4>{{ recherche }} — Wikipédia</h4>
-                    <p>Le Dogue de Bordeaux était utilisé pour garder le bétail des bouchers, pour ramener le gibier durant la période de chasse, pour les combats de chiens ou ...</p>
-                    
-                    <h4>Dogue de Bordeaux : chien et chiot.</h4>
-                    <p>Tout sur le Dogue de Bordeaux : caractéristiques physiques, mode de vie, caractère, origines, conseils, santé…</p>
+                <div class="row marketing">
+                    <div class="col-lg-12">
+                        <h4>{{ recherche }} — Wikipédia</h4>
+                        <p>Le Dogue de Bordeaux était utilisé pour garder le bétail des bouchers, pour ramener le gibier durant la période de chasse, pour les combats de chiens ou ...</p>
+
+                        <h4>Dogue de Bordeaux : chien et chiot.</h4>
+                        <p>Tout sur le Dogue de Bordeaux : caractéristiques physiques, mode de vie, caractère, origines, conseils, santé…</p>
+                    </div>
                 </div>
+            </div>
+            <div id="analyse" ng-controller="AnalyseController">
+                <div class="jumbotron">
+                    <div class="form-group form-group-lg">
+                        <textarea class="form-control" type="text" id="textInput" ng-model="text" placeholder="Entrez le texte à analyser ..."></textarea>
+                        <label for="inputConfidence">Confiance : </label>
+                        <select class="form-control" id="inputConfidence" ng-model="confidence">
+                            <option value="0.1">0.1</option>
+                            <option value="0.2">0.2</option>
+                            <option value="0.3">0.3</option>
+                            <option value="0.4">0.4</option>
+                            <option value="0.5">0.5</option>
+                            <option value="0.6">0.6</option>
+                            <option value="0.7">0.7</option>
+                            <option value="0.8">0.8</option>
+                            <option value="0.9">0.9</option>
+                        </select>
+                    </div>
+
+                    <button type="button" class="btn btn-primary btn-lg btn-block" ng-click="LancerAnalyse()">Rechercher</button>
+                </div>
+                <ul id="keyords-uri">
+                    <li ng-repeat="keyword in keywords">
+                        {{keyword['@surfaceForm']}}
+                        <p>{{keyword['@URI']}}</p>
+                    </li>
+                </ul>
             </div>
 
             <footer class="footer">
