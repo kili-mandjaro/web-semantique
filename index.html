@@ -27,8 +27,7 @@
         <script src="js/app-controller.js"></script>
         <script src="js/components/recherche/recherche-service.js"></script>
         <script src="js/components/keywords-uri-finder/keywords-uri-finder-service.js"></script>
-        <script src="js/components/rdfGraph/rdfGraph.js"></script>
-    </head>
+        <script src="js/components/rdfGraph/rdfGraph.js"></script>        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>    </head>
     <body>
         <div class="container">
             <div class="header clearfix">
@@ -52,17 +51,12 @@
 
                 <div class="row marketing">
                     <div class="col-lg-12">
+                        <h2>Resultats</h2>
                         <ul>
                             <li ng-repeat="page in pages">
                                 {{ page.url }}
                             </li>
                         </ul>
-                        
-                        <h4>{{ recherche }} — Wikipédia</h4>
-                        <p>Le Dogue de Bordeaux était utilisé pour garder le bétail des bouchers, pour ramener le gibier durant la période de chasse, pour les combats de chiens ou ...</p>
-
-                        <h4>Dogue de Bordeaux : chien et chiot.</h4>
-                        <p>Tout sur le Dogue de Bordeaux : caractéristiques physiques, mode de vie, caractère, origines, conseils, santé…</p>
                     </div>
                 </div>
             </div>
