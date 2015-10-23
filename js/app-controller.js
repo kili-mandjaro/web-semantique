@@ -3,13 +3,12 @@
 /* Controllers */
 
 var webSemantiqueControllers = angular.module('webSemantiqueControllers', [
-    'webSemantiqueUrlServices',
-    'webSemantiqueKeywordsUriFinderServices',
+    'webSemantiqueRechercheServices',
     'ngResource'
 ]);
 
-webSemantiqueControllers.controller('SearchController', ['$scope', 'Recherche', '$resource',
-    function ($scope, Recherche, $resource) {        
+webSemantiqueControllers.controller('SearchController', ['$scope', 'Recherche',
+    function ($scope, Recherche) {        
         //---------------------------------------------------Variables de la vue
         $scope.urls = [];
         
@@ -19,19 +18,5 @@ webSemantiqueControllers.controller('SearchController', ['$scope', 'Recherche', 
             Recherche.requete($scope.recherche, function(page) {
                 $scope.pages.push(page);
             });
-        };
-    }]);
-
-webSemantiqueControllers.controller('AnalyseController', ['$scope', 'Analyse', 'ExtractionTexte'
-    function ($scope, Analyse, ExtractionTexte) {
-
-        $scope.keywords = [];
-        $scope.confidence = "0.2";
-        //$scope.text = "Harry Potter is an English series of seven fantasy novels written by British author J. K. Rowling.";
-
-        $scope.LancerAnalyse = function () {
-            Analyse.getKeywordsURI(ExtractionTexte.extract(), $scope.confidence, function(keywords){
-                $scope.keywords = keywords;
-            })
         };
     }]);

@@ -2,14 +2,15 @@
 
 /* Url Services */
 
-var webSemantiqueUrlServices = angular.module('webSemantiqueUrlServices', [
+var webSemantiqueRechercheServices = angular.module('webSemantiqueRechercheServices', [
     'ngResource'
 ]);
 
-webSemantiqueUrlServices.factory('Recherche', ['$resource', '$http',
+webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
     function($resource, $http) {
         //------------------------------------------------------Attributs prives
         var pages = [];
+        var confiance = 0.2;
         
         //-------------------------------------------------------------Fonctions
         
@@ -33,6 +34,27 @@ webSemantiqueUrlServices.factory('Recherche', ['$resource', '$http',
         }
         
         /**
+         * Genere un handler pour recuperer les mots clés d'un texte.
+         * @param {JSON} item L'element retourne par l'API Google.
+         * @param {function(page)} callback Un callback appele a chaque nouveau resultat trouve.
+         */
+        function createSpolightHandler(item, callback) {
+            /**
+             * Recupere les mots cles d'une page.
+             * @param {type} jsonResponse La reponse json de l'api spotlight.
+             */
+            return function(jsonResponse) {
+                var page = {
+                    url: item.link,
+                    uriKeywords: jsonResponse.Resources
+                };
+                pages.push(page);
+                //On appelle le callback.
+                callback(page);
+            };
+        }
+        
+        /**
          * Genere un handler pour recuperer le html d'une page.
          * @param {JSON} item L'element retourne par l'API Google.
          * @param {function(page)} callback Un callback appele a chaque nouveau resultat trouve.
@@ -44,14 +66,16 @@ webSemantiqueUrlServices.factory('Recherche', ['$resource', '$http',
              *                                Voir documentation $http AngularJS
              */
             return function(responseObject) {
-                var page = {
-                    url: item.link,
-                    textContent: ExtractionTexte(responseObject.data),
-                    htmlContent: responseObject.data
-                };
-                pages.push(page);
-                //On appelle le callback.
-                callback(page);
+                var textContent = ExtractionTexte(responseObject.data);
+                
+                //On limite la taille de la chaine a envoyer à spotlight 
+                if (textContent.length > 200)
+                {
+                    textContent = textContent.substring(0, 200);
+                }
+                
+                var res = $resource('http://spotlight.dbpedia.org/rest/annotate?text=:text&confidence=:confidence&support=20', {}, {});
+                res.get({text: textContent, confidence: confiance}, createSpolightHandler(item, callback));
             };
         }
         
