@@ -9,28 +9,15 @@ var webSemantiqueControllers = angular.module('webSemantiqueControllers', [
 ]);
 
 webSemantiqueControllers.controller('SearchController', ['$scope', 'Recherche', '$resource',
-    function ($scope, Recherche, $resource) {
+    function ($scope, Recherche, $resource) {        
         //---------------------------------------------------Variables de la vue
         $scope.urls = [];
         
         //----------------------------------------------------Méthodes de la vue
         $scope.LancerRecherche = function () {
-            $scope.urls = [];
-            
-            Recherche.get({requete: $scope.recherche}, function (jsonData) {
-                
-                
-                $scope.urls = [];
-                for (var i = 0;i < jsonData.items.length;i++)
-                {
-                    $scope.urls.push(jsonData.items[i].link);
-                    //Attention, lors des acces aux site externes, les requetes 
-                    //peuvent être bloquées pour des raisons de sécurité (Cross-Domain).
-                    var webResource = $resource(jsonData.items[i].link, {}, {});
-                    webResource.get(function(htmlContent) {
-                        console.log(htmlContent);
-                    });
-                }
+            $scope.pages = [];
+            Recherche.requete($scope.recherche, function(page) {
+                $scope.pages.push(page);
             });
         };
     }]);
