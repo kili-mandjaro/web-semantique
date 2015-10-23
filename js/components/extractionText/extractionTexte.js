@@ -7,22 +7,22 @@ var webSemantiqueExtractionTexteServices = angular.module('webSemantiqueExtracti
 ]);
 
 
-webSemantiqueExtractionTexteServices.service('ExtractionTexte', 
-function(){
+webSemantiqueExtractionTexteServices.factory('ExtractionTexte', function(){
+	var extractionTexte = {};
+	extractionTexte.extract = function(myDocument){
+		var monText = $(myDocument).find("p,a,h1,h2,h3,h4,h5,h6")
+				.clone()    //clone the element
+				.children() //select all the children
+				.remove()   //remove all the children
+				.end();  //again go back to selected element
 
-return function(myDocument){
-
-	var monText = $(myDocument).find("p,a,h1,h2,h3,h4,h5,h6")
-			.clone()    //clone the element
-			.children() //select all the children
-			.remove()   //remove all the children
-			.end();  //again go back to selected element
-
-		var texteBrut = "";
-			
-	monText.each(function(){
-	  texteBrut += $(this).text() + " ";
-	});
-	
-	return texteBrut;
-}});
+			var texteBrut = "";
+				
+		monText.each(function(){
+		  texteBrut += $(this).text() + " ";
+		});
+		
+		return texteBrut;
+	};
+	return extractionTexte;
+});

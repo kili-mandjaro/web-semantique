@@ -35,15 +35,15 @@ webSemantiqueControllers.controller('SearchController', ['$scope', 'Recherche', 
         };
     }]);
 
-webSemantiqueControllers.controller('AnalyseController', ['$scope', 'Analyse',
-    function ($scope, Analyse) {
+webSemantiqueControllers.controller('AnalyseController', ['$scope', 'Analyse', 'ExtractionTexte'
+    function ($scope, Analyse, ExtractionTexte) {
 
         $scope.keywords = [];
         $scope.confidence = "0.2";
-        $scope.text = "Harry Potter is an English series of seven fantasy novels written by British author J. K. Rowling.";
+        //$scope.text = "Harry Potter is an English series of seven fantasy novels written by British author J. K. Rowling.";
 
         $scope.LancerAnalyse = function () {
-            Analyse.getKeywordsURI($scope.text, $scope.confidence, function(keywords){
+            Analyse.getKeywordsURI(ExtractionTexte.extract(), $scope.confidence, function(keywords){
                 $scope.keywords = keywords;
             })
         };
