@@ -10,7 +10,7 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
     function($resource, $http) {
         //------------------------------------------------------Attributs prives
         var pages = [];
-        var confiance = 0.2;
+        var confiance = '0.2';
         
         //-------------------------------------------------------------Fonctions
         
@@ -38,15 +38,16 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
          * @param {JSON} item L'element retourne par l'API Google.
          * @param {function(page)} callback Un callback appele a chaque nouveau resultat trouve.
          */
-        function createSpolightHandler(item, callback) {
+        function createSpotlightHandler(item, callback) {
             /**
              * Recupere les mots cles d'une page.
              * @param {type} jsonResponse La reponse json de l'api spotlight.
              */
             return function(jsonResponse) {
+                console.log(jsonResponse);
                 var page = {
                     url: item.link,
-                    uriKeywords: jsonResponse.Resources
+                    uriKeywords: jsonResponse.data.Resources
                 };
                 pages.push(page);
                 //On appelle le callback.
@@ -69,13 +70,31 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
                 var textContent = ExtractionTexte(responseObject.data);
                 
                 //On limite la taille de la chaine a envoyer à spotlight 
-                if (textContent.length > 200)
+                /*if (textContent.length > 200)
                 {
                     textContent = textContent.substring(0, 200);
-                }
-                
-                var res = $resource('http://spotlight.dbpedia.org/rest/annotate?text=:text&confidence=:confidence&support=20', {}, {});
-                res.get({text: textContent, confidence: confiance}, createSpolightHandler(item, callback));
+                }*/
+
+                //Passage par un GET limite le nb de char pour les param
+
+                //var res = $resource('http://spotlight.dbpedia.org/rest/annotate?confidence=:confidence&support=20', {}, {});
+                //res.get({text: textContent, confidence: confiance}, createSpotlightHandler(item, callback));
+
+                // Passage par un POST, le nb de char autorise est bcp plus grand
+
+                var urlPost = 'http://spotlight.dbpedia.org/rest/annotate?confidence=' + confiance + '&support=20';
+                var paramPost = $.param({
+                    text : textContent
+                });
+                $http({
+                    method: 'POST',
+                    url: urlPost,
+                    data: paramPost,
+                    headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+                }).then(createSpotlightHandler(item, callback),
+                    function errorCallback(response) {
+                        // Callback appele lors d'un probleme.
+                    });
             };
         }
         
