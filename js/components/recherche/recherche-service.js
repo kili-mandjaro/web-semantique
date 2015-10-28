@@ -20,7 +20,7 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
          * @returns {String}
          */
         function ExtractionTexte(htmlContent) {
-                var monText = $(htmlContent).find("p,a,h1,h2,h3,h4,h5,h6")
+                var monText = $(htmlContent).find("p,a,h1,h2,h3,h4,h5,h6,span,li,b")
                                 .clone()    //clone the element
                                 .children() //select all the children
                                 .remove()   //remove all the children
@@ -44,10 +44,16 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
              * @param {type} jsonResponse La reponse json de l'api spotlight.
              */
             return function(jsonResponse) {
-                console.log(jsonResponse);
+
+                var cache = {};
+                // on supprime les doublons des keywords
+                var uriKeywords = jsonResponse.data.Resources.filter(function(elem){
+                    return cache[elem['@surfaceForm']] ? 0 : cache[elem['@surfaceForm']] = 1;
+                });
+
                 var page = {
                     url: item.link,
-                    uriKeywords: jsonResponse.data.Resources
+                    uriKeywords: uriKeywords
                 };
                 pages.push(page);
                 //On appelle le callback.
@@ -67,18 +73,27 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
              *                                Voir documentation $http AngularJS
              */
             return function(responseObject) {
+
                 var textContent = ExtractionTexte(responseObject.data);
-                
+
+                // Solution de secours quand les pages ne sont pas bien ecrites
+                if(textContent == "")
+                    textContent = responseObject.data.body.innerText;
+
+                //var textContent = responseObject.data.body.innerText;
+
+                //Passage par un GET limite le nb de char pour les param ==========
+
                 //On limite la taille de la chaine a envoyer à spotlight 
                 /*if (textContent.length > 200)
                 {
                     textContent = textContent.substring(0, 200);
-                }*/
+                }
 
-                //Passage par un GET limite le nb de char pour les param
+                var res = $resource('http://spotlight.dbpedia.org/rest/annotate?confidence=:confidence&support=20', {}, {});
+                res.get({text: textContent, confidence: confiance}, createSpotlightHandler(item, callback));*/
 
-                //var res = $resource('http://spotlight.dbpedia.org/rest/annotate?confidence=:confidence&support=20', {}, {});
-                //res.get({text: textContent, confidence: confiance}, createSpotlightHandler(item, callback));
+                //======================================================================
 
                 // Passage par un POST, le nb de char autorise est bcp plus grand
 
@@ -110,9 +125,11 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
              */
             return function(jsonQueryData)
             {
+                //for (var i = 0;i < 3;i++)
                 for (var i = 0;i < jsonQueryData.items.length;i++)
                 {
-                    //Attention, lors des acces aux site externes, les requetes 
+                    console.log(jsonQueryData.items[i].link);
+                    //Attention, lors des acces aux site externes, les requetes
                     //peuvent être bloquées pour des raisons de sécurité (Cross-Domain).
                     $http({
                         method: 'GET',
@@ -133,11 +150,12 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
              * 
              * @param {String} requete La requete a traiter pour l'utilisateur.
              * @param {function(page)} callback Un callback appele a chaque nouveau resultat trouve.
+             *
              */
             requete: function(requete, callback) {
                 //Pour eviter de faire trop de requetes sur l'API Google, on fixe le resultat.
                 //var ressource = $resource('https://www.googleapis.com/customsearch/v1?q=:requete&cx=010385690139782890959%3Aezl0o7x_7ro&key=AIzaSyBgk1ACvargtPMwitXu85jlFj0maYox1jI', {}, {});
-                var ressource = $resource('data/query_dogue.json', {}, {});
+                var ressource = $resource('data/chinese_pug.json', {}, {});
                 ressource.get({requete: requete}, createGoogleApiHandler(callback));
             },
             /**

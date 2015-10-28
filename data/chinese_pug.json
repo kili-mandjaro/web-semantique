@@ -1,0 +1,465 @@
+{
+ "kind": "customsearch#search",
+ "url": {
+  "type": "application/json",
+  "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+ },
+ "queries": {
+  "nextPage": [
+   {
+    "title": "Google Custom Search - chinese pug",
+    "totalResults": "692000",
+    "searchTerms": "chinese pug",
+    "count": 10,
+    "startIndex": 11,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "010385690139782890959:ezl0o7x_7ro"
+   }
+  ],
+  "request": [
+   {
+    "title": "Google Custom Search - chinese pug",
+    "totalResults": "692000",
+    "searchTerms": "chinese pug",
+    "count": 10,
+    "startIndex": 1,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "010385690139782890959:ezl0o7x_7ro"
+   }
+  ]
+ },
+ "context": {
+  "title": "INSALyon-WebSemantique"
+ },
+ "searchInformation": {
+  "searchTime": 0.362422,
+  "formattedSearchTime": "0.36",
+  "totalResults": "692000",
+  "formattedTotalResults": "692,000"
+ },
+ "items": [
+  {
+   "kind": "customsearch#result",
+   "title": "Pug - Wikipedia, the free encyclopedia",
+   "htmlTitle": "\u003cb\u003ePug\u003c/b\u003e - Wikipedia, the free encyclopedia",
+   "link": "https://en.wikipedia.org/wiki/Pug",
+   "displayLink": "en.wikipedia.org",
+   "snippet": "In ancient times, Pugs were bred to be companions for ruling families in China. \nThe pet Pugs were highly valued by Chinese ...",
+   "htmlSnippet": "In ancient times, \u003cb\u003ePugs\u003c/b\u003e were bred to be companions for ruling families in \u003cb\u003eChina\u003c/b\u003e. \u003cbr\u003e\nThe pet \u003cb\u003ePugs\u003c/b\u003e were highly valued by \u003cb\u003eChinese\u003c/b\u003e&nbsp;...",
+   "cacheId": "7Wf5ySVfU5MJ",
+   "formattedUrl": "https://en.wikipedia.org/wiki/Pug",
+   "htmlFormattedUrl": "https://en.wikipedia.org/wiki/\u003cb\u003ePug\u003c/b\u003e",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Mops-duke-mopszucht-vom-maegdebrunnen.jpg/220px-Mops-duke-mopszucht-vom-maegdebrunnen.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "176",
+      "height": "116",
+      "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnwmF0pxuylkKEotB8yAKJaEfuGDvFAHPnLnzeqaIo38KrJzUFlUV1zQ"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Chinese Pug Dogs | Size, Breeding, Appearance, History",
+   "htmlTitle": "\u003cb\u003eChinese Pug\u003c/b\u003e Dogs | Size, Breeding, Appearance, History",
+   "link": "http://www.petpugdog.com/chinese-pug-dog",
+   "displayLink": "www.petpugdog.com",
+   "snippet": "Information regarding the Chinese Pug. Throwbacks and purposeful breeding. \nChinese Pug Lions, size, appearance and health problems.",
+   "htmlSnippet": "Information regarding the \u003cb\u003eChinese Pug\u003c/b\u003e. Throwbacks and purposeful breeding. \u003cbr\u003e\n\u003cb\u003eChinese Pug\u003c/b\u003e Lions, size, appearance and health problems.",
+   "cacheId": "JrN4IRSGiyoJ",
+   "formattedUrl": "www.petpugdog.com/chinese-pug-dog",
+   "htmlFormattedUrl": "www.pet\u003cb\u003epug\u003c/b\u003edog.com/\u003cb\u003echinese\u003c/b\u003e-\u003cb\u003epug\u003c/b\u003e-dog",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "https://irp-cdn.multiscreensite.com/94f3e251/dms3rep/multi/desktop/p22-650x172.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "437",
+      "height": "115",
+      "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfiNEMHtYv3EW0tVltMqJRJ4YO53LDRD0dfqt8h9IaSLLXz3KDoOleuKM"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": ", initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0",
+      "apple-mobile-web-app-capable": "yes"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Pug - Dogtime",
+   "htmlTitle": "\u003cb\u003ePug\u003c/b\u003e - Dogtime",
+   "link": "http://dogtime.com/dog-breeds/pug",
+   "displayLink": "dogtime.com",
+   "snippet": "Pugs are one of three types of short-nosed dogs that are known to have been \nbred by the Chinese: the Lion dog, the Pekingese, and the Lo-sze, which was the\n ...",
+   "htmlSnippet": "\u003cb\u003ePugs\u003c/b\u003e are one of three types of short-nosed dogs that are known to have been \u003cbr\u003e\nbred by the \u003cb\u003eChinese\u003c/b\u003e: the Lion dog, the Pekingese, and the Lo-sze, which was the\u003cbr\u003e\n&nbsp;...",
+   "cacheId": "BTPG4yF8_O0J",
+   "formattedUrl": "dogtime.com/dog-breeds/pug",
+   "htmlFormattedUrl": "dogtime.com/dog-breeds/\u003cb\u003epug\u003c/b\u003e",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://cdn2-www.dogtime.com/assets/uploads/2011/01/file_23124_pug.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "283",
+      "height": "178",
+      "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcOyJxaf_4VwkrAdblpf99LX1RA8MWkEhDPsKNS02FUtk4tAOdyV02QQQ"
+     }
+    ],
+    "metatags": [
+     {
+      "p:domain_verify": "bc06c90d1acb18ed0abe8e9b9c02db20",
+      "viewport": "width=device-width, initial-scale=1, maximum-scale=1, minimal-ui",
+      "fragment": "!",
+      "og:locale": "en_US",
+      "og:type": "article",
+      "og:title": "Pug - Dogtime",
+      "og:description": "Pug information including pictures, training, behavior, and care of Pugs and dog breed mixes.",
+      "og:url": "http://dogtime.com/dog-breeds/pug",
+      "og:site_name": "Dogtime",
+      "og:image": "http://cdn2-www.dogtime.com/assets/uploads/2011/01/file_23124_pug.jpg",
+      "msvalidate.01": "066A90BB609174C8673EE79E0B03EAAF"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Chinese pugs - YouTube",
+   "htmlTitle": "\u003cb\u003eChinese pugs\u003c/b\u003e - YouTube",
+   "link": "http://www.youtube.com/watch?v=_wUq0O9PAxc",
+   "displayLink": "www.youtube.com",
+   "snippet": "Jan 8, 2011 ... This is my way of saying Fuck you to everyone that says chinese pugs are ugly.",
+   "htmlSnippet": "Jan 8, 2011 \u003cb\u003e...\u003c/b\u003e This is my way of saying Fuck you to everyone that says \u003cb\u003echinese pugs\u003c/b\u003e are ugly.",
+   "cacheId": "DmkaXHvaXGcJ",
+   "formattedUrl": "www.youtube.com/watch?v=_wUq0O9PAxc",
+   "htmlFormattedUrl": "www.youtube.com/watch?v=_wUq0O9PAxc",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://i.ytimg.com/vi/_wUq0O9PAxc/hqdefault.jpg"
+     }
+    ],
+    "videoobject": [
+     {
+      "url": "http://www.youtube.com/watch?v=_wUq0O9PAxc",
+      "name": "Chinese pugs",
+      "description": "This is my way of saying Fuck you to everyone that says chinese pugs are ugly.",
+      "paid": "False",
+      "channelid": "UCnrPXQ7XWdygxXrOONVF05g",
+      "videoid": "_wUq0O9PAxc",
+      "duration": "PT2M34S",
+      "unlisted": "False",
+      "thumbnailurl": "http://i.ytimg.com/vi/_wUq0O9PAxc/hqdefault.jpg",
+      "embedurl": "https://www.youtube.com/embed/_wUq0O9PAxc",
+      "playertype": "HTML5 Flash",
+      "width": "480",
+      "height": "360",
+      "isfamilyfriendly": "True",
+      "regionsallowed": "AD,AE,AF,AG,AI,AL,AM,AO,AQ,AR,AS,AT,AU,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CA,CC,CD,CF,CG,CH,CI,CK,CL,CM,CN,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH...",
+      "interactioncount": "5941",
+      "datepublished": "2011-01-08",
+      "genre": "Music"
+     }
+    ],
+    "person": [
+     {
+      "url": "http://www.youtube.com/user/TakashiShinjo134"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "259",
+      "height": "194",
+      "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4Vq1ikuvNBEMv-kGKORwQYDSKgvEkU77IBNCdP1ApdufkJZCgf-6lS7NL"
+     }
+    ],
+    "metatags": [
+     {
+      "title": "Chinese pugs",
+      "og:site_name": "YouTube",
+      "og:url": "http://www.youtube.com/watch?v=_wUq0O9PAxc",
+      "og:title": "Chinese pugs",
+      "og:image": "http://i.ytimg.com/vi/_wUq0O9PAxc/hqdefault.jpg",
+      "og:description": "This is my way of saying Fuck you to everyone that says chinese pugs are ugly.",
+      "al:ios:app_store_id": "544007664",
+      "al:ios:app_name": "YouTube",
+      "al:ios:url": "vnd.youtube://www.youtube.com/watch?v=_wUq0O9PAxc&feature=applinks",
+      "al:android:url": "vnd.youtube://www.youtube.com/watch?v=_wUq0O9PAxc&feature=applinks",
+      "al:android:app_name": "YouTube",
+      "al:android:package": "com.google.android.youtube",
+      "al:web:url": "http://www.youtube.com/watch?v=_wUq0O9PAxc&feature=applinks",
+      "og:type": "video",
+      "og:video:url": "https://www.youtube.com/embed/_wUq0O9PAxc",
+      "og:video:secure_url": "https://www.youtube.com/embed/_wUq0O9PAxc",
+      "og:video:type": "text/html",
+      "og:video:width": "480",
+      "og:video:height": "360",
+      "og:video:tag": "Chinese",
+      "fb:app_id": "87741124305",
+      "twitter:card": "player",
+      "twitter:site": "@youtube",
+      "twitter:url": "http://www.youtube.com/watch?v=_wUq0O9PAxc",
+      "twitter:title": "Chinese pugs",
+      "twitter:description": "This is my way of saying Fuck you to everyone that says chinese pugs are ugly.",
+      "twitter:image": "http://i.ytimg.com/vi/_wUq0O9PAxc/hqdefault.jpg",
+      "twitter:app:name:iphone": "YouTube",
+      "twitter:app:id:iphone": "544007664",
+      "twitter:app:name:ipad": "YouTube",
+      "twitter:app:id:ipad": "544007664",
+      "twitter:app:url:iphone": "vnd.youtube://www.youtube.com/watch?v=_wUq0O9PAxc&feature=applinks",
+      "twitter:app:url:ipad": "vnd.youtube://www.youtube.com/watch?v=_wUq0O9PAxc&feature=applinks",
+      "twitter:app:name:googleplay": "YouTube",
+      "twitter:app:id:googleplay": "com.google.android.youtube",
+      "twitter:app:url:googleplay": "http://www.youtube.com/watch?v=_wUq0O9PAxc",
+      "twitter:player": "https://www.youtube.com/embed/_wUq0O9PAxc",
+      "twitter:player:width": "480",
+      "twitter:player:height": "360",
+      "attribution": "SonyBMG/"
+     }
+    ],
+    "imageobject": [
+     {
+      "url": "http://i.ytimg.com/vi/_wUq0O9PAxc/hqdefault.jpg",
+      "width": "480",
+      "height": "360"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Pug Breed Information & Pictures (Chinese Pug, Pug dog, Dutch ...",
+   "htmlTitle": "Pug Breed Information &amp; Pictures (\u003cb\u003eChinese Pug\u003c/b\u003e, Pug dog, Dutch \u003cb\u003e...\u003c/b\u003e",
+   "link": "http://www.terrificpets.com/dog_breeds/Pug.asp",
+   "displayLink": "www.terrificpets.com",
+   "snippet": "Detailed Information on Pug, from Health to Temperment you will find the \ninformation you need on Pug.",
+   "htmlSnippet": "Detailed Information on \u003cb\u003ePug\u003c/b\u003e, from Health to Temperment you will find the \u003cbr\u003e\ninformation you need on \u003cb\u003ePug\u003c/b\u003e.",
+   "cacheId": "PkDunduN9x8J",
+   "formattedUrl": "www.terrificpets.com/dog_breeds/Pug.asp",
+   "htmlFormattedUrl": "www.terrificpets.com/dog_breeds/\u003cb\u003ePug\u003c/b\u003e.asp",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://secure.terrificpets.com/images/uploads/13258045509731_1.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "240",
+      "height": "180",
+      "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxDyeGY2FdKzfxp1NPKNHos_u_eAcpBH67CR0O_sDYa0MbdBv4AM4lR6zR"
+     }
+    ],
+    "metatags": [
+     {
+      "y_key": "906b3077a8d878b0"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Pug Dog Breed Information - American Kennel Club",
+   "htmlTitle": "\u003cb\u003ePug\u003c/b\u003e Dog Breed Information - American Kennel Club",
+   "link": "http://www.akc.org/dog-breeds/pug/",
+   "displayLink": "www.akc.org",
+   "snippet": "Right breed for you? Pug information including personality, history, grooming, \npictures, videos, how to find a Pug and AKC standard.",
+   "htmlSnippet": "Right breed for you? \u003cb\u003ePug\u003c/b\u003e information including personality, history, grooming, \u003cbr\u003e\npictures, videos, how to find a \u003cb\u003ePug\u003c/b\u003e and AKC standard.",
+   "cacheId": "kyrBzhu2YEgJ",
+   "formattedUrl": "www.akc.org/dog-breeds/pug/",
+   "htmlFormattedUrl": "www.akc.org/dog-breeds/\u003cb\u003epug\u003c/b\u003e/",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "//cdn.akc.org/akcdoglovers/Pug_hero.jpg"
+     }
+    ],
+    "videoobject": [
+     {
+      "uploaddate": "2014-10-30",
+      "name": "Pug",
+      "description": "Loving, Charming, Mischievous",
+      "thumbnailurl": "http://assets-jpcust.jwpsrv.com/thumbs/dbR7o8gZ-480.jpg",
+      "author": "AKC",
+      "creator": "AKC",
+      "copyrightholder": "AKC",
+      "isfamilyfriendly": "1",
+      "keywords": "AKC, dog video, Pug"
+     }
+    ],
+    "thumbnail": [
+     {
+      "src": "//cdn.akc.org/akcdoglovers/Pug_hero.jpg"
+     }
+    ],
+    "metatags": [
+     {
+      "fb:app_id": "530726673730940",
+      "author": "American Kennel Club",
+      "og:url": "http://www.akc.org/dog-breeds/pug/",
+      "og:title": "Pug Dog Breed Information",
+      "og:description": "Right breed for you? Pug information including personality, history, grooming, pictures, videos, how to find a Pug and AKC standard.",
+      "og:image": "//cdn.akc.org/akcdoglovers/Pug_hero.jpg",
+      "twitter:card": "summary",
+      "twitter:site": "@akcdoglovers",
+      "twitter:title": "Pug Dog Breed Information",
+      "twitter:description": "AKC.org offers information on dog breeds, dog ownership, dog training, health, nutrition, exercise & grooming, registering your dog, AKC competition events and affiliated clubs to help you discover more things to enjoy with your dog.",
+      "twitter:image": "//cdn.akc.org/akcdoglovers/Pug_hero.jpg",
+      "thumbnail": "//cdn.akc.org/akcdoglovers/Pug_hero.jpg",
+      "headline": "Pug Dog Breed Information",
+      "viewport": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
+      "msapplication-tilecolor": "#603cba",
+      "msapplication-tileimage": "/mstile-144x144.png",
+      "fb:admins": "689743718",
+      "p:domain_verify": "48d4515b2a76c369a18a0f41a952afa0"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Chinese Pug Puppies for Sale",
+   "htmlTitle": "\u003cb\u003eChinese Pug\u003c/b\u003e Puppies for Sale",
+   "link": "http://www.puppyfind.com/chinese+pug.php",
+   "displayLink": "www.puppyfind.com",
+   "snippet": "Chinese Pug puppies for sale, Chinese Pug dogs for adoption and Chinese Pug \ndog breeders. Find the perfect Chinese Pug puppy at PuppyFind.com.",
+   "htmlSnippet": "\u003cb\u003eChinese Pug\u003c/b\u003e puppies for sale, \u003cb\u003eChinese Pug\u003c/b\u003e dogs for adoption and \u003cb\u003eChinese Pug\u003c/b\u003e \u003cbr\u003e\ndog breeders. Find the perfect \u003cb\u003eChinese Pug\u003c/b\u003e puppy at PuppyFind.com.",
+   "cacheId": "RUIYRNgPYrEJ",
+   "formattedUrl": "www.puppyfind.com/chinese+pug.php",
+   "htmlFormattedUrl": "www.puppyfind.com/\u003cb\u003echinese\u003c/b\u003e+\u003cb\u003epug\u003c/b\u003e.php",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://www.puppyfind.com/breed/pug/m_wh2gtow6y5.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "176",
+      "height": "176",
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVBIzgtx25UuEyJ0uG5iehi_lrD_lxr3h_NLhUeJDizPa3cPWYU6R930Y"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1",
+      "classification": "puppies,dogs,dog breeders,dog breeds",
+      "author": "PuppyFind.com",
+      "og:site_name": "PuppyFind.com",
+      "og:description": "Puppies for Sale at PuppyFind.com"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Pug Dog Breed Information and Pictures",
+   "htmlTitle": "\u003cb\u003ePug\u003c/b\u003e Dog Breed Information and Pictures",
+   "link": "http://www.dogbreedinfo.com/pug.htm",
+   "displayLink": "www.dogbreedinfo.com",
+   "snippet": "All about the Pug, info, pictures, rescues, care, temperament, health, puppies ... \nPug (Carlin) (Mops) (Chinese Pug Dog) (Carlin) (Dutch Bulldog) (Dutch Mastiff).",
+   "htmlSnippet": "All about the Pug, info, pictures, rescues, care, temperament, health, puppies ... \u003cbr\u003e\nPug (Carlin) (Mops) (\u003cb\u003eChinese Pug\u003c/b\u003e Dog) (Carlin) (Dutch Bulldog) (Dutch Mastiff).",
+   "cacheId": "-IHFSYJDexEJ",
+   "formattedUrl": "www.dogbreedinfo.com/pug.htm",
+   "htmlFormattedUrl": "www.dogbreedinfo.com/\u003cb\u003epug\u003c/b\u003e.htm",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://www.dogbreedinfo.com/images27/PugPurebredDogToyAdultSittingHector.JPG"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "169",
+      "height": "298",
+      "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAuXYWk_d0mLjrsy0oCXtZk5_Vz5jki9KKG059tE9Nn-7A4zc1pb_9uQo"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "The History of the Pug",
+   "htmlTitle": "The History of the \u003cb\u003ePug\u003c/b\u003e",
+   "link": "http://www.pugvillage.com/your-first-pug/history-pug",
+   "displayLink": "www.pugvillage.com",
+   "snippet": "During the British invasion of China in 1860, they found Pugs in the Chinese \nImperial Palace and brought them back to England. In 1886, England imported ...",
+   "htmlSnippet": "During the British invasion of \u003cb\u003eChina\u003c/b\u003e in 1860, they found \u003cb\u003ePugs\u003c/b\u003e in the \u003cb\u003eChinese\u003c/b\u003e \u003cbr\u003e\nImperial Palace and brought them back to England. In 1886, England imported&nbsp;...",
+   "cacheId": "-ytWBrFR0Q4J",
+   "formattedUrl": "www.pugvillage.com/your-first-pug/history-pug",
+   "htmlFormattedUrl": "www.\u003cb\u003epug\u003c/b\u003evillage.com/your-first-\u003cb\u003epug\u003c/b\u003e/history-\u003cb\u003epug\u003c/b\u003e"
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Pug, Chinese Pug Dog Breed Guide Information and Pictures",
+   "htmlTitle": "Pug, \u003cb\u003eChinese Pug\u003c/b\u003e Dog Breed Guide Information and Pictures",
+   "link": "http://dogs.animal-world.com/Toy-Dog-Breeds/Pug.php",
+   "displayLink": "dogs.animal-world.com",
+   "snippet": "Dog breed guide for Pugs, Chinese Pug history and information, description and \nChinese Pug pictures, small dog care, Pug temperament, handling and training ...",
+   "htmlSnippet": "Dog breed guide for Pugs, \u003cb\u003eChinese Pug\u003c/b\u003e history and information, description and \u003cbr\u003e\n\u003cb\u003eChinese Pug\u003c/b\u003e pictures, small dog care, Pug temperament, handling and training&nbsp;...",
+   "cacheId": "c8waVK0VlFsJ",
+   "formattedUrl": "dogs.animal-world.com/Toy-Dog-Breeds/Pug.php",
+   "htmlFormattedUrl": "dogs.animal-world.com/Toy-Dog-Breeds/\u003cb\u003ePug\u003c/b\u003e.php",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://animal-world.com//dogs/Toy-Dog-Breeds/images/Pug2WDTo_AcFpD108_vsm.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "92",
+      "height": "68",
+      "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkDjn1jRP6AXx6-xm7OAPuEsm-OSVwhPkykxQUPKa6dJxmERu0AA4luA"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1",
+      "classification": "Pug Toy Dog Breed Guide, Information and Pictures",
+      "allow-search": "yes",
+      "audience": "all",
+      "distribution": "Global",
+      "copyright": "Copyright 2013  by Animal-World",
+      "author": "Animal-World",
+      "resource-type": "document",
+      "rating": "General",
+      "language": "en-us",
+      "og:title": "Pug",
+      "og:type": "pets",
+      "og:image": "http://animal-world.com//dogs/Toy-Dog-Breeds/images/Pug2WDTo_AcFpD108_vsm.jpg",
+      "og:url": "http://dogs.animal-world.com/dogs/Toy-Dog-Breeds/Pug.php",
+      "og:site_name": "Animal World",
+      "og:description": "Pet care information about Pug",
+      "fb:admins": "762248577,1048933694,100002632944934,100002804533234",
+      "fb:app_id": "136008713092078"
+     }
+    ]
+   }
+  }
+ ]
+}
