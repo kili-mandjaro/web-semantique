@@ -20,7 +20,7 @@ function algoGrouping(){
 			if(i == j){
 				currentBag.push(j);
 			}
-			else if(matrice[i][j] == 1){
+			else if(matrice[i][j] == 1){//si on trouve un élément à 1 dans cette ligne, on va chercher dans l'autre ligne correspondante si les bags sont les mêmes
 				var countIdenticalElt = 0;
 				var countMaxElt = 0;
 				
@@ -47,18 +47,18 @@ function algoGrouping(){
 	}
 	*/
 	//----------FUSION--------------
-	//var i = 0;
-	for(i=matrice.length-1;i>=0;i--){//pour chaque element, on essaie de le fusionner avec tout ceux du dessus
+	var i = 0;
+	for(i=matrice.length-1;i>0;i--){//pour chaque element, on essaie de le fusionner avec tout ceux du dessus
 		var hasFused = 0;
-		for(j=i;j>=0;j--){
+		var j = 0;
+		for(j=i-1;j>=0;j--){
 			if(scoreFusionBag(bags[i],bags[j]) > seuilFusion){
 				hasFused = 1;
-				for(k=0;k<bags[i].length;k++){//we add the elements of bags[i] to bags[j] if they are not already present
+				for(k=0;k<bags[i].length;k++){//we add the elements of bags[i] to bags[j] if they are not already present in bags[j]
 					var present = 0;
 					for(l=0;l<bags[j].length;l++){
 						if(bags[i][k] == bags[j][l]){
 							present = 1;
-							break;
 						}
 					}
 					if(present == 0){
@@ -79,7 +79,7 @@ function algoGrouping(){
 
 function scoreFusionBag(bag1,bag2){
 	var countSimilaire = 0;
-	for(i=0;i<bag1.length;i++){ //opti � faire eventuellement
+	for(i=0;i<bag1.length;i++){ //opti à faire eventuellement
 		for(j=0;j<bag2.length;j++){
 			if(bag1[i] == bag2[j]){
 				countSimilaire++;
