@@ -64,7 +64,7 @@ webSemantiqueRdfGraphServices.factory('RdfGraph', ['$http',
 
                         callback();
                     },
-                    function errorCallback(response) {
+                    function (response) {
                         // Callback appele lors d'un probleme.
                     });
             }

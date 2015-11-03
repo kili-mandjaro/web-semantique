@@ -1,0 +1,273 @@
+{
+ "kind": "customsearch#search",
+ "url": {
+  "type": "application/json",
+  "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+ },
+ "queries": {
+  "nextPage": [
+   {
+    "title": "Google Custom Search - boulanger",
+    "totalResults": "1530000",
+    "searchTerms": "boulanger",
+    "count": 10,
+    "startIndex": 11,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "010385690139782890959:ezl0o7x_7ro"
+   }
+  ],
+  "request": [
+   {
+    "title": "Google Custom Search - boulanger",
+    "totalResults": "1530000",
+    "searchTerms": "boulanger",
+    "count": 10,
+    "startIndex": 1,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "010385690139782890959:ezl0o7x_7ro"
+   }
+  ]
+ },
+ "context": {
+  "title": "INSALyon-WebSemantique"
+ },
+ "searchInformation": {
+  "searchTime": 0.344433,
+  "formattedSearchTime": "0.34",
+  "totalResults": "1530000",
+  "formattedTotalResults": "1,530,000"
+ },
+ "items": [
+  {
+   "kind": "customsearch#result",
+   "title": "Nadia Boulanger - Wikipedia, the free encyclopedia",
+   "htmlTitle": "Nadia \u003cb\u003eBoulanger\u003c/b\u003e - Wikipedia, the free encyclopedia",
+   "link": "https://en.wikipedia.org/wiki/Nadia_Boulanger",
+   "displayLink": "en.wikipedia.org",
+   "snippet": "Juliette Nadia Boulanger (French: [?y.lj?t na.dja bu.l?~.?e]; 16 September 1887 – \n22 October 1979) was a French composer, conductor, and teacher who taught ...",
+   "htmlSnippet": "Juliette Nadia \u003cb\u003eBoulanger\u003c/b\u003e (French: [?y.lj?t na.dja bu.l?~.?e]; 16 September 1887 – \u003cbr\u003e\n22 October 1979) was a French composer, conductor, and teacher who taught&nbsp;...",
+   "cacheId": "gJvGmIcahlIJ",
+   "formattedUrl": "https://en.wikipedia.org/wiki/Nadia_Boulanger",
+   "htmlFormattedUrl": "https://en.wikipedia.org/wiki/Nadia_\u003cb\u003eBoulanger\u003c/b\u003e",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Nadia_Boulanger_1925.jpg/220px-Nadia_Boulanger_1925.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "176",
+      "height": "220",
+      "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThmzQavMOsj5f694edCmn7PE1Y5AHeKZXqw4LAZeT4c9ADJ53sQ_32HdU"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Le Boulanger",
+   "htmlTitle": "Le \u003cb\u003eBoulanger\u003c/b\u003e",
+   "link": "http://www.leboulanger.com/",
+   "displayLink": "www.leboulanger.com",
+   "snippet": "Bakery and café with numerous locations. Provides menu, location addresses, \nand online ordering through Waiter.com.",
+   "htmlSnippet": "Bakery and café with numerous locations. Provides menu, location addresses, \u003cbr\u003e\nand online ordering through Waiter.com.",
+   "cacheId": "fuUj78um340J",
+   "formattedUrl": "www.leboulanger.com/",
+   "htmlFormattedUrl": "www.le\u003cb\u003eboulanger\u003c/b\u003e.com/",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://www.leboulanger.com/images/promo/swipe_to_score.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "401",
+      "height": "126",
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKSVoq8rA9RoiLQ9JFJNHfNJ5xR66YL5LAFXj5V9dosoRkV09ytzY5JCQ"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Boulanger - Wikipedia, the free encyclopedia",
+   "htmlTitle": "\u003cb\u003eBoulanger\u003c/b\u003e - Wikipedia, the free encyclopedia",
+   "link": "https://en.wikipedia.org/wiki/Boulanger",
+   "displayLink": "en.wikipedia.org",
+   "snippet": "Several notable persons share the very typical French/Francophone surname \nBoulanger (French pronunciation: \u200b[bu.l?~.?e]) which is the equivalent of the ...",
+   "htmlSnippet": "Several notable persons share the very typical French/Francophone surname \u003cbr\u003e\n\u003cb\u003eBoulanger\u003c/b\u003e (French pronunciation: \u200b[bu.l?~.?e]) which is the equivalent of the&nbsp;...",
+   "cacheId": "ox9de5q66oQJ",
+   "formattedUrl": "https://en.wikipedia.org/wiki/Boulanger",
+   "htmlFormattedUrl": "https://en.wikipedia.org/wiki/\u003cb\u003eBoulanger\u003c/b\u003e"
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Boulanger Electroménager & Multimédia",
+   "htmlTitle": "\u003cb\u003eBoulanger\u003c/b\u003e Electroménager &amp; Multimédia",
+   "link": "https://www.facebook.com/Boulanger.Electromenager.Multimedia/",
+   "displayLink": "www.facebook.com",
+   "snippet": "Boulanger Electroménager & Multimédia. 329635 likes · 2334 talking about this · \n911 were here. Bienvenue sur la page de Boulanger, spécialiste du...",
+   "htmlSnippet": "\u003cb\u003eBoulanger\u003c/b\u003e Electroménager &amp; Multimédia. 329635 likes · 2334 talking about this · \u003cbr\u003e\n911 were here. Bienvenue sur la page de \u003cb\u003eBoulanger\u003c/b\u003e, spécialiste du...",
+   "cacheId": "0-t9SBxLFtUJ",
+   "formattedUrl": "https://www.facebook.com/Boulanger.Electromenager.Multimedia/",
+   "htmlFormattedUrl": "https://www.facebook.com/\u003cb\u003eBoulanger\u003c/b\u003e.Electromenager.Multimedia/",
+   "pagemap": {
+    "organization": [
+     {
+      "name": "Boulanger Electroménager & Multimédia"
+     }
+    ],
+    "metatags": [
+     {
+      "referrer": "default",
+      "al:android:app_name": "Facebook",
+      "al:android:package": "com.facebook.katana",
+      "al:android:url": "fb://page/107363608499"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "boulanger - Wiktionary",
+   "htmlTitle": "\u003cb\u003eboulanger\u003c/b\u003e - Wiktionary",
+   "link": "https://en.wiktionary.org/wiki/boulanger",
+   "displayLink": "en.wiktionary.org",
+   "snippet": "From Middle French boulanger, from Old French boulanger, bolengier   (“baker”), \nfrom Old Picard boulenc   (“bun-maker, bread-maker”), of Germanic origin, from ...",
+   "htmlSnippet": "From Middle French \u003cb\u003eboulanger\u003c/b\u003e, from Old French \u003cb\u003eboulanger\u003c/b\u003e, bolengier   (“baker”), \u003cbr\u003e\nfrom Old Picard boulenc   (“bun-maker, bread-maker”), of Germanic origin, from&nbsp;...",
+   "cacheId": "bW8bbFPzQcoJ",
+   "formattedUrl": "https://en.wiktionary.org/wiki/boulanger",
+   "htmlFormattedUrl": "https://en.wiktionary.org/wiki/\u003cb\u003eboulanger\u003c/b\u003e"
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Nadia Boulanger",
+   "htmlTitle": "Nadia \u003cb\u003eBoulanger\u003c/b\u003e",
+   "link": "http://www.nadiaboulanger.org/",
+   "displayLink": "www.nadiaboulanger.org",
+   "snippet": "Biography, articles, photographs, list of students, and writings.",
+   "htmlSnippet": "Biography, articles, photographs, list of students, and writings.",
+   "cacheId": "8XnDoVB8XLgJ",
+   "formattedUrl": "www.nadiaboulanger.org/",
+   "htmlFormattedUrl": "www.nadia\u003cb\u003eboulanger\u003c/b\u003e.org/",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://www.nadiaboulanger.org/nb/nadia.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "318",
+      "height": "159",
+      "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvdufpxQc5PqTlH5p128XSg4PcUqJZJUOpO2TsNKd-Ed196-Cmrn2qsus"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Manufacturer of mouldings and decorative woodwork for home ...",
+   "htmlTitle": "Manufacturer of mouldings and decorative woodwork for home \u003cb\u003e...\u003c/b\u003e",
+   "link": "http://www.boulanger.qc.ca/wood-moulding/home.php",
+   "displayLink": "www.boulanger.qc.ca",
+   "snippet": "Add some depth to your décor! Bring the latest looks home. Integrate mouldings \ninto your renovation projects! \u003e Be inspired by Boulanger mouldings \u003e.",
+   "htmlSnippet": "Add some depth to your décor! Bring the latest looks home. Integrate mouldings \u003cbr\u003e\ninto your renovation projects! &gt; Be inspired by \u003cb\u003eBoulanger\u003c/b\u003e mouldings &gt;.",
+   "cacheId": "JNXnazcqF5YJ",
+   "formattedUrl": "www.boulanger.qc.ca/wood-moulding/home.php",
+   "htmlFormattedUrl": "www.\u003cb\u003eboulanger\u003c/b\u003e.qc.ca/wood-moulding/home.php",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://www.boulanger.qc.ca/data/image/accueil_blogue_en.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "244",
+      "height": "156",
+      "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTBvGx5ZKnzug8xeeHiZEOUtWxKtpUnDM-2bLgC0GPHsFV1QnqmRYs2Lk"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Boulanger © : Electroménager et Multimedia",
+   "htmlTitle": "\u003cb\u003eBoulanger\u003c/b\u003e © : Electroménager et Multimedia",
+   "link": "http://www.boulanger.com/",
+   "displayLink": "www.boulanger.com",
+   "snippet": "Chez Boulanger découvrez des milliers de produits Electroménager - Multimedia \n- Image et son - Jeux vidéo et bien plus ... Livraison offerte (voir conditions)",
+   "htmlSnippet": "Chez \u003cb\u003eBoulanger\u003c/b\u003e découvrez des milliers de produits Electroménager - Multimedia \u003cbr\u003e\n- Image et son - Jeux vidéo et bien plus ... Livraison offerte (voir conditions)",
+   "cacheId": "wWnjI3EW6Y8J",
+   "formattedUrl": "www.boulanger.com/",
+   "htmlFormattedUrl": "www.\u003cb\u003eboulanger\u003c/b\u003e.com/",
+   "pagemap": {
+    "metatags": [
+     {
+      "expires": "0",
+      "pragma": "no-cache"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Princeton University Molecular Biology - Lisa M. Boulanger",
+   "htmlTitle": "Princeton University Molecular Biology - Lisa M. \u003cb\u003eBoulanger\u003c/b\u003e",
+   "link": "http://molbio.princeton.edu/faculty/molbio-faculty/97-boulanger",
+   "displayLink": "molbio.princeton.edu",
+   "snippet": "Molecular Biology Faculty. Lisa M. Boulanger. Assistant Professor of \nMOLECULAR BIOLOGY. and PRINCETON NEUROSCIENCE INSTITUTE. Lisa \nBoulanger ...",
+   "htmlSnippet": "Molecular Biology Faculty. Lisa M. \u003cb\u003eBoulanger\u003c/b\u003e. Assistant Professor of \u003cbr\u003e\nMOLECULAR BIOLOGY. and PRINCETON NEUROSCIENCE INSTITUTE. Lisa \u003cbr\u003e\n\u003cb\u003eBoulanger\u003c/b\u003e&nbsp;...",
+   "cacheId": "B6nyJTYjsPoJ",
+   "formattedUrl": "molbio.princeton.edu/faculty/molbio-faculty/97-boulanger",
+   "htmlFormattedUrl": "molbio.princeton.edu/faculty/molbio-faculty/97-\u003cb\u003eboulanger\u003c/b\u003e",
+   "pagemap": {
+    "metatags": [
+     {
+      "rights": "Princeton University Molecular Biology",
+      "author": "Maritza Cruz"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Boulanger Labs | Home",
+   "htmlTitle": "\u003cb\u003eBoulanger\u003c/b\u003e Labs | Home",
+   "link": "http://boulangerlabs.com/",
+   "displayLink": "boulangerlabs.com",
+   "snippet": "Boulanger Labs. ... Boulanger Labs presents csSpectral – the highly anticipated \nfollow-up app to our debut csGrain. csSpectral is a real-time, Csound-based, ...",
+   "htmlSnippet": "\u003cb\u003eBoulanger\u003c/b\u003e Labs. ... \u003cb\u003eBoulanger\u003c/b\u003e Labs presents csSpectral – the highly anticipated \u003cbr\u003e\nfollow-up app to our debut csGrain. csSpectral is a real-time, Csound-based,&nbsp;...",
+   "cacheId": "3H55fTXJfIUJ",
+   "formattedUrl": "boulangerlabs.com/",
+   "htmlFormattedUrl": "\u003cb\u003eboulanger\u003c/b\u003elabs.com/",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://boulangerlabs.com/images/ipad_2_icon_play.png"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "242",
+      "height": "208",
+      "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9ZdTKRQANBzs1nXDVxor-1yffXd30ZBANlTJxkHlcCIp5nAUl99AJitrx"
+     }
+    ],
+    "metatags": [
+     {
+      "author": "Boulanger Labs",
+      "copyright": "Copyright 2012 Boulanger Labs. All Rights Reserved."
+     }
+    ]
+   }
+  }
+ ]
+}

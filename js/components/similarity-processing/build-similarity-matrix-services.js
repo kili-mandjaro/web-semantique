@@ -48,7 +48,7 @@ webSemantiqueSimilarityServices.factory('Similarity', [
                 var matrix = new Array(pages.length);
                 for(var i = 0; i < matrix.length; i++){
                     matrix[i] = new Array(pages.length);
-                    matrix[i][i] = 0;
+                    matrix[i][i] = 1;
                 }
 
                 // On remplit la matrice avec les valeurs de Jaccard
