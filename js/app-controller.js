@@ -7,14 +7,15 @@ var webSemantiqueControllers = angular.module('webSemantiqueControllers', [
     'webSemantiqueRdfGraphServices',
     'webSemantiqueSimilarityServices',
     'webSemantiqueGroupingServices',
+    'webSemantiqueGroupKeywordsServices',
     'ngResource'
 ]);
 
-webSemantiqueControllers.controller('SearchController', ['$scope', 'Recherche', 'RdfGraph', 'Similarity', 'Grouping',
-    function ($scope, Recherche, RdfGraph, Similarity, Grouping) {
+webSemantiqueControllers.controller('SearchController', ['$scope', 'Recherche', 'RdfGraph', 'Similarity', 'Grouping', 'GroupKeywords',
+    function ($scope, Recherche, RdfGraph, Similarity, Grouping, GroupKeywords) {
         //---------------------------------------------------Variables de la vue
         $scope.urls = [];
-        $scope.nbPages = 10;
+        $scope.nbPages = 5;
         $scope.matrix = null;
         
         //----------------------------------------------------Méthodes de la vue
@@ -29,11 +30,15 @@ webSemantiqueControllers.controller('SearchController', ['$scope', 'Recherche', 
                     nbPagesProcessed++;
                     if(nbPagesProcessed == $scope.nbPages){
                         $scope.infos = "Loading similarity matrix.";
-                        $scope.matrix = Similarity.buildMatrix($scope.pages);
+                        var similarity = Similarity.buildMatrix($scope.pages);
+                        $scope.matrix = similarity.similarityMatrix;
                         $scope.infos = "Seuillage.";
-                        var matriceSeuillee = Grouping.seuillage($scope.matrix, 0.02);
+                        var matriceSeuillee = Grouping.seuillage($scope.matrix, 0.1);
                         $scope.infos = "Regroupement.";
-                        Grouping.algo(matriceSeuillee);
+                        var groups = Grouping.algo(matriceSeuillee);
+                        var groupsKeywords = GroupKeywords.getGroupsKeywords($scope.pages, groups, similarity.commonKeywordsMatrix);
+                        console.log(groups);
+                        console.log(groupsKeywords);
                         $scope.infos = "Done.";
                     } else {
                         $scope.infos = "Loading page " + nbPagesProcessed + " / " + $scope.nbPages + ".";

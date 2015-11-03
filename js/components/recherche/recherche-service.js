@@ -45,14 +45,21 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
              */
             return function(jsonResponse) {
 
-                var cache = {};
+                var occur = {};
                 // on supprime les doublons des keywords
                 var uriKeywords = jsonResponse.data.Resources.filter(function(elem){
-                    return cache[elem['@surfaceForm']] ? 0 : cache[elem['@surfaceForm']] = 1;
+                    if(occur[elem['@URI']]){
+                        occur[elem['@URI']]++;
+                        return 0;
+                    } else {
+                        occur[elem['@URI']] = 1;
+                        return 1;
+                    }
                 });
 
                 var page = {
                     url: item.link,
+                    occurrences : occur,
                     uriKeywords: uriKeywords
                 };
                 pages.push(page);
@@ -125,8 +132,8 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
              */
             return function(jsonQueryData)
             {
-                //for (var i = 0;i < 3;i++)
-                for (var i = 0;i < jsonQueryData.items.length;i++)
+                for (var i = 0; i < 5; i++)
+                //for (var i = 0;i < jsonQueryData.items.length;i++)
                 {
                     console.log(jsonQueryData.items[i].link);
                     //Attention, lors des acces aux site externes, les requetes

@@ -19,20 +19,30 @@ webSemantiqueSimilarityServices.factory('Similarity', [
          * @param {Page} Une page à comparer avec page1.
          * @returns {int} Similarite entre les deux pages
          */
-        function computeJaccardSimilarity(page1, page2){
+        function computeSimilarity(page1, page2){
 
             var nbIntersect = 0;
+            var commonKeyWords = [];
 
-            for(var id in page1.allKeywords){
+            for(var id1 in page1.allKeywords){
                 // Si on trouve un mot de la premiere page dans la seconde
-                if(page2.allKeywords.indexOf(page1.allKeywords[id]) >= 0)
+                var id2 = page2.allKeywords.indexOf(page1.allKeywords[id1]);
+                if(id2 >= 0) {
                     nbIntersect++;
+                    commonKeyWords.push({
+                        val : page1.allKeywords[id1],
+                        score : page1.occurences[page1.allKeywords[id1]] + page2.occurences[page1.allKeywords[id1]]
+                    });
+                }
             }
 
             var jaccardSimilarity = nbIntersect / (page1.allKeywords.length + page2.allKeywords.length - nbIntersect);
             jaccardSimilarity = Math.round(jaccardSimilarity * 1000) / 1000;
 
-            return jaccardSimilarity;
+            return {
+                jaccardVal : jaccardSimilarity,
+                keywords : commonKeyWords
+            };
         }
 
         //----------------------------------------------------Methodes publiques
@@ -45,22 +55,31 @@ webSemantiqueSimilarityServices.factory('Similarity', [
             buildMatrix: function(pages){
 
                 // Construction d'un matrice carre nbPages x nbPages
-                var matrix = new Array(pages.length);
-                for(var i = 0; i < matrix.length; i++){
-                    matrix[i] = new Array(pages.length);
-                    matrix[i][i] = 0;
+                var similarityMatrix = new Array(pages.length);
+                var commonKeywordsMatrix = new Array(pages.length);
+
+                for(var i = 0; i < pages.length; i++){
+                    similarityMatrix[i] = new Array(pages.length);
+                    similarityMatrix[i][i] = 1;
+                    commonKeywordsMatrix[i] = new Array(pages.length);
+                    commonKeywordsMatrix[i][i] = [];
                 }
 
                 // On remplit la matrice avec les valeurs de Jaccard
-                for(var i = 0; i < matrix.length-1; i++){
-                    for(var j = i+1; j < matrix.length; j++){
-                        var jaccardValue = computeJaccardSimilarity(pages[i], pages[j]);
-                        matrix[i][j] = jaccardValue;
-                        matrix[j][i] = jaccardValue;
+                for(var i = 0; i < pages.length-1; i++){
+                    for(var j = i+1; j < pages.length; j++){
+                        var res = computeSimilarity(pages[i], pages[j]);
+                        similarityMatrix[i][j] = res.jaccardVal;
+                        similarityMatrix[j][i] = res.jaccardVal;
+                        commonKeywordsMatrix[i][j] = res.keywords;
+                        commonKeywordsMatrix[j][i] = res.keywords;
                     }
                 }
 
-                return matrix;
+                return {
+                    similarityMatrix : similarityMatrix,
+                    commonKeywordsMatrix : commonKeywordsMatrix
+                };
             }
         };
     }

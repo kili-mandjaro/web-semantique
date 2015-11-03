@@ -25,8 +25,8 @@ webSemantiqueRdfGraphServices.factory('RdfGraph', ['$http',
                 // Construction de la requete d'enrichissement de graph
                 var query = 'construct {?k ?s ?o} where {?k ?s ?o FILTER(';
                 for (var i = 0; i < keywords.length; i++) {
-                    query += '?o = <' + keywords[i]['@URI'] + '> or ';
-                    //query += '?k = <'+ keywords[i]['@URI'] + '> or ';
+                    //query += '?o = <' + keywords[i]['@URI'] + '> or ';
+                    query += '?k = <'+ keywords[i]['@URI'] + '> or ';
                 }
                 //The last or is ignored with the zero
                 query += '0';
@@ -43,24 +43,43 @@ webSemantiqueRdfGraphServices.factory('RdfGraph', ['$http',
                     data: paramPost,
                     headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                 }).then(function (jsonData) {
-
                         // On se retrovue avec des reations impliquant d'autres keywords
                         // On recupere dans une variable l'objet et le sujet de chaque relation
                         var allKeywords = [];
                         var bindings = jsonData.data.results.bindings;
 
                         for (var id in bindings) {
-                            allKeywords.push(bindings[id].o.value);
-                            allKeywords.push(bindings[id].s.value);
+                            if(bindings[id].o.value.indexOf('wikidata') == -1) {
+                                allKeywords.push({
+                                    val: bindings[id].s.value,
+                                    score: page.occurrences[bindings[id].s.value]
+                                });
+                                allKeywords.push({
+                                    val: bindings[id].o.value,
+                                    score: page.occurrences[bindings[id].s.value]
+                                });
+                            }
                         }
 
                         // Puis on enleve les doublons
-                        var cache = {};
+                        var occur = {};
                         var allKeywords = allKeywords.filter(function (elem) {
-                            return cache[elem] ? 0 : cache[elem] = 1;
+                            if(occur[elem.val]){
+                                occur[elem.val] += elem.score;
+                                return 0;
+                            } else {
+                                occur[elem.val] = elem.score;
+                                return 1;
+                            }
                         });
 
+                        // Enfin on enleve le score dans allKeyword
+                        for(var i = 0; i < allKeywords.length; i++){
+                            allKeywords[i] = allKeywords[i].val;
+                        }
+
                         page['allKeywords'] = allKeywords;
+                        page['occurences'] = occur;
 
                         callback();
                     },

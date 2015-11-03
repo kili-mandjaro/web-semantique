@@ -116,10 +116,12 @@ webSemantiqueSimilarityServices.factory('Grouping', [
                         bags.splice(i,1);
                     }
                 }
-                for(var i=0;i<bags.length;i++)
+                /*for(var i=0;i<bags.length;i++)
                 {
                     console.log(bags[i]);
-                }
+                }*/
+
+                return bags;
             }
         };
     }
