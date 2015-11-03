@@ -6,11 +6,12 @@ var webSemantiqueControllers = angular.module('webSemantiqueControllers', [
     'webSemantiqueRechercheServices',
     'webSemantiqueRdfGraphServices',
     'webSemantiqueSimilarityServices',
+    'webSemantiqueGroupingServices',
     'ngResource'
 ]);
 
-webSemantiqueControllers.controller('SearchController', ['$scope', 'Recherche', 'RdfGraph', 'Similarity',
-    function ($scope, Recherche, RdfGraph, Similarity) {
+webSemantiqueControllers.controller('SearchController', ['$scope', 'Recherche', 'RdfGraph', 'Similarity', 'Grouping',
+    function ($scope, Recherche, RdfGraph, Similarity, Grouping) {
         //---------------------------------------------------Variables de la vue
         $scope.urls = [];
         $scope.nbPages = 10;
@@ -18,6 +19,7 @@ webSemantiqueControllers.controller('SearchController', ['$scope', 'Recherche', 
         
         //----------------------------------------------------Méthodes de la vue
         $scope.LancerRecherche = function () {
+
             $scope.pages = [];
             $scope.infos = "Searching...";
             var nbPagesProcessed = 0;
@@ -28,6 +30,10 @@ webSemantiqueControllers.controller('SearchController', ['$scope', 'Recherche', 
                     if(nbPagesProcessed == $scope.nbPages){
                         $scope.infos = "Loading similarity matrix.";
                         $scope.matrix = Similarity.buildMatrix($scope.pages);
+                        $scope.infos = "Seuillage.";
+                        var matriceSeuillee = Grouping.seuillage($scope.matrix, 0.02);
+                        $scope.infos = "Regroupement.";
+                        Grouping.algo(matriceSeuillee);
                         $scope.infos = "Done.";
                     } else {
                         $scope.infos = "Loading page " + nbPagesProcessed + " / " + $scope.nbPages + ".";
