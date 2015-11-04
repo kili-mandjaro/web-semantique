@@ -14,10 +14,13 @@ webSemantiqueRdfGraphServices.factory('RdfGraph', ['$http',
 
         //----------------------------------------------------Methodes publiques
         return {
-            generateGraph : function (page, callback){
+            generateGraph : function (page, searchStringKeywords, callback){
                 var graph = [];
 
-                var keywords = page.uriKeywords;
+                var keywords = [];
+                for (var i = 0; i < page.uriKeywords.length; i++) {
+                    keywords.push(page.uriKeywords[i]['@URI']);
+                }
 
                 // Si on veut passer par une req GET, on utilise $resource
                 //var res = $resource('http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=:query&format=application%2Fsparql-results%2Bjson', {}, {});
@@ -25,7 +28,7 @@ webSemantiqueRdfGraphServices.factory('RdfGraph', ['$http',
                 // Construction de la requete d'enrichissement de graph
                 var query = 'construct {?s ?p ?o} where {?s ?p ?o FILTER(';
                 for (var i = 0; i < keywords.length; i++) {
-                    query += '?o = <' + keywords[i]['@URI'] + '> or ';
+                    query += '?o = <' + keywords[i] + '> or ';
                     //query += '?s = <'+ keywords[i]['@URI'] + '> or ';
                 }
                 //The last or is ignored with the zero
@@ -64,26 +67,40 @@ webSemantiqueRdfGraphServices.factory('RdfGraph', ['$http',
                                             score: page.occurrences[subject]
                                         });
                                     }*/
+
+                                    allKeywords.push({
+                                        val: object,
+                                        score: page.occurrences[object]
+                                    });
                                     if (subject.indexOf('dbpedia.org') > 0) {
                                         allKeywords.push({
-                                            val: object,
-                                            score: page.occurrences[object]
-                                        });
-                                        allKeywords.push({
                                             val: subject,
-                                            score: page.occurrences[object]
+                                            score: page.occurrences[object]/2
                                         });
                                     }
                                 }
 
+                                /*for(var i = 0; i < keywords.length; i++){
+                                    allKeywords.push({
+                                        val: keywords[i],
+                                        score: page.occurrences[keywords[i]]
+                                    });
+                                }*/
+
                                 // Puis on enleve les doublons
                                 var occur = {};
                                 var allKeywords = allKeywords.filter(function (elem) {
+                                    var coefficient = 1;
+                                    // Si on trouve l'URI dans les mots cles apportes par la chaine de carac de la requete
+                                    if(searchStringKeywords.indexOf(elem.val) > 0){
+                                        coefficient = 5;
+                                    }
+
                                     if (occur[elem.val]) {
-                                        occur[elem.val] += elem.score;
+                                        occur[elem.val] += (elem.score * coefficient);
                                         return 0;
                                     } else {
-                                        occur[elem.val] = elem.score;
+                                        occur[elem.val] = (elem.score * coefficient);
                                         return 1;
                                     }
                                 });

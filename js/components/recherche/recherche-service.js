@@ -50,26 +50,16 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
 
                 if(jsonResponse.data.Resources != undefined){
 
-                    //var test = [];
-
                     // on supprime les doublons des keywords
                     var uriKeywords = jsonResponse.data.Resources.filter(function(elem){
                         if(occur[elem['@URI']]){
                             occur[elem['@URI']]++;
                             return 0;
                         } else {
-                            //test.push(elem['@URI']);
                             occur[elem['@URI']] = 1;
                             return 1;
                         }
                     });
-
-                    /*test.sort(function(a,b){
-                        return a > b;
-                    });
-                    test = test.join('\n');
-
-                    console.log(test);*/
 
                     var page = {
                         title: item.title,
@@ -115,13 +105,25 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
                         headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                     }).then(createSpotlightHandler(item, callback),
                         function (response) {
-                            // Callback appele lors d'un probleme.
+                            callback(null);
                     });
                 } else {
                     //On appelle directement le callback sans contenu.
                     //Pour signifier qu'il y a eu un problème avec la page.
                     callback(null);
                 }
+            };
+        }
+
+        function createLookupHandler(callback) {
+            return function (jsonData){
+                var searchStringKeywords = [];
+
+                for(var i = 0; i < jsonData.results.length; i++){
+                    searchStringKeywords.push(jsonData.results[i].uri);
+                }
+
+                callback(searchStringKeywords);
             };
         }
         
@@ -137,7 +139,7 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
              */
             return function(jsonQueryData)
             {
-                //for (var i = 0; i == 0; i++)
+                //for (var i = 1; i == 1; i++)
                 for (var i = 0;i < jsonQueryData.items.length;i++)
                 {
                     //Attention, lors des acces aux site externes, les requetes
@@ -167,8 +169,16 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
                 //Pour eviter de faire trop de requetes sur l'API Google, on fixe le resultat.
                 //var ressource = $resource('https://www.googleapis.com/customsearch/v1?q=:requete&cx=010385690139782890959%3Aezl0o7x_7ro&key=AIzaSyBgk1ACvargtPMwitXu85jlFj0maYox1jI', {}, {});
                 var ressource = $resource('data/query_galaxy.json', {}, {});
+                //var ressource = $resource('data/query_mouse.json', {}, {});
+                //var ressource = $resource('data/query_glass.json', {}, {});
                 ressource.get({requete: requete}, createGoogleApiHandler(callback));
             },
+
+            searchStringRequete: function(searchString, callback){
+                var ressource = $resource('http://lookup.dbpedia.org/api/search.asmx/KeywordSearch?QueryString=' + searchString, {}, {});
+                ressource.get({}, createLookupHandler(callback));
+            },
+
             /**
              * Retourne le tableau contenant toutes les pages 
              * @returns {Array}

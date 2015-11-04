@@ -1,0 +1,389 @@
+{
+    "kind": "customsearch#search",
+    "url": {
+        "type": "application/json",
+        "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+    },
+    "queries": {
+        "nextPage": [
+            {
+                "title": "Google Custom Search - mouse",
+                "totalResults": "61700000",
+                "searchTerms": "mouse",
+                "count": 10,
+                "startIndex": 11,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "010385690139782890959:ezl0o7x_7ro"
+            }
+        ],
+        "request": [
+            {
+                "title": "Google Custom Search - mouse",
+                "totalResults": "61700000",
+                "searchTerms": "mouse",
+                "count": 10,
+                "startIndex": 1,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "010385690139782890959:ezl0o7x_7ro"
+            }
+        ]
+    },
+    "context": {
+        "title": "INSALyon-WebSemantique"
+    },
+    "searchInformation": {
+        "searchTime": 0.329594,
+        "formattedSearchTime": "0.33",
+        "totalResults": "61700000",
+        "formattedTotalResults": "61,700,000"
+    },
+    "items": [
+        {
+            "kind": "customsearch#result",
+            "title": "Mouse - Wikipedia, the free encyclopedia",
+            "htmlTitle": "\u003cb\u003eMouse\u003c/b\u003e - Wikipedia, the free encyclopedia",
+            "link": "https://en.wikipedia.org/wiki/Mouse",
+            "displayLink": "en.wikipedia.org",
+            "snippet": "A mouse (plural: mice) is a small rodent characteristically having a pointed snout, \nsmall rounded ears, a body-length scaly tail and a high breeding rate. The best ...",
+            "htmlSnippet": "A \u003cb\u003emouse\u003c/b\u003e (plural: mice) is a small rodent characteristically having a pointed snout, \u003cbr\u003e\nsmall rounded ears, a body-length scaly tail and a high breeding rate. The best&nbsp;...",
+            "cacheId": "lQ3Vvi-tbhsJ",
+            "formattedUrl": "https://en.wikipedia.org/wiki/Mouse",
+            "htmlFormattedUrl": "https://en.wikipedia.org/wiki/\u003cb\u003eMouse\u003c/b\u003e",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/%D0%9C%D1%8B%D1%88%D1%8C_2.jpg/250px-%D0%9C%D1%8B%D1%88%D1%8C_2.jpg"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "200",
+                        "height": "105",
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4jpG6XOp_LHTJpV26_nmjAZub-xO_hfXr_c4hkWUvyuFxvTgQgU0BBg"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Mouse",
+            "htmlTitle": "\u003cb\u003eMouse\u003c/b\u003e",
+            "link": "http://www.mouse.org/",
+            "displayLink": "www.mouse.org",
+            "snippet": "Mouse is a 501 (c)(3) nonprofit organization that pioneers innovative school \nprograms in support of its mission: to be a catalyst for the effective integration of ...",
+            "htmlSnippet": "\u003cb\u003eMouse\u003c/b\u003e is a 501 (c)(3) nonprofit organization that pioneers innovative school \u003cbr\u003e\nprograms in support of its mission: to be a catalyst for the effective integration of&nbsp;...",
+            "cacheId": "TRnBwX1SuSAJ",
+            "formattedUrl": "www.mouse.org/",
+            "htmlFormattedUrl": "www.\u003cb\u003emouse\u003c/b\u003e.org/",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "http://www.mouse.org/sites/default/files/imagecache/home_slide/zainab_2.jpg"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "309",
+                        "height": "163",
+                        "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSchBzApNDybWra7QHWHQbG56kLT0q1Okjfm6jXj_KcKIRlzDm2i9MrLzLo"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Mouse (computing) - Wikipedia, the free encyclopedia",
+            "htmlTitle": "\u003cb\u003eMouse\u003c/b\u003e (computing) - Wikipedia, the free encyclopedia",
+            "link": "https://en.wikipedia.org/wiki/Mouse_(computing)",
+            "displayLink": "en.wikipedia.org",
+            "snippet": "In computing, a mouse is a pointing device that detects two-dimensional motion \nrelative to a surface. This motion is typically translated into the motion of a ...",
+            "htmlSnippet": "In computing, a \u003cb\u003emouse\u003c/b\u003e is a pointing device that detects two-dimensional motion \u003cbr\u003e\nrelative to a surface. This motion is typically translated into the motion of a&nbsp;...",
+            "cacheId": "TWUj9CE1id0J",
+            "formattedUrl": "https://en.wikipedia.org/wiki/Mouse_(computing)",
+            "htmlFormattedUrl": "https://en.wikipedia.org/wiki/\u003cb\u003eMouse\u003c/b\u003e_(computing)",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/3-Tastenmaus_Microsoft.jpg/220px-3-Tastenmaus_Microsoft.jpg"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "176",
+                        "height": "154",
+                        "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbGKgeUhz5jYPIlk84N2u-KvjqQSIbH4WA07SdFoc6L2mF0lhS-getOeY"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Magic Mouse",
+            "htmlTitle": "Magic \u003cb\u003eMouse\u003c/b\u003e",
+            "link": "http://www.apple.com/magic-accessories/",
+            "displayLink": "www.apple.com",
+            "snippet": "The Magic Keyboard, Magic Mouse 2, and Magic Trackpad 2 make every \ninteraction feel better, and do more than ever.",
+            "htmlSnippet": "The Magic Keyboard, Magic \u003cb\u003eMouse\u003c/b\u003e 2, and Magic Trackpad 2 make every \u003cbr\u003e\ninteraction feel better, and do more than ever.",
+            "cacheId": "4MTLPHfbu0sJ",
+            "formattedUrl": "www.apple.com/magic-accessories/",
+            "htmlFormattedUrl": "www.apple.com/magic-accessories/",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "http://images.apple.com/promos/2009/wireless_keyboard/image_wirelesskeyboard.png"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "195",
+                        "height": "144",
+                        "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTi70say1rxyOafPtuCuJV6rNa68qbDYODnfwndiLyR81zpllOnc3YAKCaK"
+                    }
+                ],
+                "Organization": [
+                    {
+                        "name": "Apple",
+                        "telephone": "1-800-692-7753"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "author": "Apple Inc.",
+                        "viewport": "width=device-width, initial-scale=1",
+                        "analytics-track": "Apple Accessories",
+                        "analytics-s-channel": "magicaccessories",
+                        "analytics-s-bucket-0": "appleglobal,appleusmagicaccessories",
+                        "analytics-s-bucket-1": "apple{COUNTRY_CODE}global,apple{COUNTRY_CODE}magicaccessories",
+                        "analytics-s-bucket-2": "apple{COUNTRY_CODE}global",
+                        "analytics-s-bucket-store": "applestoreww,applestoreamr,applestoreus",
+                        "og:url": "http://www.apple.com/magic-accessories/",
+                        "og:title": "Apple Accessories - Apple",
+                        "og:image": "/magic-accessories/images/og_image.jpg?201510211313",
+                        "og:type": "website",
+                        "og:site_name": "Apple",
+                        "position": "3",
+                        "name": "Apple",
+                        "telephone": "1-800-692-7753"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "MGI-Mouse Genome Informatics-The international database ...",
+            "htmlTitle": "MGI-\u003cb\u003eMouse\u003c/b\u003e Genome Informatics-The international database \u003cb\u003e...\u003c/b\u003e",
+            "link": "http://www.informatics.jax.org/",
+            "displayLink": "www.informatics.jax.org",
+            "snippet": "MGI: the international database resource for the laboratory mouse, providing \nintegrated genetic, genomic, and biological data for researching human health \nand ...",
+            "htmlSnippet": "MGI: the international database resource for the laboratory \u003cb\u003emouse\u003c/b\u003e, providing \u003cbr\u003e\nintegrated genetic, genomic, and biological data for researching human health \u003cbr\u003e\nand&nbsp;...",
+            "cacheId": "inJvPC8FhfkJ",
+            "formattedUrl": "www.informatics.jax.org/",
+            "htmlFormattedUrl": "www.informatics.jax.org/",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "http://www.informatics.jax.org/mgihome/homepages/images/Carousel_iPhoneapp.png"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "275",
+                        "height": "183",
+                        "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfmkZb-yq4__Ys90cVAO0x-s4pBDRJ96Qv4MU39JFfR9PpXRWW0JOqM_TQ"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Mouse - Android Apps on Google Play",
+            "htmlTitle": "\u003cb\u003eMouse\u003c/b\u003e - Android Apps on Google Play",
+            "link": "https://play.google.com/store/apps/details?id=com.magmamobile.game.mousetrap&hl=en",
+            "displayLink": "play.google.com",
+            "snippet": "MOUSE is a simple but very addictive puzzle game. The goal is to help the \nmouse escape from the trap and find the exit in maze. This can be achieved by \nsliding ...",
+            "htmlSnippet": "\u003cb\u003eMOUSE\u003c/b\u003e is a simple but very addictive puzzle game. The goal is to help the \u003cbr\u003e\n\u003cb\u003emouse\u003c/b\u003e escape from the trap and find the exit in maze. This can be achieved by \u003cbr\u003e\nsliding&nbsp;...",
+            "cacheId": "dejRlPAHLLUJ",
+            "formattedUrl": "https://play.google.com/store/apps/details?id=com...mousetrap...",
+            "htmlFormattedUrl": "https://play.google.com/store/apps/details?id=com...\u003cb\u003emouse\u003c/b\u003etrap...",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "https://i.ytimg.com/vi/Xr_2Xt33iyI/hqdefault.jpg"
+                    }
+                ],
+                "organization": [
+                    {
+                        "url": "/store/apps/dev?id=5093519374571024344",
+                        "name": "Magma Mobile",
+                        "genre": "Puzzle"
+                    },
+                    {
+                        "name": "Android"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "259",
+                        "height": "194",
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Xej8fMP3iBaeIibDDcRvUOrdhAk7mBRQ6OUNDNPcW_ArIdrTAKwV5Xk"
+                    }
+                ],
+                "aggregaterating": [
+                    {
+                        "ratingvalue": "4.357895851135254",
+                        "ratingcount": "668930"
+                    }
+                ],
+                "offer": [
+                    {
+                        "url": "https://play.google.com/store/apps/details?id=com.magmamobile.game.mousetrap&rdid=com.magmamobile.game.mousetrap&rdot=1&feature=md",
+                        "price": "0"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "og:type": "website",
+                        "og:title": "Mouse - Android Apps on Google Play",
+                        "og:url": "https://play.google.com/store/apps/details?id=com.magmamobile.game.mousetrap"
+                    }
+                ],
+                "mobileapplication": [
+                    {
+                        "url": "https://play.google.com/store/apps/details?id=com.magmamobile.game.mousetrap",
+                        "logoimageurl": "https://www.gstatic.com/android/market_images/plus/play_stream_logo.png",
+                        "logohrefurl": "https://play.google.com",
+                        "image": "https://lh4.ggpht.com/BRIbJ2hce-QGsxhenBSMh975-WiAaImORlXodu7NsaMjsmugTxJXyuLbM9EzXqtG80o=w300",
+                        "topdeveloperbadgeurl": "https://ssl.gstatic.com/android/market_images/badges/topdev_ann.png",
+                        "name": "Mouse",
+                        "screenshot": "https://lh5.ggpht.com/SrlRBv8cIzgQYWZcDHSZIIFWkG6WfbexS6Bwf4XXwoDxW9iJg2VEIlztXGw2Qqzn_Q=h310",
+                        "description": "MOUSE is a simple but very addictive puzzle game. The goal is to help the mouse escape from the trap and find the exit in maze. This can be achieved by sliding blocks out of the mouse's way....",
+                        "datepublished": "October 7, 2015",
+                        "filesize": "5.2M",
+                        "numdownloads": "10,000,000 - 50,000,000",
+                        "softwareversion": "1.0.36",
+                        "operatingsystems": "1.5 and up",
+                        "contentrating": "Everyone"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "MOUSE Squad",
+            "htmlTitle": "\u003cb\u003eMOUSE\u003c/b\u003e Squad",
+            "link": "http://mousesquad.org/",
+            "displayLink": "mousesquad.org",
+            "snippet": "Mouse empowers all students to create with technology to solve real problems \nand make meaningful change in our world. Mousesquad.org is the learning ...",
+            "htmlSnippet": "\u003cb\u003eMouse\u003c/b\u003e empowers all students to create with technology to solve real problems \u003cbr\u003e\nand make meaningful change in our world. Mousesquad.org is the learning&nbsp;...",
+            "cacheId": "IaQI-nuh240J",
+            "formattedUrl": "mousesquad.org/",
+            "htmlFormattedUrl": "\u003cb\u003emouse\u003c/b\u003esquad.org/",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "http://mousesquad.org/sites/all/themes/mousesquad/assets/img/mouse_squad_og.png"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "200",
+                        "height": "200",
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5x9ZPUB_l8kKnchEsPUpCW5S5SPqXx8og1lff1RD20f-4yVU1NLD8ABCh"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "og:site_name": "Mousesquad.org",
+                        "og:title": "Mousesquad.org",
+                        "og:url": "http://mousesquad.org",
+                        "og:image": "http://mousesquad.org/sites/all/themes/mousesquad/assets/img/mouse_squad_og.png",
+                        "og:description": "Mouse empowers all students to create with technology to solve real problems and make meaningful change in our world.  Mousesquad.org is the learning platform for youth and educators across the national Mouse Squad network.",
+                        "og:type": "website"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Modest Mouse | Strangers to Ourselves",
+            "htmlTitle": "Modest \u003cb\u003eMouse\u003c/b\u003e | Strangers to Ourselves",
+            "link": "http://modestmouse.com/",
+            "displayLink": "modestmouse.com",
+            "snippet": "Official website of Modest Mouse. ... Skip to content. Modest Mouse. Primary \nMenu. twitter · Instagram · facebook · store · Videos · Linguistic Remix Generator ...",
+            "htmlSnippet": "Official website of Modest \u003cb\u003eMouse\u003c/b\u003e. ... Skip to content. Modest \u003cb\u003eMouse\u003c/b\u003e. Primary \u003cbr\u003e\nMenu. twitter &middot; Instagram &middot; facebook &middot; store &middot; Videos &middot; Linguistic Remix Generator&nbsp;...",
+            "cacheId": "Sm6skFTfKNIJ",
+            "formattedUrl": "modestmouse.com/",
+            "htmlFormattedUrl": "modest\u003cb\u003emouse\u003c/b\u003e.com/",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "https://i.ytimg.com/vi/o0ZI9vQfr4Q/hqdefault.jpg"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "259",
+                        "height": "194",
+                        "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOwN3xgJ-ZcmYVCOwWMZQBJ8LcbAOkmtvUo6c0WC3aj9_hbvJzleO6ztg"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "viewport": "width=device-width, initial-scale=1"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Mouse Genome",
+            "htmlTitle": "\u003cb\u003eMouse\u003c/b\u003e Genome",
+            "link": "http://www.ncbi.nlm.nih.gov/genome/guide/mouse/",
+            "displayLink": "www.ncbi.nlm.nih.gov",
+            "snippet": "Mus musculus The laboratory mouse is a major model organism for basic \nmammalian biology, human disease, and genome evolution, and its genome has \nbeen ...",
+            "htmlSnippet": "Mus musculus The laboratory \u003cb\u003emouse\u003c/b\u003e is a major model organism for basic \u003cbr\u003e\nmammalian biology, human disease, and genome evolution, and its genome has \u003cbr\u003e\nbeen&nbsp;...",
+            "formattedUrl": "www.ncbi.nlm.nih.gov/genome/guide/mouse/",
+            "htmlFormattedUrl": "www.ncbi.nlm.nih.gov/genome/guide/\u003cb\u003emouse\u003c/b\u003e/"
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "ABCmouse: Kids Learning, Phonics, Educational Games, Preschool ...",
+            "htmlTitle": "ABCmouse: Kids Learning, Phonics, Educational Games, Preschool \u003cb\u003e...\u003c/b\u003e",
+            "link": "http://www.abcmouse.com/",
+            "displayLink": "www.abcmouse.com",
+            "snippet": "See More Testimonials. ABC mouse offers over 450 lessons for Pre-K, Preschool, \nKindergarten, and ... ABC mouse offers 6 academic levels of kids' education ...",
+            "htmlSnippet": "See More Testimonials. ABC \u003cb\u003emouse\u003c/b\u003e offers over 450 lessons for Pre-K, Preschool, \u003cbr\u003e\nKindergarten, and ... ABC \u003cb\u003emouse\u003c/b\u003e offers 6 academic levels of kids&#39; education&nbsp;...",
+            "cacheId": "7aQUE7Kt1RgJ",
+            "formattedUrl": "www.abcmouse.com/",
+            "htmlFormattedUrl": "www.abc\u003cb\u003emouse\u003c/b\u003e.com/",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "http://img.abcmouse.com/misc/linkedin_mouse.jpg"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "144",
+                        "height": "88",
+                        "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdO_4ZtoSvqLoVGE7ms7GLQZytS_1Ljx5XYY3beplR9Wouv_qFMxfDog"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "p:domain_verify": "3834aa80bb98f8d4bfa7430d198a8016",
+                        "og:title": "ABCmouse.com",
+                        "og:image": "http://img.abcmouse.com/misc/linkedin_mouse.jpg",
+                        "og:site_name": "ABCmouse.com",
+                        "og:url": "http://www.abcmouse.com/",
+                        "og:description": "Give your child a head start with ABCmouse.com’s full online preschool, pre-k, and kindergarten curriculum--games, books, songs, and more!"
+                    }
+                ]
+            }
+        }
+    ]
+}

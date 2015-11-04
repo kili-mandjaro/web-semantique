@@ -82,38 +82,44 @@ webSemantiqueControllers.controller('SearchController', ['$scope', 'Recherche', 
             $scope.groups = [];
             $scope.urls = [];
             $scope.pages = [];
+            $scope.searchStringKeywords = [];
             $scope.matrix = null;
             var nbPagesProcessed = 0;
-            Recherche.requete($scope.recherche, function(page) {
 
+            Recherche.searchStringRequete($scope.recherche, function(searchStringKeywords){
 
+                $scope.searchStringKeywords = searchStringKeywords;
+                console.log(searchStringKeywords);
 
-                //Si la page retournee est vide, quelque chose s'est mal passé lors de la requete.
-                if (page !== null)
-                {
-                    page.snippet = unescape(encodeURIComponent(page.snippet));
-                    page.snippet = page.snippet.replace('ï¿½', ' ');
+                Recherche.requete($scope.recherche, function(page) {
 
-                    //La page est non vide, on la prend en compte.
-                    $scope.pages.push(page);
-                    RdfGraph.generateGraph(page, function(){
-                        nbPagesProcessed++;
+                    //Si la page retournee est vide, quelque chose s'est mal passé lors de la requete.
+                    if (page !== null)
+                    {
+                        page.snippet = unescape(encodeURIComponent(page.snippet));
+                        page.snippet = page.snippet.replace('ï¿½', ' ');
+
+                        //La page est non vide, on la prend en compte.
+                        $scope.pages.push(page);
+                        RdfGraph.generateGraph(page, $scope.searchStringKeywords, function(){
+                            nbPagesProcessed++;
+                            $scope.progressBar.setValue(nbPagesProcessed);
+                            if(nbPagesProcessed === $scope.nbPages) {
+                                CalculerRegroupements();
+                            }
+                        });
+                    }
+                    else
+                    {
+                        //Quelque chose s'est mal passé, on ne prend pas en compte cette page.
+                        $scope.nbPages--;
+                        $scope.progressBar.max = $scope.nbPages;
                         $scope.progressBar.setValue(nbPagesProcessed);
                         if(nbPagesProcessed === $scope.nbPages) {
                             CalculerRegroupements();
                         }
-                    });
-                }
-                else
-                {
-                    //Quelque chose s'est mal passé, on ne prend pas en compte cette page.
-                    $scope.nbPages--;
-                    $scope.progressBar.max = $scope.nbPages;
-                    $scope.progressBar.setValue(nbPagesProcessed);
-                    if(nbPagesProcessed === $scope.nbPages) {
-                        CalculerRegroupements();
                     }
-                }
+                });
             });
         };
     }]);

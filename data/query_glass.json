@@ -1,0 +1,387 @@
+{
+    "kind": "customsearch#search",
+    "url": {
+        "type": "application/json",
+        "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+    },
+    "queries": {
+        "nextPage": [
+            {
+                "title": "Google Custom Search - glass",
+                "totalResults": "132000000",
+                "searchTerms": "glass",
+                "count": 10,
+                "startIndex": 11,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "010385690139782890959:ezl0o7x_7ro"
+            }
+        ],
+        "request": [
+            {
+                "title": "Google Custom Search - glass",
+                "totalResults": "132000000",
+                "searchTerms": "glass",
+                "count": 10,
+                "startIndex": 1,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "010385690139782890959:ezl0o7x_7ro"
+            }
+        ]
+    },
+    "context": {
+        "title": "INSALyon-WebSemantique"
+    },
+    "searchInformation": {
+        "searchTime": 0.330756,
+        "formattedSearchTime": "0.33",
+        "totalResults": "132000000",
+        "formattedTotalResults": "132,000,000"
+    },
+    "items": [
+        {
+            "kind": "customsearch#result",
+            "title": "Glass - Wikipedia, the free encyclopedia",
+            "htmlTitle": "\u003cb\u003eGlass\u003c/b\u003e - Wikipedia, the free encyclopedia",
+            "link": "https://en.wikipedia.org/wiki/Glass",
+            "displayLink": "en.wikipedia.org",
+            "snippet": "Glass is a non-crystalline solid that is often transparent and has widespread \npractical, technological, and decorative usage in things like window panes, ...",
+            "htmlSnippet": "\u003cb\u003eGlass\u003c/b\u003e is a non-crystalline solid that is often transparent and has widespread \u003cbr\u003e\npractical, technological, and decorative usage in things like window panes,&nbsp;...",
+            "cacheId": "595eEYXu6gcJ",
+            "formattedUrl": "https://en.wikipedia.org/wiki/Glass",
+            "htmlFormattedUrl": "https://en.wikipedia.org/wiki/\u003cb\u003eGlass\u003c/b\u003e",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Glass_welding_two_tubes_together.JPG/300px-Glass_welding_two_tubes_together.JPG"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "240",
+                        "height": "200",
+                        "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRN0SpABH15fckxmXCw2qnVz1vrSdPIWzlqCFaXjzZVEFSGrbKfyth_g9b6"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Google Glass",
+            "htmlTitle": "Google \u003cb\u003eGlass\u003c/b\u003e",
+            "link": "https://www.google.com/glass/start/",
+            "displayLink": "www.google.com",
+            "snippet": "Thanks for exploring with us. The journey doesn't end here. You'll start to see \nfuture versions of Glass when they're ready (for now, no peeking).",
+            "htmlSnippet": "Thanks for exploring with us. The journey doesn&#39;t end here. You&#39;ll start to see \u003cbr\u003e\nfuture versions of \u003cb\u003eGlass\u003c/b\u003e when they&#39;re ready (for now, no peeking).",
+            "cacheId": "c4vgB-irO1wJ",
+            "formattedUrl": "https://www.google.com/glass/start/",
+            "htmlFormattedUrl": "https://www.google.com/\u003cb\u003eglass\u003c/b\u003e/start/",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "https://lh3.googleusercontent.com/proxy/qaJg9UQQ5cZGulx1ff-Io7LDDBONWVN8dGgDC3AN-aFR6BRKin72eemUo-OK3vOiVVkR-TjcTa5kXW0KTm_0U9mcIg=w120-h120"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "96",
+                        "height": "96",
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1uobuwB0fljVYpJJCVKDtoK0ehVR9G4hknbenNR5_xBtbA9gFdBnV"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "viewport": "initial-scale=1, width=device-width, user-scalable=no"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Glasses.com | Free Lenses so you can get Glasses You Love",
+            "htmlTitle": "Glasses.com | Free Lenses so you can get Glasses You Love",
+            "link": "http://www.glasses.com/",
+            "displayLink": "www.glasses.com",
+            "snippet": "Shop Ray-Ban, Oakley, Smith, Kate Spade and more. Free Rx Lenses - High \nclarity, Scratch Resistant, UV Protection and Anti-glare! Orders Ship in 24hrs.",
+            "htmlSnippet": "Shop Ray-Ban, Oakley, Smith, Kate Spade and more. Free Rx Lenses - High \u003cbr\u003e\nclarity, Scratch Resistant, UV Protection and Anti-glare! Orders Ship in 24hrs.",
+            "cacheId": "zPSV9v7qWW4J",
+            "formattedUrl": "www.glasses.com/",
+            "htmlFormattedUrl": "www.\u003cb\u003eglass\u003c/b\u003ees.com/",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "http://www.glasses.com/dyn-images/single_mosiac_tile/Coach_homepage_trending_mosaic_v1_CA.jpg"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "260",
+                        "height": "194",
+                        "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3qfYpxvWCkOwKgmDJmGqkpqIv8x6qt2dT__IsCBlJp4QRMDaJ5J3-Oavl"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "msvalidate.01": "46AA95EC5EEAC634E1D6C6BE0776A795"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Philip Glass: Welcome",
+            "htmlTitle": "Philip \u003cb\u003eGlass\u003c/b\u003e: Welcome",
+            "link": "http://www.philipglass.com/",
+            "displayLink": "www.philipglass.com",
+            "snippet": "Philip Glass, the official web site of Philip Glass. Celebrating 70 years in 2007.",
+            "htmlSnippet": "Philip \u003cb\u003eGlass\u003c/b\u003e, the official web site of Philip \u003cb\u003eGlass\u003c/b\u003e. Celebrating 70 years in 2007.",
+            "cacheId": "eVeHdSbLFrMJ",
+            "formattedUrl": "www.philipglass.com/",
+            "htmlFormattedUrl": "www.philip\u003cb\u003eglass\u003c/b\u003e.com/"
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Glassdoor – Get Hired. Love Your Job.",
+            "htmlTitle": "Glassdoor – Get Hired. Love Your Job.",
+            "link": "http://www.glassdoor.com/",
+            "displayLink": "www.glassdoor.com",
+            "snippet": "Glassdoor helps you find a job and company you love. Reviews, salaries and \nbenefits from employees. Interview questions from candidates. Millions of jobs.",
+            "htmlSnippet": "Glassdoor helps you find a job and company you love. Reviews, salaries and \u003cbr\u003e\nbenefits from employees. Interview questions from candidates. Millions of jobs.",
+            "cacheId": "WBUsbzqyDIQJ",
+            "formattedUrl": "www.glassdoor.com/",
+            "htmlFormattedUrl": "www.\u003cb\u003eglass\u003c/b\u003edoor.com/",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "http://www.glassdoor.com/static/img/illustration/phones.us.png"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "230",
+                        "height": "219",
+                        "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQULVvt2uAYIGD3zQbL-mp4yel2IC7iXiSD1ErUKuV-vvAC2SuDxe1IghU"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "viewport": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
+                        "apple-mobile-web-app-capable": "yes",
+                        "apple-mobile-web-app-status-bar-style": "black",
+                        "referrer": "origin",
+                        "norton-safeweb-site-verification": "5jaf6c9jhhj1-6--7-r3mnr20yqoqzka3l8xvwt9pdiusv8lxu0rqxrhtgwymhi9z8t6gxkn7n78isrs3804yzjcktnxjvfbxn1loqzok669m6t6uf8vhzzm4gcvewc6",
+                        "al:ios:url": "/index.htm",
+                        "al:ios:app_store_id": "589698942",
+                        "al:ios:app_name": "Glassdoor",
+                        "og:title": "Glassdoor – Get Hired. Love Your Job.",
+                        "og:type": "website",
+                        "og:site_name": "Glassdoor",
+                        "fb:app_id": "129253937150340",
+                        "og:url": "http://www.glassdoor.com/index.htm",
+                        "og:image": "http://static.glassdoor.com/static/img/partners/fb/logo-1200x630.png?v=b8dbc1je1",
+                        "og:description": "Glassdoor helps you find a job and company you love. Reviews, salaries and benefits from employees. Interview questions from candidates. Millions of jobs.",
+                        "apple-itunes-app-beta": "app-id=589698942",
+                        "google-play-app": "app-id=com.glassdoor.app"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "glass - Wiktionary",
+            "htmlTitle": "\u003cb\u003eglass\u003c/b\u003e - Wiktionary",
+            "link": "https://en.wiktionary.org/wiki/glass",
+            "displayLink": "en.wiktionary.org",
+            "snippet": "glass   (countable and uncountable, plural glasses). (uncountable) ... made of \nglass. A popular myth is that window glass is actually an extremely viscous liquid.",
+            "htmlSnippet": "\u003cb\u003eglass\u003c/b\u003e   (countable and uncountable, plural glasses). (uncountable) ... made of \u003cbr\u003e\n\u003cb\u003eglass\u003c/b\u003e. A popular myth is that window \u003cb\u003eglass\u003c/b\u003e is actually an extremely viscous liquid.",
+            "cacheId": "E3WnFBDn3NAJ",
+            "formattedUrl": "https://en.wiktionary.org/wiki/glass",
+            "htmlFormattedUrl": "https://en.wiktionary.org/wiki/\u003cb\u003eglass\u003c/b\u003e"
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "GlassesUSA: Eyeglasses - Prescription glasses, eyewear, buy ...",
+            "htmlTitle": "GlassesUSA: Eyeglasses - Prescription glasses, eyewear, buy \u003cb\u003e...\u003c/b\u003e",
+            "link": "http://www.glassesusa.com/",
+            "displayLink": "www.glassesusa.com",
+            "snippet": "GlassesUSA.com offers prescription glasses online at discount prices. Buy \nquality eyeglasses with a 365 days manufacturer's warranty, free lenses, and free\n ...",
+            "htmlSnippet": "GlassesUSA.com offers prescription glasses online at discount prices. Buy \u003cbr\u003e\nquality eyeglasses with a 365 days manufacturer&#39;s warranty, free lenses, and free\u003cbr\u003e\n&nbsp;...",
+            "cacheId": "Nn258zYKpcsJ",
+            "formattedUrl": "www.glassesusa.com/",
+            "htmlFormattedUrl": "www.\u003cb\u003eglass\u003c/b\u003eesusa.com/",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "http://lgcdn.glassesusa.com/skin/frontend/default/optimaxhp/images/GlassesUSA_Logo_70x70.gif"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "68",
+                        "height": "68",
+                        "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJ78R7Jgm4UwHp_6nMukc7y_sp5pYvHSBAX1E5CTdeNfDFWc3R0p4_qQ"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "classification": "glasses",
+                        "og:title": "GlassesUSA.com - Prescription Glasses Online at 70% Off Retail Prices",
+                        "og:type": "website",
+                        "og:url": "http://www.glassesusa.com",
+                        "og:image": "http://lgcdn.glassesusa.com/skin/frontend/default/optimaxhp/images/GlassesUSA_Logo_70x70.gif",
+                        "og:site_name": "GlassesUSA.com",
+                        "fb:admins": "663750202"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Corning Museum of Glass",
+            "htmlTitle": "Corning Museum of \u003cb\u003eGlass\u003c/b\u003e",
+            "link": "http://www.cmog.org/",
+            "displayLink": "www.cmog.org",
+            "snippet": "Contains over 40000 objects representing 3500 years of glass and glassmaking \nfrom Egyptian to 20th century. Collections, exhibitions, education ...",
+            "htmlSnippet": "Contains over 40000 objects representing 3500 years of \u003cb\u003eglass\u003c/b\u003e and glassmaking \u003cbr\u003e\nfrom Egyptian to 20th century. Collections, exhibitions, education&nbsp;...",
+            "cacheId": "jL8Wb3m9QpsJ",
+            "formattedUrl": "www.cmog.org/",
+            "htmlFormattedUrl": "www.cmog.org/",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "http://d3seu6qyu1a8jw.cloudfront.net/sites/default/files/styles/4-column-promo/public/promo-image/Corning-Museum-TPP-0748.jpg?itok=olt9gyXs"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "176",
+                        "height": "144",
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpLujfRlLtgqmt4D59ZETgD3OzAYy4lryj28KrF5TZzm194q7wt2EWAwMF"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "yandex-verification": "574973c93f997089",
+                        "msvalidate.01": "06C7D894FDBFF23859FC5EDEBFB91815",
+                        "application-name": " ",
+                        "msapplication-tilecolor": "#FFFFFF",
+                        "msapplication-tileimage": "mstile-144x144.png"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Google Glass - Google+",
+            "htmlTitle": "Google \u003cb\u003eGlass\u003c/b\u003e - Google+",
+            "link": "https://plus.google.com/+GoogleGlass",
+            "displayLink": "plus.google.com",
+            "snippet": "Google Glass - Getting technology out of the way - We started Project Glass to \nbuild technology that's seamless, beautiful and empowering. To share the world ...",
+            "htmlSnippet": "Google \u003cb\u003eGlass\u003c/b\u003e - Getting technology out of the way - We started Project \u003cb\u003eGlass\u003c/b\u003e to \u003cbr\u003e\nbuild technology that&#39;s seamless, beautiful and empowering. To share the world&nbsp;...",
+            "cacheId": "IqcyX8_ntw4J",
+            "formattedUrl": "https://plus.google.com/+GoogleGlass",
+            "htmlFormattedUrl": "https://plus.google.com/+Google\u003cb\u003eGlass\u003c/b\u003e",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "https://lh3.googleusercontent.com/lgL3mXVmOYEJ8Uei8JEg-1fsYYXR7QTQnqngFi29v8qR=s630-fcrop64=1,32471b20a6f07dc7"
+                    }
+                ],
+                "videoobject": [
+                    {
+                        "image": "https://lh3.googleusercontent.com/proxy/_jeRD_E6ae9MyosBeQ8YuYp3l0KV4Su8sgRIBzAPuWGiV5T21eBmC8Vg7H2qbk1avqLksv5ZUdSa1SnBfFZ95p5ibpjnZwwRxiGjcRvBtqyZX6_YOcNOE348RGa_CQCuWkh0PjJHCazxbzvG9g=w426-h240-n"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "299",
+                        "height": "168",
+                        "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSf66gf_0aPgtQMcSH1nu-oj1R-JJbY8PHoiUw1WP8yQbI7sWD2vhvfZDR_"
+                    }
+                ],
+                "webpage": [
+                    {
+                        "name": "Google Glass - Google+",
+                        "description": "Getting technology out of the way",
+                        "image": "//lh3.googleusercontent.com/-DksK-JOoDc4/AAAAAAAAAAI/AAAAAAAAb_I/SIBr9E7Wqp4/photo.jpg",
+                        "url": "https://plus.google.com/+GoogleGlass"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "referrer": "origin",
+                        "og:title": "Google Glass - Google+",
+                        "twitter:title": "Google Glass - Google+",
+                        "twitter:image:src": "//lh3.googleusercontent.com/-SFx-N_ie2hI/VjTEqvJmF4I/AAAAAAAAb94/pR71ljFiUDY/w426-h313/b58b0a8b5bd03949e631539baf6eb68d.jpg"
+                    }
+                ],
+                "hcard": [
+                    {
+                        "fn": "Google Glass",
+                        "url": "http://www.youtube.com/user/googleglass",
+                        "url_text": "Google Glass"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "GLASS on Vimeo",
+            "htmlTitle": "\u003cb\u003eGLASS\u003c/b\u003e on Vimeo",
+            "link": "https://vimeo.com/136764796",
+            "displayLink": "vimeo.com",
+            "snippet": "Aug 19, 2015 ... Glass 3D Printing (G3DP) Additive Manufacturing of Optically Transparent Glass \ndeveloped by the Mediated Matter Group at the MIT Media Lab ...",
+            "htmlSnippet": "Aug 19, 2015 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eGlass\u003c/b\u003e 3D Printing (G3DP) Additive Manufacturing of Optically Transparent \u003cb\u003eGlass\u003c/b\u003e \u003cbr\u003e\ndeveloped by the Mediated Matter Group at the MIT Media Lab&nbsp;...",
+            "cacheId": "RjfN9B2xihAJ",
+            "formattedUrl": "https://vimeo.com/136764796",
+            "htmlFormattedUrl": "https://vimeo.com/136764796",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "https://i.vimeocdn.com/video/531398810_1280x720.jpg"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "300",
+                        "height": "168",
+                        "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNIYEzZ9Y8d-BrZdxgOo1P6-tOkjc67l7b-SMvMVdA6O8pztyxArmenwM"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "viewport": "width=1024,maximum-scale=1.0",
+                        "fb:app_id": "19884028963",
+                        "og:title": "GLASS",
+                        "og:description": "Glass 3D Printing (G3DP)  Additive Manufacturing of Optically Transparent Glass developed by the Mediated Matter Group at the MIT Media Lab in collaboration with…",
+                        "og:image": "https://i.vimeocdn.com/video/531398810_1280x720.jpg",
+                        "og:image:height": "720",
+                        "og:image:width": "1280",
+                        "og:type": "video",
+                        "og:video:url": "https://player.vimeo.com/video/136764796?autoplay=1",
+                        "og:video:secure_url": "https://player.vimeo.com/video/136764796?autoplay=1",
+                        "og:video:type": "text/html",
+                        "og:video:width": "640",
+                        "og:video:height": "360",
+                        "og:site_name": "Vimeo",
+                        "og:url": "https://vimeo.com/136764796",
+                        "al:ios:url": "vimeo://app.vimeo.com/videos/136764796",
+                        "al:ios:app_store_id": "425194759",
+                        "al:ios:app_name": "Vimeo",
+                        "video:tag": "Glass 3D Printing",
+                        "twitter:card": "player",
+                        "twitter:site": "@vimeo",
+                        "twitter:player": "https://player.vimeo.com/video/136764796",
+                        "twitter:player:height": "360",
+                        "twitter:player:width": "640",
+                        "twitter:image": "https://i.vimeocdn.com/video/531398810_1280x720.jpg",
+                        "twitter:app:name:iphone": "Vimeo"
+                    }
+                ]
+            }
+        }
+    ]
+}

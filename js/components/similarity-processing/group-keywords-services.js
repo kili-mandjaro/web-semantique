@@ -77,7 +77,7 @@ webSemantiqueGroupKeywordsServices.factory('GroupKeywords', [
                 var groupsKeywords = [];
 
                 for (var i = 0; i < groups.length; i++) {
-                    console.log(groups[i].length);
+
                     if(groups[i].length > 1) {
                         groupsKeywords.push(getKeywordsForGroup(groups[i], commonKeywordMatrix));
                     } else {
