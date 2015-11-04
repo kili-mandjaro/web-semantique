@@ -60,14 +60,12 @@ webSemantiqueSimilarityServices.factory('Similarity', [
 
                 for(var i = 0; i < pages.length; i++){
                     similarityMatrix[i] = new Array(pages.length);
-                    similarityMatrix[i][i] = 1;
                     commonKeywordsMatrix[i] = new Array(pages.length);
-                    commonKeywordsMatrix[i][i] = [];
                 }
 
                 // On remplit la matrice avec les valeurs de Jaccard
-                for(var i = 0; i < pages.length-1; i++){
-                    for(var j = i+1; j < pages.length; j++){
+                for(var i = 0; i < pages.length; i++){
+                    for(var j = i; j < pages.length; j++){
                         var res = computeSimilarity(pages[i], pages[j]);
                         similarityMatrix[i][j] = res.jaccardVal;
                         similarityMatrix[j][i] = res.jaccardVal;

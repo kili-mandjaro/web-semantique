@@ -48,11 +48,18 @@
             <div id="recherche" ng-controller="SearchController">
 
                 <div class="jumbotron">
+                    <div ng-hide="progressBar.value < 0">
+                        <h2>{{ progressBar.label }}</h2>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="{{ progressBar.value }}" aria-valuemin="{{ progressBar.min }}" aria-valuemax="{{ progressBar.max }}" ng-style="{ 'width' : progressBar.percent + '%' }">
+                                <span>{{ progressBar.percent }}%</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="form-group form-group-lg">
                         <input class="form-control" type="text" id="searchInput" ng-model="recherche" placeholder="Entrez votre requête...">
                     </div>
                     <button type="button" class="btn btn-primary btn-lg btn-block" ng-click="LancerRecherche()">Rechercher</button>
-                    <span>{{ infos }}</span>
                 </div>
 
                 <div class="row marketing">
@@ -63,18 +70,28 @@
                                 <td ng-repeat="matrixCell in matrixLine track by $index">{{ matrixCell }}</td>
                             </tr>
                         </table>
+                        
+                        <div ng-show="groups.length > 0">
+                            <h2>Resultats</h2>
+                            <div class="panel panel-default" ng-repeat="group in groups track by $index">
+                                <div class="panel-heading">Groupe {{ $index + 1 }}</div>
+                                <div class="panel-body">
+                                    <p>Description des mots clés : </p>
+                                    <p>
+                                        <a ng-repeat="keyword in group.keywords" href="{{keyword[0]}}">{{ getUriEntityName(keyword[0]) }} </a>
+                                    </p>
+                                </div>
 
-                        <h2>Resultats</h2>
-                        <ul>
-                            <li ng-repeat="page in pages">
-                                {{ page.url }}
-                                <ul>
-                                    <li ng-repeat="keyword in page.uriKeywords">
-                                        {{ keyword['@surfaceForm'] }} - {{ keyword['@URI'] }}
+                                <!-- List group -->
+                                <ul class="list-group">
+                                    <li class="list-group-item" ng-repeat="page in group.pages">
+                                        <h4><a ng-href="{{ page.url }}">{{ page.title }}</a></h4>
+                                        {{ page.formattedUrl }}<br />
+                                        <p class="text-muted">{{ page.snippet }}</p>
                                     </li>
                                 </ul>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

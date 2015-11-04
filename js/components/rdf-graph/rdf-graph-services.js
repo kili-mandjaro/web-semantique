@@ -23,10 +23,10 @@ webSemantiqueRdfGraphServices.factory('RdfGraph', ['$http',
                 //var res = $resource('http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=:query&format=application%2Fsparql-results%2Bjson', {}, {});
 
                 // Construction de la requete d'enrichissement de graph
-                var query = 'construct {?k ?s ?o} where {?k ?s ?o FILTER(';
+                var query = 'construct {?s ?p ?o} where {?s ?p ?o FILTER(';
                 for (var i = 0; i < keywords.length; i++) {
-                    //query += '?o = <' + keywords[i]['@URI'] + '> or ';
-                    query += '?k = <'+ keywords[i]['@URI'] + '> or ';
+                    query += '?o = <' + keywords[i]['@URI'] + '> or ';
+                    //query += '?s = <'+ keywords[i]['@URI'] + '> or ';
                 }
                 //The last or is ignored with the zero
                 query += '0';
@@ -48,34 +48,51 @@ webSemantiqueRdfGraphServices.factory('RdfGraph', ['$http',
                         var allKeywords = [];
                         var bindings = jsonData.data.results.bindings;
 
-                        for (var id in bindings) {
-                            if(bindings[id].o.value.indexOf('wikidata') == -1) {
-                                allKeywords.push({
-                                    val: bindings[id].s.value,
-                                    score: page.occurrences[bindings[id].s.value]
-                                });
-                                allKeywords.push({
-                                    val: bindings[id].o.value,
-                                    score: page.occurrences[bindings[id].s.value]
-                                });
-                            }
-                        }
+                        if(bindings != null) {
+                            if(bindings.length > 0) {
 
-                        // Puis on enleve les doublons
-                        var occur = {};
-                        var allKeywords = allKeywords.filter(function (elem) {
-                            if(occur[elem.val]){
-                                occur[elem.val] += elem.score;
-                                return 0;
-                            } else {
-                                occur[elem.val] = elem.score;
-                                return 1;
-                            }
-                        });
+                                for (var i = 0; i < bindings.length; i++) {
+                                    var object = String(bindings[i].o.value);
+                                    var subject = String(bindings[i].s.value);
+                                    /*if (object.indexOf('dbpedia.org') > 0) {
+                                        allKeywords.push({
+                                            val: subject,
+                                            score: page.occurrences[subject]
+                                        });
+                                        allKeywords.push({
+                                            val: object,
+                                            score: page.occurrences[subject]
+                                        });
+                                    }*/
+                                    if (subject.indexOf('dbpedia.org') > 0) {
+                                        allKeywords.push({
+                                            val: object,
+                                            score: page.occurrences[object]
+                                        });
+                                        allKeywords.push({
+                                            val: subject,
+                                            score: page.occurrences[object]
+                                        });
+                                    }
+                                }
 
-                        // Enfin on enleve le score dans allKeyword
-                        for(var i = 0; i < allKeywords.length; i++){
-                            allKeywords[i] = allKeywords[i].val;
+                                // Puis on enleve les doublons
+                                var occur = {};
+                                var allKeywords = allKeywords.filter(function (elem) {
+                                    if (occur[elem.val]) {
+                                        occur[elem.val] += elem.score;
+                                        return 0;
+                                    } else {
+                                        occur[elem.val] = elem.score;
+                                        return 1;
+                                    }
+                                });
+
+                                // Enfin on enleve le score dans allKeyword
+                                for (var i = 0; i < allKeywords.length; i++) {
+                                    allKeywords[i] = allKeywords[i].val;
+                                }
+                            }
                         }
 
                         page['allKeywords'] = allKeywords;
@@ -83,7 +100,7 @@ webSemantiqueRdfGraphServices.factory('RdfGraph', ['$http',
 
                         callback();
                     },
-                    function errorCallback(response) {
+                    function (response) {
                         // Callback appele lors d'un probleme.
                     });
             }

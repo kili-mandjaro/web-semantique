@@ -46,23 +46,41 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
             return function(jsonResponse) {
 
                 var occur = {};
-                // on supprime les doublons des keywords
-                var uriKeywords = jsonResponse.data.Resources.filter(function(elem){
-                    if(occur[elem['@URI']]){
-                        occur[elem['@URI']]++;
-                        return 0;
-                    } else {
-                        occur[elem['@URI']] = 1;
-                        return 1;
-                    }
-                });
+                var page = null;
 
-                var page = {
-                    url: item.link,
-                    occurrences : occur,
-                    uriKeywords: uriKeywords
-                };
-                pages.push(page);
+                if(jsonResponse.data.Resources != undefined){
+
+                    //var test = [];
+
+                    // on supprime les doublons des keywords
+                    var uriKeywords = jsonResponse.data.Resources.filter(function(elem){
+                        if(occur[elem['@URI']]){
+                            occur[elem['@URI']]++;
+                            return 0;
+                        } else {
+                            //test.push(elem['@URI']);
+                            occur[elem['@URI']] = 1;
+                            return 1;
+                        }
+                    });
+
+                    /*test.sort(function(a,b){
+                        return a > b;
+                    });
+                    test = test.join('\n');
+
+                    console.log(test);*/
+
+                    var page = {
+                        title: item.title,
+                        formattedUrl: item.formattedUrl,
+                        snippet: item.snippet,
+                        url: item.link,
+                        occurrences : occur,
+                        uriKeywords: uriKeywords
+                    };
+                    pages.push(page);
+                }
                 //On appelle le callback.
                 callback(page);
             };
@@ -83,40 +101,27 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
 
                 var textContent = ExtractionTexte(responseObject.data);
 
-                // Solution de secours quand les pages ne sont pas bien ecrites
-                if(textContent == "")
-                    textContent = responseObject.data.body.innerText;
-
-                //var textContent = responseObject.data.body.innerText;
-
-                //Passage par un GET limite le nb de char pour les param ==========
-
-                //On limite la taille de la chaine a envoyer à spotlight 
-                /*if (textContent.length > 200)
-                {
-                    textContent = textContent.substring(0, 200);
-                }
-
-                var res = $resource('http://spotlight.dbpedia.org/rest/annotate?confidence=:confidence&support=20', {}, {});
-                res.get({text: textContent, confidence: confiance}, createSpotlightHandler(item, callback));*/
-
-                //======================================================================
-
-                // Passage par un POST, le nb de char autorise est bcp plus grand
-
-                var urlPost = 'http://spotlight.dbpedia.org/rest/annotate?confidence=' + confiance + '&support=20';
-                var paramPost = $.param({
-                    text : textContent
-                });
-                $http({
-                    method: 'POST',
-                    url: urlPost,
-                    data: paramPost,
-                    headers: {'Content-Type': 'application/x-www-form-urlencoded'}
-                }).then(createSpotlightHandler(item, callback),
-                    function errorCallback(response) {
-                        // Callback appele lors d'un probleme.
+                //Si la page contient du texte.
+                if(textContent !== "") {
+                    // Passage par un POST, le nb de char autorise est bcp plus grand
+                    var urlPost = 'http://spotlight.dbpedia.org/rest/annotate?confidence=' + confiance + '&support=20';
+                    var paramPost = $.param({
+                        text : textContent
                     });
+                    $http({
+                        method: 'POST',
+                        url: urlPost,
+                        data: paramPost,
+                        headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+                    }).then(createSpotlightHandler(item, callback),
+                        function (response) {
+                            // Callback appele lors d'un probleme.
+                    });
+                } else {
+                    //On appelle directement le callback sans contenu.
+                    //Pour signifier qu'il y a eu un problème avec la page.
+                    callback(null);
+                }
             };
         }
         
@@ -132,10 +137,9 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
              */
             return function(jsonQueryData)
             {
-                for (var i = 0; i < 5; i++)
-                //for (var i = 0;i < jsonQueryData.items.length;i++)
+                //for (var i = 0; i == 0; i++)
+                for (var i = 0;i < jsonQueryData.items.length;i++)
                 {
-                    console.log(jsonQueryData.items[i].link);
                     //Attention, lors des acces aux site externes, les requetes
                     //peuvent être bloquées pour des raisons de sécurité (Cross-Domain).
                     $http({
@@ -162,7 +166,7 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
             requete: function(requete, callback) {
                 //Pour eviter de faire trop de requetes sur l'API Google, on fixe le resultat.
                 //var ressource = $resource('https://www.googleapis.com/customsearch/v1?q=:requete&cx=010385690139782890959%3Aezl0o7x_7ro&key=AIzaSyBgk1ACvargtPMwitXu85jlFj0maYox1jI', {}, {});
-                var ressource = $resource('data/chinese_pug.json', {}, {});
+                var ressource = $resource('data/query_galaxy.json', {}, {});
                 ressource.get({requete: requete}, createGoogleApiHandler(callback));
             },
             /**

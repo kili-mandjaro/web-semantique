@@ -75,9 +75,29 @@ webSemantiqueGroupKeywordsServices.factory('GroupKeywords', [
         return {
             getGroupsKeywords : function(pages, groups, commonKeywordMatrix){
                 var groupsKeywords = [];
-                for(var i = 0; i < groups.length; i++){
-                    groupsKeywords.push(getKeywordsForGroup(groups[i], commonKeywordMatrix));
+
+                for (var i = 0; i < groups.length; i++) {
+                    console.log(groups[i].length);
+                    if(groups[i].length > 1) {
+                        groupsKeywords.push(getKeywordsForGroup(groups[i], commonKeywordMatrix));
+                    } else {
+                        var pageKeywords = commonKeywordMatrix[groups[i][0]][groups[i][0]];
+                        var finalKeyWordsList = [];
+
+                        for(var j = 0; j < pageKeywords.length; j++){
+                            finalKeyWordsList.push([
+                                pageKeywords[j].val,
+                                pageKeywords[j].score
+                            ]);
+                        }
+
+                        finalKeyWordsList = finalKeyWordsList.sort(function(a, b) {return b[1] - a[1]});
+                        finalKeyWordsList = finalKeyWordsList.splice(0, nbKeywordsPerGroup);
+
+                        groupsKeywords.push(finalKeyWordsList);
+                    }
                 }
+
                 return groupsKeywords;
             }
         };

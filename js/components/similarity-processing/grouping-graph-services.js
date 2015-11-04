@@ -32,7 +32,7 @@ webSemantiqueSimilarityServices.factory('Grouping', [
             seuillage : function(matrice, seuil){
                 var matriceSeuillee = new Array(matrice.length);
 
-                for(var i=0; i<matrice.length;i++) { //for each row
+                for(var i=0; i < matrice.length;i++) { //for each row
                     matriceSeuillee[i] = new Array(matrice.length);
                     for (var j = 0; j < matrice[i].length; j++) {
                         if (matrice[i][j] >= seuil)
@@ -116,11 +116,6 @@ webSemantiqueSimilarityServices.factory('Grouping', [
                         bags.splice(i,1);
                     }
                 }
-                /*for(var i=0;i<bags.length;i++)
-                {
-                    console.log(bags[i]);
-                }*/
-
                 return bags;
             }
         };
