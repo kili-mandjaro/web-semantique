@@ -38,9 +38,12 @@ webSemantiqueControllers.controller('SearchController', ['$scope', 'Recherche', 
 
             return apresDiese;
         };
-
-        $scope.urls = [];
-
+        
+        $scope.modeAvance = false;
+        $scope.constantes = {
+            seuilJaccard: 0.02,
+            nombrePagesMax: 10
+        };
         $scope.groups = [];
         $scope.nbPages = 0;
         $scope.pages = [];
@@ -53,7 +56,7 @@ webSemantiqueControllers.controller('SearchController', ['$scope', 'Recherche', 
             var similarity = Similarity.buildMatrix($scope.pages, $scope.searchStringKeywords);
             $scope.matrix = similarity.similarityMatrix;
             $scope.progressBar.label = "Seuillage.";
-            var matriceSeuillee = Grouping.seuillage($scope.matrix, $scope.seuilJaccard);
+            var matriceSeuillee = Grouping.seuillage($scope.matrix, $scope.constantes.seuilJaccard);
             $scope.progressBar.label = "Regroupement.";
             var groupes = Grouping.algo(matriceSeuillee);
             var groupsKeywords = GroupKeywords.getGroupsKeywords($scope.pages, groupes, similarity.commonKeywordsMatrix);
@@ -75,12 +78,11 @@ webSemantiqueControllers.controller('SearchController', ['$scope', 'Recherche', 
         }
         
         $scope.LancerRecherche = function () {
-            $scope.nbPages = 10;
+            $scope.nbPages = $scope.constantes.nombrePagesMax;
             $scope.progressBar.label = "Chargement des résultats...";
             $scope.progressBar.max = $scope.nbPages;
             $scope.progressBar.value = 0;
             $scope.groups = [];
-            $scope.urls = [];
             $scope.pages = [];
             $scope.searchStringKeywords = [];
             $scope.matrix = null;
@@ -91,7 +93,7 @@ webSemantiqueControllers.controller('SearchController', ['$scope', 'Recherche', 
                 $scope.searchStringKeywords = searchStringKeywords;
                 console.log(searchStringKeywords);
 
-                Recherche.requete($scope.recherche, function(page) {
+                Recherche.requete($scope.recherche, $scope.nbPages, function(page) {
 
                     //Si la page retournee est vide, quelque chose s'est mal passé lors de la requete.
                     if (page !== null)

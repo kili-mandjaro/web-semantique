@@ -32,20 +32,20 @@
         <script src="js/components/similarity-processing/grouping-graph-services.js"></script>
         <script src="js/components/similarity-processing/group-keywords-services.js"></script>
     </head>
-    <body>
+    <body ng-controller="SearchController">
         <div class="container">
             <div class="header clearfix">
                 <nav>
                     <ul class="nav nav-pills pull-right">
-                        <li role="presentation" class="active"><a href="#">Recherche</a></li>
+                        <li role="presentation" ng-class="(modeAvance) ? '' : 'active'"><a href="#" ng-click="modeAvance = false;">Recherche</a></li>
+                        <li role="presentation" ng-class="(modeAvance) ? 'active' : ''"><a href="#" ng-click="modeAvance = true;">Recherche avancée</a></li>
                         <li role="presentation"><a href="#">A Propos</a></li>
-                        <li role="presentation"><a href="#">Contact</a></li>
                     </ul>
                 </nav>
                 <h3 class="text-muted">WebSemantique</h3>
             </div>
 
-            <div id="recherche" ng-controller="SearchController">
+            <div id="recherche">
 
                 <div class="jumbotron">
                     <div ng-hide="progressBar.value < 0">
@@ -56,12 +56,22 @@
                             </div>
                         </div>
                     </div>
-                    <div ng-hide="progressBar.value == 0">
-                        <label for="seuil"   >Seuil de jaccard : </label>
-                        <input type="text" ng-model="seuilJaccard" id="seuil" value="0.2"/>
-                    </div>
                     <div class="form-group form-group-lg">
                         <input class="form-control" type="text" id="searchInput" ng-model="recherche" placeholder="Entrez votre requête...">
+                    </div>                       
+                    <div ng-show="modeAvance" class="form-horizontal">
+                        <div class="form-group">
+                            <label for="inputSeuilJaccard" class="col-sm-4 control-label">Seuil de Jaccard</label>
+                            <div class="col-sm-8">
+                                <input type="number" min="0" max="1" step="0.01" class="form-control" id="inputSeuilJaccard" ng-model="constantes.seuilJaccard">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputNombrePages" class="col-sm-4 control-label">Nombres de pages</label>
+                            <div class="col-sm-8">
+                                <input type="number" min="0" max="100" step="1" class="form-control" id="inputNombrePages" ng-model="constantes.nombrePagesMax">
+                            </div>
+                        </div>
                     </div>
                     <button type="button" class="btn btn-primary btn-lg btn-block" ng-click="LancerRecherche()">Rechercher</button>
                 </div>

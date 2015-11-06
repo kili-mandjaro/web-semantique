@@ -139,7 +139,6 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
              */
             return function(jsonQueryData)
             {
-                //for (var i = 1; i == 1; i++)
                 for (var i = 0;i < jsonQueryData.items.length;i++)
                 {
                     //Attention, lors des acces aux site externes, les requetes
@@ -162,20 +161,31 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
              * Traite une requete.
              * 
              * @param {String} requete La requete a traiter pour l'utilisateur.
+             * @param {Integer} nombrePages Le nombre de pages a demander a Google.
              * @param {function(page)} callback Un callback appele a chaque nouveau resultat trouve.
              *
              */
-            requete: function(requete, callback) {
+            requete: function(requete, nombrePages, callback) {
                 //Pour eviter de faire trop de requetes sur l'API Google, on fixe le resultat.
-                //var ressource = $resource('https://www.googleapis.com/customsearch/v1?q=:requete&cx=010385690139782890959%3Aezl0o7x_7ro&key=AIzaSyBgk1ACvargtPMwitXu85jlFj0maYox1jI', {}, {});
-                //var ressource = $resource('data/query_galaxy.json', {}, {});
+                //var ressource = $resource('https://www.googleapis.com/customsearch/v1?q=:requete&cx=010385690139782890959%3Aezl0o7x_7ro&start=:start&num=:num&key=AIzaSyBgk1ACvargtPMwitXu85jlFj0maYox1jI', {}, {});
+                var ressource = $resource('data/query_galaxy.json', {}, {});
                 //var ressource = $resource('data/chinese_pug.json', {}, {});
                 //var ressource = $resource('data/query_mouse.json', {}, {});
                 //var ressource = $resource('data/query_glass.json', {}, {});
-                var ressource = $resource('data/query_insa.json', {}, {});
-                var ressource = $resource('data/query_research.json', {}, {});
+                //var ressource = $resource('data/query_insa.json', {}, {});
+                //var ressource = $resource('data/query_research.json', {}, {});
                 //var ressource = $resource('data/query_cup.json', {}, {});
-                ressource.get({requete: requete}, createGoogleApiHandler(callback));
+                
+                //On separe le nombre max de pages en paquets de 10.
+                var GoogleApiHandler = createGoogleApiHandler(callback);
+                var start = 0;
+                var num = 10;
+                while(start < nombrePages) {
+                    num = Math.min(10, nombrePages - start);
+                    ressource.get({requete: requete, start: start, num: num}, GoogleApiHandler);
+                    //On passe a la fenetre suivante.
+                    start += num;
+                }
             },
 
             searchStringRequete: function(searchString, callback){

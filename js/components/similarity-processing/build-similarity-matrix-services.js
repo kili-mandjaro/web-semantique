@@ -29,14 +29,6 @@ webSemantiqueSimilarityServices.factory('Similarity', [
                 // Si on trouve un mot de la premiere page dans la seconde
                 var id2 = page2.allKeywords.indexOf(page1.allKeywords[id1]);
                 if(id2 >= 0) {
-
-                    if(searchStringKeywords.length > 0){
-                        if(searchStringKeywords.indexOf(page1.allKeywords[id1]) > 0){
-                            nbAddedScorePoints += page1.occurences[page1.allKeywords[id1]];
-                            nbIntersect+= page1.occurences[page1.allKeywords[id1]];
-                        }
-                    }
-
                     nbIntersect++;
 
                     commonKeyWords.push({
@@ -46,8 +38,7 @@ webSemantiqueSimilarityServices.factory('Similarity', [
                 }
             }
 
-            //var jaccardSimilarity = nbIntersect / (page1.allKeywords.length + page2.allKeywords.length - nbIntersect);
-            var jaccardSimilarity = nbIntersect / (page1.allKeywords.length + page2.allKeywords.length - nbIntersect + nbAddedScorePoints);
+            var jaccardSimilarity = nbIntersect / (page1.allKeywords.length + page2.allKeywords.length - nbIntersect);
             jaccardSimilarity = Math.round(jaccardSimilarity * 1000) / 1000;
 
             return {
