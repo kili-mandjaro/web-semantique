@@ -20,7 +20,7 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
          * @returns {String}
          */
         function ExtractionTexte(htmlContent) {
-                var monText = $(htmlContent).find("p,a,h1,h2,h3,h4,h5,h6,span,li,b")
+                var monText = $(htmlContent).find("p,h1,h2,h3,h4,h5,h6,span,li,b,title")
                                 .clone()    //clone the element
                                 .children() //select all the children
                                 .remove()   //remove all the children
@@ -168,9 +168,13 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
             requete: function(requete, callback) {
                 //Pour eviter de faire trop de requetes sur l'API Google, on fixe le resultat.
                 //var ressource = $resource('https://www.googleapis.com/customsearch/v1?q=:requete&cx=010385690139782890959%3Aezl0o7x_7ro&key=AIzaSyBgk1ACvargtPMwitXu85jlFj0maYox1jI', {}, {});
-                var ressource = $resource('data/query_galaxy.json', {}, {});
+                //var ressource = $resource('data/query_galaxy.json', {}, {});
+                //var ressource = $resource('data/chinese_pug.json', {}, {});
                 //var ressource = $resource('data/query_mouse.json', {}, {});
                 //var ressource = $resource('data/query_glass.json', {}, {});
+                var ressource = $resource('data/query_insa.json', {}, {});
+                var ressource = $resource('data/query_research.json', {}, {});
+                //var ressource = $resource('data/query_cup.json', {}, {});
                 ressource.get({requete: requete}, createGoogleApiHandler(callback));
             },
 

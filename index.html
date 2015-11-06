@@ -56,6 +56,10 @@
                             </div>
                         </div>
                     </div>
+                    <div ng-hide="progressBar.value == 0">
+                        <label for="seuil"   >Seuil de jaccard : </label>
+                        <input type="text" ng-model="seuilJaccard" id="seuil" value="0.2"/>
+                    </div>
                     <div class="form-group form-group-lg">
                         <input class="form-control" type="text" id="searchInput" ng-model="recherche" placeholder="Entrez votre requête...">
                     </div>

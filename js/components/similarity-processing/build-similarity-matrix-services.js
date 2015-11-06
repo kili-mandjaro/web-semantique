@@ -19,16 +19,26 @@ webSemantiqueSimilarityServices.factory('Similarity', [
          * @param {Page} Une page à comparer avec page1.
          * @returns {int} Similarite entre les deux pages
          */
-        function computeSimilarity(page1, page2){
+        function computeSimilarity(page1, page2, searchStringKeywords){
 
             var nbIntersect = 0;
             var commonKeyWords = [];
+            var nbAddedScorePoints = 0;
 
             for(var id1 in page1.allKeywords){
                 // Si on trouve un mot de la premiere page dans la seconde
                 var id2 = page2.allKeywords.indexOf(page1.allKeywords[id1]);
                 if(id2 >= 0) {
+
+                    if(searchStringKeywords.length > 0){
+                        if(searchStringKeywords.indexOf(page1.allKeywords[id1]) > 0){
+                            nbAddedScorePoints += page1.occurences[page1.allKeywords[id1]];
+                            nbIntersect+= page1.occurences[page1.allKeywords[id1]];
+                        }
+                    }
+
                     nbIntersect++;
+
                     commonKeyWords.push({
                         val : page1.allKeywords[id1],
                         score : page1.occurences[page1.allKeywords[id1]] + page2.occurences[page1.allKeywords[id1]]
@@ -36,7 +46,8 @@ webSemantiqueSimilarityServices.factory('Similarity', [
                 }
             }
 
-            var jaccardSimilarity = nbIntersect / (page1.allKeywords.length + page2.allKeywords.length - nbIntersect);
+            //var jaccardSimilarity = nbIntersect / (page1.allKeywords.length + page2.allKeywords.length - nbIntersect);
+            var jaccardSimilarity = nbIntersect / (page1.allKeywords.length + page2.allKeywords.length - nbIntersect + nbAddedScorePoints);
             jaccardSimilarity = Math.round(jaccardSimilarity * 1000) / 1000;
 
             return {
@@ -52,7 +63,7 @@ webSemantiqueSimilarityServices.factory('Similarity', [
              * @param {[Pages]} htmlContent Un tableau de pages.
              * @returns {[[int]]} Une matrice de dimensions |pages|x|pages| contenant les distances des pages deux à deux
              */
-            buildMatrix: function(pages){
+            buildMatrix: function(pages, searchStringKeywords){
 
                 // Construction d'un matrice carre nbPages x nbPages
                 var similarityMatrix = new Array(pages.length);
@@ -66,7 +77,7 @@ webSemantiqueSimilarityServices.factory('Similarity', [
                 // On remplit la matrice avec les valeurs de Jaccard
                 for(var i = 0; i < pages.length; i++){
                     for(var j = i; j < pages.length; j++){
-                        var res = computeSimilarity(pages[i], pages[j]);
+                        var res = computeSimilarity(pages[i], pages[j], searchStringKeywords);
                         similarityMatrix[i][j] = res.jaccardVal;
                         similarityMatrix[j][i] = res.jaccardVal;
                         commonKeywordsMatrix[i][j] = res.keywords;

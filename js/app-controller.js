@@ -50,10 +50,10 @@ webSemantiqueControllers.controller('SearchController', ['$scope', 'Recherche', 
         
         function CalculerRegroupements() {
             $scope.progressBar.label = "Loading similarity matrix.";
-            var similarity = Similarity.buildMatrix($scope.pages);
+            var similarity = Similarity.buildMatrix($scope.pages, $scope.searchStringKeywords);
             $scope.matrix = similarity.similarityMatrix;
             $scope.progressBar.label = "Seuillage.";
-            var matriceSeuillee = Grouping.seuillage($scope.matrix, 0.02);
+            var matriceSeuillee = Grouping.seuillage($scope.matrix, $scope.seuilJaccard);
             $scope.progressBar.label = "Regroupement.";
             var groupes = Grouping.algo(matriceSeuillee);
             var groupsKeywords = GroupKeywords.getGroupsKeywords($scope.pages, groupes, similarity.commonKeywordsMatrix);

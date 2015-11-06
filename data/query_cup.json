@@ -1,0 +1,384 @@
+{
+ "kind": "customsearch#search",
+ "url": {
+  "type": "application/json",
+  "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+ },
+ "queries": {
+  "nextPage": [
+   {
+    "title": "Google Custom Search - cup",
+    "totalResults": "97500000",
+    "searchTerms": "cup",
+    "count": 10,
+    "startIndex": 11,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "010385690139782890959:ezl0o7x_7ro"
+   }
+  ],
+  "request": [
+   {
+    "title": "Google Custom Search - cup",
+    "totalResults": "97500000",
+    "searchTerms": "cup",
+    "count": 10,
+    "startIndex": 1,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "010385690139782890959:ezl0o7x_7ro"
+   }
+  ]
+ },
+ "context": {
+  "title": "INSALyon-WebSemantique"
+ },
+ "searchInformation": {
+  "searchTime": 0.284292,
+  "formattedSearchTime": "0.28",
+  "totalResults": "97500000",
+  "formattedTotalResults": "97,500,000"
+ },
+ "items": [
+  {
+   "kind": "customsearch#result",
+   "title": "A Cup of Jo - Style, Culture, Motherhood, Travel, Food & Life",
+   "htmlTitle": "A \u003cb\u003eCup\u003c/b\u003e of Jo - Style, Culture, Motherhood, Travel, Food &amp; Life",
+   "link": "http://cupofjo.com/",
+   "displayLink": "cupofjo.com",
+   "snippet": "A daily lifestyle blog, founded by Joanna Goddard, covering everything from \nfashion to culture to parenthood.",
+   "htmlSnippet": "A daily lifestyle blog, founded by Joanna Goddard, covering everything from \u003cbr\u003e\nfashion to culture to parenthood.",
+   "cacheId": "5kVSYw_IiqoJ",
+   "formattedUrl": "cupofjo.com/",
+   "htmlFormattedUrl": "\u003cb\u003ecup\u003c/b\u003eofjo.com/",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://cupofjo.com/wp-content/uploads/2015/05/jo_homepage.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "259",
+      "height": "194",
+      "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRklfMpc0KyQTudIG_DdWr9sDddw6duUunTRHICDtdoseLocQoI13cqma66"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1",
+      "og:locale": "en_US",
+      "og:type": "website",
+      "og:title": "A Cup of Jo",
+      "og:description": "A daily lifestyle blog, founded by Joanna Goddard, covering everything from fashion to culture to parenthood.",
+      "og:url": "http://cupofjo.com",
+      "og:site_name": "A Cup of Jo",
+      "fb:admins": "1040097694",
+      "og:image": "http://cupofjo.com/wp-content/uploads/2015/05/jo_homepage.jpg",
+      "twitter:card": "summary_large_image",
+      "twitter:description": "A daily lifestyle blog, founded by Joanna Goddard, covering everything from fashion to culture to parenthood.",
+      "twitter:title": "A Cup of Jo - Style, Culture, Motherhood, Travel, Food & Life",
+      "twitter:site": "@joannagoddard",
+      "twitter:domain": "A Cup of Jo",
+      "twitter:image": "http://cupofjo.com/wp-content/uploads/2015/05/jo_homepage.jpg"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Cup (unit) - Wikipedia, the free encyclopedia",
+   "htmlTitle": "\u003cb\u003eCup\u003c/b\u003e (unit) - Wikipedia, the free encyclopedia",
+   "link": "https://en.wikipedia.org/wiki/Cup_(unit)",
+   "displayLink": "en.wikipedia.org",
+   "snippet": "The cup is a unit of measurement for volume, used in cooking to measure liquids \n(fluid measurement) and bulk foods such as granulated sugar (dry ...",
+   "htmlSnippet": "The \u003cb\u003ecup\u003c/b\u003e is a unit of measurement for volume, used in cooking to measure liquids \u003cbr\u003e\n(fluid measurement) and bulk foods such as granulated sugar (dry&nbsp;...",
+   "cacheId": "wJK04aGqSZkJ",
+   "formattedUrl": "https://en.wikipedia.org/wiki/Cup_(unit)",
+   "htmlFormattedUrl": "https://en.wikipedia.org/wiki/\u003cb\u003eCup\u003c/b\u003e_(unit)",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Simple_Measuring_Cup.jpg/220px-Simple_Measuring_Cup.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "176",
+      "height": "204",
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnfifRzwiauGRiGc7Vw9g5e7H-_XIFT2QVNHub8dUfS6zYrGWWoJxWi8It"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "CRAVE THE CUP - The Cup - St. Louis, MO; Chesterfield, MO ...",
+   "htmlTitle": "CRAVE THE \u003cb\u003eCUP\u003c/b\u003e - The \u003cb\u003eCup\u003c/b\u003e - St. Louis, MO; Chesterfield, MO \u003cb\u003e...\u003c/b\u003e",
+   "link": "http://www.cravethecup.com/",
+   "displayLink": "www.cravethecup.com",
+   "snippet": "When The Cup opened as St. Louis, Missouri's first gourmet cupcake bakery in \n2007, St. Louisans let out a collective, sugary squeal of delight. Local dessert ...",
+   "htmlSnippet": "When The \u003cb\u003eCup\u003c/b\u003e opened as St. Louis, Missouri&#39;s first gourmet cupcake bakery in \u003cbr\u003e\n2007, St. Louisans let out a collective, sugary squeal of delight. Local dessert&nbsp;...",
+   "cacheId": "QoaCbUvWC6UJ",
+   "formattedUrl": "www.cravethecup.com/",
+   "htmlFormattedUrl": "www.cravethe\u003cb\u003ecup\u003c/b\u003e.com/",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://www.cravethecup.com/images/splash/PumpkinHarvest_homepage.png"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "310",
+      "height": "163",
+      "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQOqBM8nyLTPUsWmARPsBZrAeJR-YhEal6uJmLUhBk9VB8oz0TQPCPMs4"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Cup - Wikipedia, the free encyclopedia",
+   "htmlTitle": "\u003cb\u003eCup\u003c/b\u003e - Wikipedia, the free encyclopedia",
+   "link": "https://en.wikipedia.org/wiki/Cup",
+   "displayLink": "en.wikipedia.org",
+   "snippet": "A cup is a small open container used for drinking and carrying drinks. It may be \nmade of wood, plastic, glass, clay, metal, stone, china or other materials, and ...",
+   "htmlSnippet": "A \u003cb\u003ecup\u003c/b\u003e is a small open container used for drinking and carrying drinks. It may be \u003cbr\u003e\nmade of wood, plastic, glass, clay, metal, stone, china or other materials, and&nbsp;...",
+   "cacheId": "gg51jPWvR8kJ",
+   "formattedUrl": "https://en.wikipedia.org/wiki/Cup",
+   "htmlFormattedUrl": "https://en.wikipedia.org/wiki/\u003cb\u003eCup\u003c/b\u003e",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Mazagran_1.jpg/200px-Mazagran_1.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "160",
+      "height": "240",
+      "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuIgc-Si9k4JnXaHt4VFk2ddSvlrnAm3GD-j_9gy6J6tDCMw2dXqUOOAk"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "CUP: Home",
+   "htmlTitle": "\u003cb\u003eCUP\u003c/b\u003e: Home",
+   "link": "http://welcometocup.org/",
+   "displayLink": "welcometocup.org",
+   "snippet": "The Center for Urban Pedagogy (CUP) is a nonprofit organization that uses the \npower of design and art to increase meaningful civic engagement.",
+   "htmlSnippet": "The \u003cb\u003eCenter for Urban Pedagogy\u003c/b\u003e (\u003cb\u003eCUP\u003c/b\u003e) is a nonprofit organization that uses the \u003cbr\u003e\npower of design and art to increase meaningful civic engagement.",
+   "cacheId": "LG2T6LabzUUJ",
+   "formattedUrl": "welcometocup.org/",
+   "htmlFormattedUrl": "welcometo\u003cb\u003ecup\u003c/b\u003e.org/",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://welcometocup.org/image_columns/0005/2959/standclearimage_400.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "285",
+      "height": "177",
+      "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLpJZDPdQx0EDKn0Ah1mae7vMKKfExDjxjAeKudBAUMBRaAK8TmRXtPMwL"
+     }
+    ],
+    "metatags": [
+     {
+      "og:description": "Your description here.",
+      "og:url": "URL here.",
+      "og:image": "Image here."
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "CUP Parser Generator for Java",
+   "htmlTitle": "\u003cb\u003eCUP\u003c/b\u003e Parser Generator for Java",
+   "link": "https://www.cs.princeton.edu/~appel/modern/java/CUP/",
+   "displayLink": "www.cs.princeton.edu",
+   "snippet": "Generates LALR parsers from simple specifications. [Open Source]",
+   "htmlSnippet": "Generates LALR parsers from simple specifications. [Open Source]",
+   "cacheId": "7VO2LrxcA5wJ",
+   "formattedUrl": "https://www.cs.princeton.edu/~appel/modern/java/CUP/",
+   "htmlFormattedUrl": "https://www.cs.princeton.edu/~appel/modern/java/\u003cb\u003eCUP\u003c/b\u003e/",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "https://www.cs.princeton.edu/~appel/modern/java/CUP/cup_logo.gif"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "364",
+      "height": "121",
+      "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBpWiRzWPqJ6-7Z1Pwxz384UwaRIqFVko9eUVR3BBesNEZxxKaw-MYbj8"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Imagine Cup",
+   "htmlTitle": "Imagine \u003cb\u003eCup\u003c/b\u003e",
+   "link": "https://www.imaginecup.com/",
+   "displayLink": "www.imaginecup.com",
+   "snippet": "Microsoft Imagine Cup is the world's premier student technology competition.",
+   "htmlSnippet": "Microsoft Imagine \u003cb\u003eCup\u003c/b\u003e is the world&#39;s premier student technology competition.",
+   "cacheId": "JQlblc-LG1MJ",
+   "formattedUrl": "https://www.imaginecup.com/",
+   "htmlFormattedUrl": "https://www.imagine\u003cb\u003ecup\u003c/b\u003e.com/",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "https://iccms.blob.core.windows.net/library/comp_hellocloud_sq-56262bd1d750.png"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "224",
+      "height": "224",
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb8d2950AT5KnszoWKmukTAsoPAi8i2dkRY6Hq7e2dx9_nXcqUQEZ72RY1"
+     }
+    ],
+    "metatags": [
+     {
+      "wt.ti": "Microsoft Imagine Cup | Microsoft Imagine Cup",
+      "ms.env": "PROD",
+      "viewport": "width=device-width, initial-scale=1.0"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "CUP",
+   "htmlTitle": "\u003cb\u003eCUP\u003c/b\u003e",
+   "link": "http://www2.cs.tum.edu/projects/cup/",
+   "displayLink": "www2.cs.tum.edu",
+   "snippet": "CUP stands for Construction of Useful Parsers and is an LALR parser generator \nfor Java. It was developed by C. Scott Ananian, Frank Flannery, Dan Wang, ...",
+   "htmlSnippet": "\u003cb\u003eCUP\u003c/b\u003e stands for Construction of Useful Parsers and is an LALR parser generator \u003cbr\u003e\nfor Java. It was developed by C. Scott Ananian, Frank Flannery, Dan Wang,&nbsp;...",
+   "cacheId": "Dm48mq211C8J",
+   "formattedUrl": "www2.cs.tum.edu/projects/cup/",
+   "htmlFormattedUrl": "www2.cs.tum.edu/projects/\u003cb\u003ecup\u003c/b\u003e/",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://www2.cs.tum.edu/projects/cup/cup_logo.gif"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "364",
+      "height": "121",
+      "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCOTpWwMlAIPqEVMaLOGYJWHYvQ4xKkzrYRcJ_xwX2-3h0OyGTFhl_9A"
+     }
+    ],
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1.0"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Parking & Transportation page",
+   "htmlTitle": "Parking &amp; Transportation page",
+   "link": "http://www.breederscup.com/plan-your-visit/how-get-here/parking-transportation",
+   "displayLink": "www.breederscup.com",
+   "snippet": "Park-and-Ride shuttling will also be available at certain locations on Thursday, \nOctober 29 for Keeneland's Prelude to the Cup. For more information about ...",
+   "htmlSnippet": "Park-and-Ride shuttling will also be available at certain locations on Thursday, \u003cbr\u003e\nOctober 29 for Keeneland&#39;s Prelude to the \u003cb\u003eCup\u003c/b\u003e. For more information about&nbsp;...",
+   "cacheId": "u01LmXz81qkJ",
+   "formattedUrl": "www.breederscup.com/plan-your-visit/.../parking-transportation",
+   "htmlFormattedUrl": "www.breeders\u003cb\u003ecup\u003c/b\u003e.com/plan-your-visit/.../parking-transportation",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://www.breederscup.com/sites/default/files/Rupp.jpg"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "120",
+      "height": "108",
+      "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtdyGtzY7k7LIoMDlDThxeAf3XXYF7ETOAfI38Y0SX4Zgoixi7h2Jl"
+     }
+    ],
+    "metatags": [
+     {
+      "og:title": "Parking &  Transportation",
+      "og:description": "ON-SITE PARKING AT KEENELANDParking at Keeneland will be limited to those with official PRE-PAID parking credentials. Vehicles arriving at Keeneland without an official parking credential will",
+      "og:url": "http://www.breederscup.com/plan-your-visit/how-get-here/parking-transportation",
+      "og:image": "http://www.breederscup.com/sites/all/themes/breederscup/images/logo-banner-lg.png",
+      "og:type": "website"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "2018 FIFA World Cup Russia™ - FIFA.com",
+   "htmlTitle": "2018 FIFA World \u003cb\u003eCup\u003c/b\u003e Russia™ - FIFA.com",
+   "link": "http://www.fifa.com/worldcup/",
+   "displayLink": "www.fifa.com",
+   "snippet": "The eyes of the footballing world were on St. Petersburg on Saturday 25 July \nwhen the 2018 FIFA World Cup Russia™ Preliminary Draw, the first major Kick-\nOff ...",
+   "htmlSnippet": "The eyes of the footballing world were on St. Petersburg on Saturday 25 July \u003cbr\u003e\nwhen the 2018 FIFA World \u003cb\u003eCup\u003c/b\u003e Russia™ Preliminary Draw, the first major Kick-\u003cbr\u003e\nOff&nbsp;...",
+   "cacheId": "At821rEcUSUJ",
+   "formattedUrl": "www.fifa.com/worldcup/",
+   "htmlFormattedUrl": "www.fifa.com/world\u003cb\u003ecup\u003c/b\u003e/",
+   "pagemap": {
+    "cse_image": [
+     {
+      "src": "http://img.fifa.com/images/fwc/2018/opengraph/generic.png"
+     }
+    ],
+    "cse_thumbnail": [
+     {
+      "width": "310",
+      "height": "163",
+      "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkFhRGiS4gc5Z2DzDdVccWWzLr_6eqfXswb_cpYGXfP33V43Iw0gmespM"
+     }
+    ],
+    "metatags": [
+     {
+      "_requires": "_requires",
+      "competition-folder": "worldcup",
+      "competition-resourcepath": "fwc/2014",
+      "competition-timeline-edition": "2014",
+      "pagelanguages": "e;d;f;s;a;r",
+      "author": "FIFA.com",
+      "thumb": "http://img.fifa.com/images/fwc/2018/opengraph/generic.png",
+      "twitter:image:src": "http://img.fifa.com/images/fwc/2018/opengraph/generic.png",
+      "og:image:type": "png",
+      "og:image:width": "1200",
+      "og:image:height": "630",
+      "og:image": "http://img.fifa.com/images/fwc/2018/opengraph/generic.png",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "2018 FIFA World Cup Russia™    - FIFA.com",
+      "twitter:description": "2018 FIFA World Cup Russia™",
+      "twitter:site": "@fifacom",
+      "twitter:creator": "@fifacom",
+      "twitter:domain": "fifa.com",
+      "og:title": "2018 FIFA World Cup Russia™    - FIFA.com",
+      "og:description": "2018 FIFA World Cup Russia™",
+      "og:type": "website",
+      "og:url": "http://www.fifa.com/worldcup/index.html",
+      "og:site_name": "FIFA.com",
+      "og:locale": "en_GB",
+      "apple-itunes-app-js": "app-id=756915899",
+      "google-play-app": "app-id=com.fifa.fifaapp.android",
+      "mobileredirecturl": "/worldcup/index.html"
+     }
+    ]
+   }
+  }
+ ]
+}

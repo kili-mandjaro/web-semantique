@@ -1,0 +1,440 @@
+{
+    "kind": "customsearch#search",
+    "url": {
+        "type": "application/json",
+        "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+    },
+    "queries": {
+        "nextPage": [
+            {
+                "title": "Google Custom Search - insa",
+                "totalResults": "3350000",
+                "searchTerms": "insa",
+                "count": 10,
+                "startIndex": 11,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "010385690139782890959:ezl0o7x_7ro"
+            }
+        ],
+        "request": [
+            {
+                "title": "Google Custom Search - insa",
+                "totalResults": "3350000",
+                "searchTerms": "insa",
+                "count": 10,
+                "startIndex": 1,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "010385690139782890959:ezl0o7x_7ro"
+            }
+        ]
+    },
+    "context": {
+        "title": "INSALyon-WebSemantique"
+    },
+    "searchInformation": {
+        "searchTime": 0.282158,
+        "formattedSearchTime": "0.28",
+        "totalResults": "3350000",
+        "formattedTotalResults": "3,350,000"
+    },
+    "items": [
+        {
+            "kind": "customsearch#result",
+            "title": "The Intelligence National Security Alliance - Building a Stronger ...",
+            "htmlTitle": "The \u003cb\u003eIntelligence National Security Alliance\u003c/b\u003e - Building a Stronger \u003cb\u003e...\u003c/b\u003e",
+            "link": "http://www.insaonline.org/",
+            "displayLink": "www.insaonline.org",
+            "snippet": "Sep 24, 2015 ... INSA is the premier association representing the public, private, and academic \nsectors of the national security and intelligence communities.",
+            "htmlSnippet": "Sep 24, 2015 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eINSA\u003c/b\u003e is the premier association representing the public, private, and academic \u003cbr\u003e\nsectors of the national security and intelligence communities.",
+            "cacheId": "ZTjMwMamgXUJ",
+            "formattedUrl": "www.insaonline.org/",
+            "htmlFormattedUrl": "www.\u003cb\u003einsa\u003c/b\u003eonline.org/",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "http://insaonline.org//MasterImages/HomePage/WP_Carousel.png"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "185",
+                        "height": "145",
+                        "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTR-rv4e-mlpwju-p3p-MDzKha4hHzXFN2rcCVJlNIF1phuMRcGzfMW_2P4"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "publicationdate": "2014-08-11 00:00:00",
+                        "content-language": "EN",
+                        "audience": "ALL",
+                        "rating": "General",
+                        "distribution": "Global, Worldwide",
+                        "copyright": "Advanced Solutions International, Inc.",
+                        "author": "Advanced Solutions International, Inc."
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "insaland",
+            "htmlTitle": "insaland",
+            "link": "http://www.insaland.com/",
+            "displayLink": "www.insaland.com",
+            "snippet": "Insaland, the official website of UK artist INSA.",
+            "htmlSnippet": "Insaland, the official website of UK artist \u003cb\u003eINSA\u003c/b\u003e.",
+            "cacheId": "8cR8IsVJKj8J",
+            "formattedUrl": "www.insaland.com/",
+            "htmlFormattedUrl": "www.\u003cb\u003einsa\u003c/b\u003eland.com/",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "http://www.insaland.com/cms/wp-content/uploads/2010/11/vnacover.jpg"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "194",
+                        "height": "259",
+                        "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSE6TLRUoAQ1kOgsKgYoVCxzvdEJGWhGkhYQxsmK-7Xl9c1Grp3zxctylE"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "author": "Insa",
+                        "apple-mobile-web-app-status": "black-translucent",
+                        "viewport": "width=device-width, initial-scale=1"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "INSA's GIF-ITI",
+            "htmlTitle": "\u003cb\u003eINSA&#39;s\u003c/b\u003e GIF-ITI",
+            "link": "http://gif-iti.tumblr.com/",
+            "displayLink": "gif-iti.tumblr.com",
+            "snippet": "online meets offline, hand painted animated street art.",
+            "htmlSnippet": "online meets offline, hand painted animated street art.",
+            "cacheId": "1WmXj2dMG4MJ",
+            "formattedUrl": "gif-iti.tumblr.com/",
+            "htmlFormattedUrl": "gif-iti.tumblr.com/",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "http://33.media.tumblr.com/avatar_a445bb664a02_128.png"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "102",
+                        "height": "102",
+                        "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaYpYsnKnHIkrre0wfC4T07k5H19egyLwU_1RsIsH11iZvQb2ZYPTgHA"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "color:background": "#FFFFFF",
+                        "color:text": "#000000",
+                        "font:body": "Courier New",
+                        "if:fade images on hover": "1",
+                        "if:show captions": "0",
+                        "if:show post dividers": "0",
+                        "image:header": "0",
+                        "fb:app_id": "48119224995",
+                        "og:title": "INSA's GIF-ITI",
+                        "og:url": "http://gif-iti.tumblr.com/?og=1",
+                        "og:description": "online meets offline, hand painted animated street art",
+                        "og:type": "tumblr-feed:tumblelog",
+                        "og:image": "http://33.media.tumblr.com/avatar_a445bb664a02_128.png",
+                        "al:ios:url": "tumblr://x-callback-url/blog?blogName=gif-iti",
+                        "al:ios:app_name": "Tumblr",
+                        "al:ios:app_store_id": "305343404",
+                        "al:android:url": "tumblr://x-callback-url/blog?blogName=gif-iti",
+                        "al:android:app_name": "Tumblr",
+                        "al:android:package": "com.tumblr",
+                        "twitter:site": "tumblr",
+                        "twitter:card": "app",
+                        "twitter:description": "gif-iti",
+                        "twitter:title": "gif-iti",
+                        "twitter:app:name:iphone": "Tumblr",
+                        "twitter:app:name:ipad": "Tumblr",
+                        "twitter:app:name:googleplay": "Tumblr",
+                        "twitter:app:id:iphone": "305343404",
+                        "twitter:app:id:ipad": "305343404",
+                        "twitter:app:id:googleplay": "com.tumblr",
+                        "twitter:app:url:iphone": "tumblr://x-callback-url/blog?blogName=gif-iti&referrer=twitter-cards",
+                        "twitter:app:url:ipad": "tumblr://x-callback-url/blog?blogName=gif-iti&referrer=twitter-cards",
+                        "twitter:app:url:googleplay": "tumblr://x-callback-url/blog?blogName=gif-iti&referrer=twitter-cards"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "blog « insaland",
+            "htmlTitle": "blog « insaland",
+            "link": "http://www.insaland.com/blog/",
+            "displayLink": "www.insaland.com",
+            "snippet": "INSA x UE BOOM · Speaker1. Ultimate Ears makes by far the best bluetooth \nspeaker around. So good for painting with- loud, tough and wetproof!! And now \nthey ...",
+            "htmlSnippet": "\u003cb\u003eINSA\u003c/b\u003e x UE BOOM &middot; Speaker1. Ultimate Ears makes by far the best bluetooth \u003cbr\u003e\nspeaker around. So good for painting with- loud, tough and wetproof!! And now \u003cbr\u003e\nthey&nbsp;...",
+            "cacheId": "dZVrChfmzr8J",
+            "formattedUrl": "www.insaland.com/blog/",
+            "htmlFormattedUrl": "www.\u003cb\u003einsa\u003c/b\u003eland.com/blog/",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "http://www.insaland.com/cms/wp-content/uploads/2012/12/BlogHeaderBillboard.jpg"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "340",
+                        "height": "148",
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT53LfxxHIdLsELrMxi-V3csaeF9y1c3n_fZmZOjdu1cpgVpISxdtKpzpQ"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Home page - Insa - Toulouse",
+            "htmlTitle": "Home page - \u003cb\u003eInsa\u003c/b\u003e - Toulouse",
+            "link": "http://www.insa-toulouse.fr/en/",
+            "displayLink": "www.insa-toulouse.fr",
+            "snippet": "Search inDirectory. You are. Direct links. Version FrançaiseEnglish version\nEspagnol. Search. Search on this website. Institut National des Sciences \nAppliquées.",
+            "htmlSnippet": "Search inDirectory. You are. Direct links. Version FrançaiseEnglish version\u003cbr\u003e\nEspagnol. Search. Search on this website. \u003cb\u003eInstitut National des Sciences\u003c/b\u003e \u003cbr\u003e\n\u003cb\u003eAppliquées\u003c/b\u003e.",
+            "cacheId": "oJBbJQZSgnMJ",
+            "formattedUrl": "www.insa-toulouse.fr/en/",
+            "htmlFormattedUrl": "www.\u003cb\u003einsa\u003c/b\u003e-toulouse.fr/en/",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "http://www.insa-toulouse.fr/_contents/ametys-internal%253Asites/default/ametys-internal%253Acontents/home-page-carrousel/_metadata/illustration1/image/banniere_generique2013_anglais.jpg"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "328",
+                        "height": "154",
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ65rc7pM0XliyhvyTmW_0EnBMmrdBi38A9IewkGoq3npiC9u5wB2zMXBw"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "INSA (@INSALAND) | Twitter",
+            "htmlTitle": "\u003cb\u003eINSA\u003c/b\u003e (@INSALAND) | Twitter",
+            "link": "https://twitter.com/insaland",
+            "displayLink": "twitter.com",
+            "snippet": "5338 tweets • 628 photos/videos • 11.8K followers. Check out the latest Tweets \nfrom INSA (@INSALAND)",
+            "htmlSnippet": "5338 tweets • 628 photos/videos • 11.8K followers. Check out the latest Tweets \u003cbr\u003e\nfrom \u003cb\u003eINSA\u003c/b\u003e (@INSALAND)",
+            "cacheId": "oF5OgBq7TmEJ",
+            "formattedUrl": "https://twitter.com/insaland",
+            "htmlFormattedUrl": "https://twitter.com/\u003cb\u003einsa\u003c/b\u003eland",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "https://pbs.twimg.com/profile_images/1282504117/OneHeel-low_400x400.jpg"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "225",
+                        "height": "225",
+                        "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhRgcWz2amSAwAO22jKBHt3Mvxc7kV_vUtBy0iKz-RmbY1luOpmfOzqZc"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "msapplication-tileimage": "//abs.twimg.com/favicons/win8-tile-144.png",
+                        "msapplication-tilecolor": "#00aced",
+                        "swift-page-name": "profile"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "@insa_gram • Instagram photos and videos",
+            "htmlTitle": "@insa_gram • Instagram photos and videos",
+            "link": "https://instagram.com/insa_gram/?hl=en",
+            "displayLink": "instagram.com",
+            "snippet": "insa_gram. INSA - Artist from London www.gif-iti.com. 1,052 posts; 24.4k \nfollowers; 592 following. Having an amazing trip down the Oregon coast! Spotted \na fin ...",
+            "htmlSnippet": "insa_gram. \u003cb\u003eINSA\u003c/b\u003e - Artist from London www.gif-iti.com. 1,052 posts; 24.4k \u003cbr\u003e\nfollowers; 592 following. Having an amazing trip down the Oregon coast! Spotted \u003cbr\u003e\na fin&nbsp;...",
+            "cacheId": "ul7qC51ersEJ",
+            "formattedUrl": "https://instagram.com/insa_gram/?hl=en",
+            "htmlFormattedUrl": "https://instagram.com/\u003cb\u003einsa\u003c/b\u003e_gram/?hl=en",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "https://scontent-sea1-1.cdninstagram.com/hphotos-xfp1/t51.2885-19/11809652_1478634882436575_801528241_a.jpg"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "apple-mobile-web-app-capable": "yes",
+                        "apple-mobile-web-app-status-bar-style": "black",
+                        "viewport": "width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1",
+                        "al:ios:app_name": "Instagram",
+                        "al:ios:app_store_id": "389801252",
+                        "al:ios:url": "instagram://user?username=insa_gram",
+                        "al:android:app_name": "Instagram",
+                        "al:android:package": "com.instagram.android",
+                        "al:android:url": "https://instagram.com/_u/insa_gram/",
+                        "og:type": "profile",
+                        "og:image": "https://scontent-sea1-1.cdninstagram.com/hphotos-xfp1/t51.2885-19/11809652_1478634882436575_801528241_a.jpg",
+                        "og:title": "@insa_gram • Instagram photos and videos",
+                        "og:description": "INSA - Artist from London",
+                        "og:url": "https://instagram.com/insa_gram/"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "INSA Lyon | Institut National des Sciences Appliquées de Lyon ...",
+            "htmlTitle": "\u003cb\u003eINSA\u003c/b\u003e Lyon | \u003cb\u003eInstitut National des Sciences Appliquées\u003c/b\u003e de Lyon \u003cb\u003e...\u003c/b\u003e",
+            "link": "http://www.insa-lyon.fr/",
+            "displayLink": "www.insa-lyon.fr",
+            "snippet": "Ecole d'ingénieurs. Propose des informations destinées aux élèves, étudiants, \npresse, entreprise et des actualités.",
+            "htmlSnippet": "Ecole d&#39;ingénieurs. Propose des informations destinées aux élèves, étudiants, \u003cbr\u003e\npresse, entreprise et des actualités.",
+            "cacheId": "Z2q22Q-NFv4J",
+            "formattedUrl": "www.insa-lyon.fr/",
+            "htmlFormattedUrl": "www.\u003cb\u003einsa\u003c/b\u003e-lyon.fr/",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "http://www.insa-lyon.fr/sites/www.insa-lyon.fr/files/styles/slider_home/public/slider/monde_carte.jpg"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "399",
+                        "height": "126",
+                        "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLrGRGFXIa3vIsCbwkGGp2YUahg6cdxFrDGoMnA6uBXhhBJpte1oP7ttA"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "INSA's GIF-ITI VIEWER on the App Store",
+            "htmlTitle": "\u003cb\u003eINSA&#39;s\u003c/b\u003e GIF-ITI VIEWER on the App Store",
+            "link": "https://itunes.apple.com/us/app/insas-gif-iti-viewer/id893172835?mt=8",
+            "displayLink": "itunes.apple.com",
+            "snippet": "Aug 25, 2015 ... Description. View INSA's incredible GIF-ITI work in real life. The hand painted \nanimated murals by British artist INSA and brought to live when ...",
+            "htmlSnippet": "Aug 25, 2015 \u003cb\u003e...\u003c/b\u003e Description. View \u003cb\u003eINSA&#39;s\u003c/b\u003e incredible GIF-ITI work in real life. The hand painted \u003cbr\u003e\nanimated murals by British artist \u003cb\u003eINSA\u003c/b\u003e and brought to live when&nbsp;...",
+            "cacheId": "ddgBc9YgWbQJ",
+            "formattedUrl": "https://itunes.apple.com/us/app/insas-gif-iti.../id893172835?mt=8",
+            "htmlFormattedUrl": "https://itunes.apple.com/us/app/\u003cb\u003einsa\u003c/b\u003es-gif-iti.../id893172835?mt=8",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "http://is1.mzstatic.com/image/thumb/Purple1/v4/4b/8b/89/4b8b8930-c53d-dd5f-94d0-3a9ad2dbf154/source/1024x1024sr.jpg"
+                    }
+                ],
+                "person": [
+                    {
+                        "name": "Microdark Ltd"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "225",
+                        "height": "225",
+                        "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2DkDlrdaUStCoOzivAOXU7WzrIbdeUkbukaiGvSfdnIxm4W7mq4irJ7Q"
+                    }
+                ],
+                "aggregaterating": [
+                    {
+                        "ratingvalue": "0",
+                        "worstrating": "0",
+                        "ratingcount": "0"
+                    }
+                ],
+                "softwareapplication": [
+                    {
+                        "name": "INSA’s GIF-ITI VIEWER",
+                        "description": "View INSA’s incredible GIF-ITI work in real life. The hand painted animated murals by British artist INSA and brought to live when viewed through this new Augmented Reality platform. The...",
+                        "screenshot": "http://a3.mzstatic.com/us/r30/Purple7/v4/31/b2/68/31b268be-0400-1299-6b6d-d84743e790c3/screen322x572.jpeg",
+                        "image": "http://a2.mzstatic.com/us/r30/Purple1/v4/4b/8b/89/4b8b8930-c53d-dd5f-94d0-3a9ad2dbf154/icon175x175.jpeg",
+                        "applicationcategory": "Entertainment",
+                        "datepublished": "2014-07-13 04:23:30 Etc/GMT",
+                        "softwareversion": "1.3",
+                        "operatingsystem": "Requires iOS 7.0 or later. Compatible with iPhone, iPad, and iPod touch."
+                    }
+                ],
+                "Organization": [
+                    {
+                        "name": "Apple",
+                        "telephone": "1-800-692-7753"
+                    }
+                ],
+                "offer": [
+                    {
+                        "price": "0"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "platform-cache-id": "8",
+                        "og:title": "INSA’s GIF-ITI VIEWER on the App Store",
+                        "og:description": "Read reviews, compare customer ratings, see screenshots, and learn more about INSA’s GIF-ITI VIEWER. Download INSA’s GIF-ITI VIEWER and enjoy it on your iPhone, iPad, and iPod touch.",
+                        "og:site_name": "App Store",
+                        "twitter:title": "INSA’s GIF-ITI VIEWER on the App Store",
+                        "twitter:description": "Read reviews, compare customer ratings, see screenshots, and learn more about INSA’s GIF-ITI VIEWER. Download INSA’s GIF-ITI VIEWER and enjoy it on your iPhone, iPad, and iPod touch.",
+                        "twitter:site": "@AppStore",
+                        "twitter:domain": "App Store",
+                        "twitter:card": "summary_large_image",
+                        "twitter:image": "http://is1.mzstatic.com/image/thumb/Purple1/v4/4b/8b/89/4b8b8930-c53d-dd5f-94d0-3a9ad2dbf154/source/1024x1024sr.jpg",
+                        "og:image": "http://is1.mzstatic.com/image/thumb/Purple1/v4/4b/8b/89/4b8b8930-c53d-dd5f-94d0-3a9ad2dbf154/source/1024x1024sr.jpg",
+                        "og:image:secure_url": "http://is1.mzstatic.com/image/thumb/Purple1/v4/4b/8b/89/4b8b8930-c53d-dd5f-94d0-3a9ad2dbf154/source/1024x1024sr.jpg",
+                        "og:image:type": "image/jpg",
+                        "og:image:width": "1024",
+                        "og:image:height": "1024",
+                        "position": "1",
+                        "name": "Apple",
+                        "telephone": "1-800-692-7753"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Gif-iti",
+            "htmlTitle": "Gif-iti",
+            "link": "http://www.gif-iti.com/",
+            "displayLink": "www.gif-iti.com",
+            "snippet": "Enjoy INSA's incredible GIF paintings in real life! Download the new GIF-ITI \nViewer App Search for 'GIF-ITI' on iTunes or click this link \u003e. button-appstore. GIF-\nITI ...",
+            "htmlSnippet": "Enjoy \u003cb\u003eINSA&#39;s\u003c/b\u003e incredible GIF paintings in real life! Download the new GIF-ITI \u003cbr\u003e\nViewer App Search for &#39;GIF-ITI&#39; on iTunes or click this link &gt;. button-appstore. GIF-\u003cbr\u003e\nITI&nbsp;...",
+            "cacheId": "ibEoJZJhbnsJ",
+            "formattedUrl": "www.gif-iti.com/",
+            "htmlFormattedUrl": "www.gif-iti.com/",
+            "pagemap": {
+                "cse_image": [
+                    {
+                        "src": "http://www.gif-iti.com/images/HowTo-1000.gif"
+                    }
+                ],
+                "cse_thumbnail": [
+                    {
+                        "width": "322",
+                        "height": "156",
+                        "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtTcqGVr044hr9RAVS96SMupDAO4L9NyvlDAzXkLKCmI9u0POoTM781PI"
+                    }
+                ]
+            }
+        }
+    ]
+}
