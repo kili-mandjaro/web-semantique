@@ -190,7 +190,7 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
                     start += num;
                 }*/
 
-                var ressource = $resource('http://localhost:5000', {}, {});
+                var ressource = $resource('http://ws.kilianollivier.fr', {}, {});
                 ressource.get({q: requete}, function(res){
                     if('res' in res){
                         for(var i = 0; i < res['res'].length; i++){
