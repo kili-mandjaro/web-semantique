@@ -63,9 +63,9 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
 
                     var page = {
                         title: item.title,
-                        formattedUrl: item.formattedUrl,
-                        snippet: item.snippet,
-                        url: item.link,
+                        formattedUrl: item.display_url,
+                        snippet: item.snippet.replace(/<\/?[^>]+(>|$)/g, ""),
+                        url: item.url,
                         occurrences : occur,
                         uriKeywords: uriKeywords
                     };
@@ -81,38 +81,40 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
          * @param {JSON} item L'element retourne par l'API Google.
          * @param {function(page)} callback Un callback appele a chaque nouveau resultat trouve.
          */
-        function createHtmlHandler(item, callback) {
+        function lauchSpotlightRequest(item, callback) {
             /**
-             * Recupere le html d'une page
+             * Recupere le contenu d'une page
              * @param {Object} responseObject L'objet reponse de la requete http.
              *                                Voir documentation $http AngularJS
              */
-            return function(responseObject) {
+            //var textContent = ExtractionTexte(responseObject.data);
+            var textContent = item.text;
 
-                var textContent = ExtractionTexte(responseObject.data);
-
-                //Si la page contient du texte.
-                if(textContent !== "") {
-                    // Passage par un POST, le nb de char autorise est bcp plus grand
-                    var urlPost = 'http://spotlight.dbpedia.org/rest/annotate?confidence=' + confiance + '&support=20';
-                    var paramPost = $.param({
-                        text : textContent
-                    });
-                    $http({
-                        method: 'POST',
-                        url: urlPost,
-                        data: paramPost,
-                        headers: {'Content-Type': 'application/x-www-form-urlencoded'}
-                    }).then(createSpotlightHandler(item, callback),
-                        function (response) {
-                            callback(null);
-                    });
-                } else {
-                    //On appelle directement le callback sans contenu.
-                    //Pour signifier qu'il y a eu un problème avec la page.
-                    callback(null);
-                }
-            };
+            //Si la page contient du texte.
+            if(textContent !== "") {
+                // Passage par un POST, le nb de char autorise est bcp plus grand
+                //var urlPost = 'http://spotlight.dbpedia.org/rest/annotate?confidence=' + confiance + '&support=20';
+                var urlPost = 'http://model.dbpedia-spotlight.org/en/annotate?confidence=' + confiance + '&support=20';
+                var paramPost = $.param({
+                    text : textContent
+                });
+                $http({
+                    method: 'POST',
+                    url: urlPost,
+                    data: paramPost,
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        'Accept': 'application/json'
+                    }
+                }).then(createSpotlightHandler(item, callback),
+                    function (response) {
+                        callback(null);
+                });
+            } else {
+                //On appelle directement le callback sans contenu.
+                //Pour signifier qu'il y a eu un problème avec la page.
+                callback(null);
+            }
         }
 
         function createLookupHandler(callback) {
@@ -168,7 +170,7 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
              */
             requete: function(requete, nombrePages, callback) {
                 //Pour eviter de faire trop de requetes sur l'API Google, on fixe le resultat.
-                var ressource = $resource('https://www.googleapis.com/customsearch/v1?q=:requete&cx=010385690139782890959%3Aezl0o7x_7ro&start=:start&num=:num&key=AIzaSyBgk1ACvargtPMwitXu85jlFj0maYox1jI', {}, {});
+                //var ressource = $resource('https://www.googleapis.com/customsearch/v1?q=:requete&cx=010385690139782890959%3Aezl0o7x_7ro&start=:start&num=:num&key=AIzaSyBgk1ACvargtPMwitXu85jlFj0maYox1jI', {}, {});
                 //var ressource = $resource('data/query_galaxy.json', {}, {});
                 //var ressource = $resource('data/chinese_pug.json', {}, {});
                 //var ressource = $resource('data/query_mouse.json', {}, {});
@@ -178,7 +180,7 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
                 //var ressource = $resource('data/query_cup.json', {}, {});
                 
                 //On separe le nombre max de pages en paquets de 10.
-                var GoogleApiHandler = createGoogleApiHandler(callback);
+                /*var GoogleApiHandler = createGoogleApiHandler(callback);
                 var start = 0;
                 var num = 10;
                 while(start < nombrePages) {
@@ -186,7 +188,17 @@ webSemantiqueRechercheServices.factory('Recherche', ['$resource', '$http',
                     ressource.get({requete: requete, start: start, num: num}, GoogleApiHandler);
                     //On passe a la fenetre suivante.
                     start += num;
-                }
+                }*/
+
+                var ressource = $resource('http://localhost:5000', {}, {});
+                ressource.get({q: requete}, function(res){
+                    if('res' in res){
+                        for(var i = 0; i < res['res'].length; i++){
+                            lauchSpotlightRequest(res['res'][i], callback);
+                        }
+                    }
+                });
+                //createHtmlHandler(jsonQueryData.items[i], callback)
             },
 
             searchStringRequete: function(searchString, callback){
