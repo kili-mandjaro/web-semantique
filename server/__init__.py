@@ -4,13 +4,18 @@ from flask import request
 import requests
 from bs4 import BeautifulSoup
 from flask_cors import CORS, cross_origin
+import curio
+import curio_http
 
 app = Flask(__name__)
 CORS(app)
 
-def extract_text(link):
-    r = requests.get(link)
-    soup = BeautifulSoup(r.text, 'html.parser')
+google_endpoint = 'https://www.googleapis.com/customsearch/v1'
+google_key = 'xxx'
+google_context = 'xxx'
+
+def extract_text(html_text):
+    soup = BeautifulSoup(html_text, 'html.parser')
 
     for script in soup(["script", "style"]):
         script.extract()
@@ -23,38 +28,54 @@ def extract_text(link):
 
     return text
 
-def do_something(response):
-    print(response.url)
+def fetch_google_res(query):
+    r = requests.get(google_endpoint + '?key=' + google_key + '&cx=' + google_context + '&q=' + query)
+    json_res = r.json()
+
+    # json_res = {}
+    # with open('query_galaxy.json') as json_data:
+    #     json_res = json.load(json_data)
+
+    return json_res
+
+async def fetch_website_content(web_res):
+    async with curio_http.ClientSession() as session:
+        response = await session.get(web_res['link'])
+        html = await response.text()
+        return response, html, web_res
+
+async def fetch_websites_content(google_res):
+    tasks = []
+    res = []
+    for web_res in google_res['items']:
+        #print('--- Extracting : ' + web_res['link'])
+        task = await curio.spawn(fetch_website_content(web_res))
+        tasks.append(task)
+
+    for task in tasks:
+        response, html, web_res = await task.join()
+        #print('+++ Extracted : ' + web_res['link'])
+        if response.status_code == 200:
+            res.append({
+                'url': web_res['link'],
+                'title': web_res['title'],
+                'display_url': web_res['displayLink'],
+                'snippet': web_res['htmlSnippet'],
+                'text': extract_text(html)
+            })
+
+    return res
 
 @app.route("/")
 def get_web_content():
-    url = 'https://www.googleapis.com/customsearch/v1'
-    key = 'xxx'
-    context = 'xxx'
+
     query = request.args.get('q')
     if not(query):
         query = 'galaxy'
-    r = requests.get(url + '?key=' + key + '&cx=' + context + '&q=' + query)
-    json_res = r.json()
+    google_res = fetch_google_res(query)
+    res = curio.run(fetch_websites_content(google_res))
 
-    #json_res = {}
-    #with open('galaxy.json') as json_data:
-    #    json_res = json.load(json_data)
-
-    res = []
-    for web_res in json_res['items']:
-        print('--- Extracting : ' + web_res['link'])
-        text = extract_text(web_res['link'])
-        print('+++ Extracted : ' + web_res['link'])
-        res.append({
-            'url': web_res['link'],
-            'title': web_res['title'],
-            'display_url': web_res['displayLink'],
-            'snippet': web_res['htmlSnippet'],
-            'text': text
-        })
-
-    return jsonify({'res' :res})
+    return jsonify({'res': res})
 
 if __name__ == "__main__":
     app.run()
