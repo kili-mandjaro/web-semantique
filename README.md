@@ -8,4 +8,4 @@ For further details about WSGI:
 - http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi
 - https://www.digitalocean.com/community/tutorials/installing-mod_wsgi-on-ubuntu-12-04
 
-You can find a demo [here](http://brindesable.github.io/web-semantique).
+You can find a demo [here](http://brindesable.github.io/web-semantique), and further details about the algorithm [here](http://kilianollivier.fr/ProjetSE4IF-Gr4402.pdf).
