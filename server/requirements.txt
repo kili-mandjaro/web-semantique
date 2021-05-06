@@ -7,7 +7,7 @@ click==6.7
 curio==0.7
 curio-http==0.1.0
 Flask==0.12.2
-Flask-Cors==3.0.2
+Flask-Cors==3.0.9
 h11==0.7.0
 idna==2.5
 itsdangerous==0.24
